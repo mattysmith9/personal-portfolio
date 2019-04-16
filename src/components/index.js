@@ -37,19 +37,20 @@ const BackgroundSection = ({ className, children }) => (
 );
 
 const StyledSymetryWrapper = styled.div`
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  height: auto;
   overflow: hidden;
 `;
 
 const StyledBackgroundSection = styled(BackgroundSection)`
-  width: 100vw;
+  width: 100%;
+  height: auto;
   background-size: cover;
 `;
 
 const StyledWrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
 `;
 

@@ -11,9 +11,9 @@ const Intro = styled.h1`
   font-size: 22rem;
   font-weight: 500;
   text-align: center;
-  border: 4px solid #6DA6B2;
+  border: 4px solid #6da6b2;
   border-radius: 20px;
-  color: #6DA6B2;
+  color: #6da6b2;
   mix-blend-mode: color-burn;
 `;
 

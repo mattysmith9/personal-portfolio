@@ -5,7 +5,7 @@ require('dotenv').config({
 });
 
 const siteMetadata = {
-  siteTitle: 'Matty Smith | Software Engineer',
+  siteTitle: 'Matty Smith | Software Engineer | Avid Golfer',
   siteTitleShort: 'MS Portfolio',
   siteTitleAlt: 'Matty Smith Portfolio Page',
   siteDescription:
@@ -14,6 +14,7 @@ const siteMetadata = {
     'Matty Smith, Matty, Matt, Smith, Matthew, @mattysmith9, software engineer, front-end engineer, back-end engineer, full stack developer, full stack engineer, web developer, javascript, react, node, kotlin',
   author: 'Matty Smith',
   siteUrl: 'https://mattysmith.co',
+  googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
   facebookAppID: '',
   pages: ['welcome', 'homepage'],
   siteLanguage: 'en_US',
@@ -47,8 +48,10 @@ const siteMetadata = {
     },
   ],
   googleAnalyticsID: 'UA-137382831-1',
-  googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
+
   headerHeight: 100,
+  whiteColor: '#F7F8F3',
+  blueColor: '#355c7d',
 };
 
 module.exports = {
@@ -61,8 +64,8 @@ module.exports = {
         name: siteMetadata.siteTitle,
         short_name: siteMetadata.siteTitleAlt,
         start_url: `/`,
-        background_color: siteMetadata.darkNavyColor,
-        theme_color: siteMetadata.navyColor,
+        background_color: siteMetadata.whiteColor,
+        theme_color: siteMetadata.blueColor,
         display: `minimal-ui`,
         icon: siteMetadata.faviconPng,
       },
@@ -144,5 +147,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-modal-routing`,
   ],
 };

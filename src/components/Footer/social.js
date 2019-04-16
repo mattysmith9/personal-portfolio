@@ -3,7 +3,7 @@ const social = [
     id: 0,
     name: 'Instagram',
     link: 'https://instagram.com/mattysmith9',
-    icon: 'icons/instagram.svg',
+    FontAwesomeIcon: "icon={['fab', 'facebook']}",
   },
   {
     id: 1,

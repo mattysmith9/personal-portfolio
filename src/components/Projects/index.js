@@ -2,37 +2,49 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { StaticQuery } from 'gatsby';
 import { Card } from '../../styled/Card';
-import { Container } from '../../styled/Container';
 import styled from 'styled-components';
+import theme from '../../styled/theme';
+const { colors } = theme;
 
 const Wrapper = styled.div`
-  padding: 2rem 0;
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  h2 {
+    color: ${colors.blue};
+    padding-top: 2rem;
+  }
 `;
 
 const Grid = styled.div`
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 8fr;
-  gap: 1.2rem 1.2rem;
+  grid-template-columns: ${theme.gridTemplateColumnsDesk};
+  grid-template-rows: ${theme.gridTemplateRows};
+  gap: ${theme.gap};
   @media (max-width: 960px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: ${theme.gridTemplateColumnsMob9};
   }
   @media (max-width: 680px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: ${theme.gridTemplateColumnsMob6};
   }
 `;
 
 const Item = styled.div`
-  width: 100%;
   height: 100%;
   overflow: hidden;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
+  box-shadow: ${theme.boxShadow};
+  border-radius: ${theme.borderRadiusCard};
+  background: ${colors.body};
   h4 {
-    color: #2aa1af;
+    color: ${colors.orange};
+    font-weight: bold;
   }
   p {
-    color: #282e56;
+    color: ${colors.blue};
+    font-family: ${theme.fontFamily};
   }
 `;
 
@@ -70,7 +82,7 @@ export const Projects = () => (
         },
       },
     }) => (
-      <Wrapper as={Container} id="projects" rel="canonical">
+      <Wrapper id="projects" rel="canonical">
         <h2>Recent Repositories</h2>
         <Grid>
           {edges.map(({ node }) => (
