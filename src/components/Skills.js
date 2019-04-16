@@ -1,45 +1,52 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from '../styled/Container';
 import { Link } from 'gatsby-plugin-modal-routing';
+import { Section } from '../styled/Section';
+import SkillList from './SkillList';
 import theme from '../styled/theme';
 const { colors } = theme;
 
-const Wrapper = styled.div`
-  background-size: contain;
-  background-position: left top;
-  background-repeat: no-repeat;
-  min-height: 70vh;
-`;
-
-const AboutWrapper = styled.div`
-  padding: 4rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-`;
-
-const Details = styled.div`
-  flex: 1;
-  padding-left: 2rem;
-  @media (max-width: 960px) {
-    padding-left: unset;
-    width: 100%;
-  }
+const AboutWrapper = styled(Section)`
+  position: relative;
   h2 {
-    margin-bottom: 2rem;
     color: ${colors.blue};
-    text-align: center;
   }
-  p {
-    margin-bottom: 2.5rem;
-    font-family: ${theme.fontFamily};
-    font-weight: normal;
-    line-height: 1.3;
+`;
+
+const FlexWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+`;
+
+const DetailsWrapper = styled.div`
+  width: 60%;
+  max-width: 480px;
+  color: ${colors.grey};
+`;
+
+const SkillsWrapper = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  overflow: hidden;
+  margin-top: 20px;
+`;
+
+const Skill = styled.li`
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: ${theme.fontFamily};
+  font-size: 0.9rem;
+  color: ${colors.blue};
+  list-style: none;
+  &:before {
+    content: '》';
+    position: absolute;
+    left: 0;
     color: ${colors.orange};
+    font-size: 1rem;
+    line-height: 24px;
   }
 `;
 
@@ -65,27 +72,26 @@ const Button = styled(Link)`
 `;
 
 export const Skills = () => (
-  <Wrapper id="skills">
-    <AboutWrapper as={Container}>
-      <Details>
-        <h2>A little About myself</h2>
-        <p>
-          Hola, I'm Matty! I have a ginger kitty named Blue, I love golf, I live
-          in Burlington, Vermont, I could read about sacred geometry for hours,
-          Alan Watts is cool, I have been programming for four months and this
-          is my first portfolio page.
-          <br />
-          <br />
-          About four months ago I enrolled in a bootcamp to learn how to code. I
-          can defintely say it was one of the best decisions I have made. I was
-          looking for a change of pace and programming has certainly delivered.
-          The amount of information intake that has been involved with this
-          journey so far is mind boggling but I am enjoying the process.
-        </p>
-        <Button to="/projectDescription/" asModal>
-          <span>more info</span>
-        </Button>
-      </Details>
-    </AboutWrapper>
-  </Wrapper>
+  <AboutWrapper id="skills">
+    <h2>About Me</h2>
+    <FlexWrapper>
+      <DetailsWrapper>
+        Hi! I'm Matty, I am an aspiring Software Engineer from Burlington,
+        Vermont. About six months ago I decided that my previous career as a
+        Mortgage Broker wasn't what I was looking for so I enrolled in a
+        bootcamp and took the plunge into the world of Software.
+        <br />
+        <br />
+        Here are a few of the technologies I am working with.
+        <SkillsWrapper>
+          {SkillList.map(({ id, name }) => (
+            <Skill key={id}>{name}</Skill>
+          ))}
+        </SkillsWrapper>
+      </DetailsWrapper>
+      <Button to="/projectDescription/" asModal>
+        <span>more info</span>
+      </Button>
+    </FlexWrapper>
+  </AboutWrapper>
 );

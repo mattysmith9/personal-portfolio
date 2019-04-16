@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   a {
-    color: ${colors.blue};
+    color: ${colors.grey};
     font-family: ${theme.fontFamilyNav};
     font-weight: ${theme.navWeight};
     font-size: 1.4rem;

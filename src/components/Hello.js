@@ -14,8 +14,8 @@ const HelloContainer = styled(Container)`
 `;
 
 const Hola = styled.h1`
-  color: ${colors.blue};
-  margin: 0 0 10px 2.5rem;
+  color: ${colors.grey};
+  margin: 0 0 10px 2.3rem;
   font-size: 1.5rem;
   font-weight: normal;
   font-family: ${theme.fontFamily};
@@ -24,7 +24,7 @@ const Hola = styled.h1`
 const FullName = styled.h2`
   font-size: 85px;
   line-height: 1.1;
-  margin: 0 0 10px 2rem;
+  margin: 0 0 10px 1.8rem;
   color: ${colors.blue};
 `;
 
@@ -32,18 +32,31 @@ const Subtitle = styled.h3`
   font-size: 35px;
   line-height: 1.1;
   color: ${colors.green};
-  margin: 0 0 10px 2.1rem;
+  margin: 0 0 10px 2rem;
 `;
 
-const Blob = styled.div`
-  margin: 0 0 20px 2.1rem;
-  width: 50%;
-  max-width: 500px;
-  color: ${colors.blue};
+const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 0 5px 2rem;
+  padding-top: 1.5rem;
+`;
+
+const Button = styled.a`
   font-family: ${theme.fontFamily};
-  span {
-    font-size: 1rem;
-  }
+  background-color: ${colors.body};
+  border: 1px solid ${colors.green};
+  border-radius: ${theme.borderRadiusCard};
+  color: ${colors.blue};
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  margin: 20px auto;
+  padding: 18px 23px;
 `;
 
 export const Hello = () => (
@@ -53,7 +66,9 @@ export const Hello = () => (
     <Subtitle>
       engineer | developer | avid golfer | aspiring polyglot .
     </Subtitle>
-    <Blob />
+    <ButtonWrapper>
+      <Button href="mail">Contact</Button>
+    </ButtonWrapper>
   </HelloContainer>
 );
 

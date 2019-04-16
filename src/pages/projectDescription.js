@@ -15,27 +15,6 @@ const ModalWrapper = styled(Container)`
   padding: 1 1rem;
 `;
 
-const Button = styled(Link)`
-  cursor: pointer;
-  font-family: ${theme.fontFamily};
-  border-radius: ${theme.borderRadiusBtn};
-  padding: 1em 1.5em;
-  vertical-align: middle;
-  line-height: 1;
-  border: 1px solid ${colors.green};
-  background: ${colors.body};
-  box-shadow: ${theme.boxShadow};
-  &:hover {
-    transform: ${theme.transform};
-    transition: ${theme.transition};
-    border: 2px solid ${colors.blue};
-  }
-  span {
-    color: ${colors.blue};
-    font-size: 1.2rem;
-  }
-`;
-
 const ProjectDescription = () => (
   <ConditionalLayout>
     <ModalWrapper>
@@ -52,9 +31,7 @@ const ProjectDescription = () => (
         saepe rem sed ea doloribus. Cum ipsum quaerat repudiandae dicta quasi
         sint dicta aut.
       </p>
-      <Button to="/homepage/">
-        <span>previous</span>
-      </Button>
+      <Link to="/#skills/" />
     </ModalWrapper>
   </ConditionalLayout>
 );

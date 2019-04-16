@@ -7,15 +7,16 @@ import theme from '../../styled/theme';
 const { colors } = theme;
 
 const Wrapper = styled.div`
-  min-height: 100vh;
+  min-height: 140vh;
   max-width: 1280px;
   margin: 0 auto;
   width: 80%;
   text-align: center;
   h2 {
     color: ${colors.blue};
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
+  
 `;
 
 const Grid = styled.div`
@@ -39,11 +40,11 @@ const Item = styled.div`
   border-radius: ${theme.borderRadiusCard};
   background: ${colors.body};
   h4 {
-    color: ${colors.orange};
+    color: ${colors.green};
     font-weight: bold;
   }
   p {
-    color: ${colors.blue};
+    color: ${colors.grey};
     font-family: ${theme.fontFamily};
   }
 `;

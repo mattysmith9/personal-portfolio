@@ -33,7 +33,7 @@ const Links = styled.div`
   align-items: center;
   a {
     margin: 0 5px;
-    color: ${colors.blue};
+    color: ${colors.grey};
   }
 `;
 
@@ -83,6 +83,7 @@ export const Footer = () => (
       <Links>
         <a
           href="https://github.com/mattysmith9"
+          aria-label="link to github repositories"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -90,6 +91,7 @@ export const Footer = () => (
         </a>
         <a
           href="https://instagram.com/mattysmith9"
+          aria-label="link to instagram account"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -97,6 +99,7 @@ export const Footer = () => (
         </a>
         <a
           href="https://www.facebook.com/matty.smith.146"
+          aria-label="link to facebook account"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -104,6 +107,7 @@ export const Footer = () => (
         </a>
         <a
           href="https://www.linkedin.com/in/mattysmith9"
+          aria-label="link to linkedin profile"
           target="_blank"
           rel="noopener noreferrer"
         >

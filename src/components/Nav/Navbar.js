@@ -13,20 +13,26 @@ const Wrapper = styled.div`
   justify-content: space-between;
   span {
     color: ${colors.green};
-    font-size: 3.2em;
+    font-size: 3.1em;
     font-weight: bold;
     font-family: ${theme.fontFamily};
     background: ${colors.blue};
     padding: 0.1em 0.4em;
     border-radius: ${theme.borderRadiusBtn};
     box-shadow: ${theme.boxShadow};
-    border-bottom: 4px solid ${colors.green};
+    border-bottom: 2px solid ${colors.green};
+    border-left: 2px solid ${colors.green};
+    border-top: 2px solid ${colors.green};
+    border-right: 2px solid ${colors.green};
   }
   span:hover {
     transform: ${theme.transform};
     transition: ${theme.transition};
     color: ${colors.orange};
-    border-bottom: 4px solid ${colors.orange};
+    border-bottom: 2px solid ${colors.orange};
+    border-left: 2px solid ${colors.orange};
+    border-top: 2px solid ${colors.orange};
+    border-right: 2px solid ${colors.orange};
   }
 `;
 

@@ -20,9 +20,9 @@ const Homepage = () => {
       />
       <Header />
       <Hello />
+      <Skills />
       <About />
       <Projects />
-      <Skills />
       <Footer />
     </Layout>
   );

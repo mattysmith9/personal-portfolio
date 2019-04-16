@@ -5,6 +5,7 @@ const theme = {
     green: '#19e0b4',
     orange: '#f7444e',
     teal: '#2aa1af',
+    grey: '#708090',
   },
   fontFamily: 'Nunito Sans sans-serif',
   fontFamilyNav: ' Montserrat sans-serif',
