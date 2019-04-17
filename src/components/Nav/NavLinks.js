@@ -1,22 +1,23 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styled from 'styled-components';
-import theme from '../../styled/theme';
+import { theme } from '@style';
+
 const { colors } = theme;
 
 const Wrapper = styled.div`
-  padding-right: 1rem;
+  padding-right: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   a {
-    color: ${colors.grey};
+    color: ${colors.blue};
     font-family: ${theme.fontFamilyNav};
     font-weight: ${theme.navWeight};
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-decoration: none;
     margin-right: 1em;
-    padding: 0.3em 0.3em;
+    padding: 0.4em 0.4em;
   }
   a:hover {
     transform: ${theme.transform};

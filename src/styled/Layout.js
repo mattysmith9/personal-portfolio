@@ -3,6 +3,8 @@ import theme from './theme';
 
 const { colors } = theme;
 
-export const Layout = styled.div`
+const Layout = styled.div`
   background: ${colors.body};
 `;
+
+export default Layout;

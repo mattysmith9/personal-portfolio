@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 import theme from './theme';
+
 const { colors } = theme;
 
-export const Card = styled.div`
+const Card = styled.div`
   padding: 1rem;
   background: ${colors.body};
   height: 100%;
   border: 3px solid ${colors.blue};
   border-radius: ${theme.borderRadiusCard};
 `;
+
+export default Card;
 
 /*access token:
 

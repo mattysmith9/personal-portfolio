@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import Hero from '../components/Hero';
-import SEO from '../components/seo';
-import useSiteMetadata from '../components/SiteMetadata';
+import Layout from '@comp/Layout';
+import Hero from '@comp/Hero';
+import SEO from '@comp/seo';
+import useSiteMetadata from '@comp/SiteMetadata';
 
 const IndexPage = () => {
   const { siteDescription, siteTitle } = useSiteMetadata();

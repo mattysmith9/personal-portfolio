@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container } from '../styled/Container';
 import styled from 'styled-components';
-import theme from '../styled/theme';
+import { theme, Container, helpers } from '@style';
+
 const { colors } = theme;
 
 const HelloContainer = styled(Container)`
@@ -16,7 +16,7 @@ const HelloContainer = styled(Container)`
 const Hola = styled.h1`
   color: ${colors.grey};
   margin: 0 0 10px 2.3rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: normal;
   font-family: ${theme.fontFamily};
 `;
@@ -45,18 +45,7 @@ const ButtonWrapper = styled.div`
 `;
 
 const Button = styled.a`
-  font-family: ${theme.fontFamily};
-  background-color: ${colors.body};
-  border: 1px solid ${colors.green};
-  border-radius: ${theme.borderRadiusCard};
-  color: ${colors.blue};
-  font-size: 1rem;
-  line-height: 1;
-  text-decoration: none;
-  cursor: pointer;
-  letter-spacing: 0.5px;
-  margin: 20px auto;
-  padding: 18px 23px;
+  ${helpers.largeButton};
 `;
 
 export const Hello = () => (
@@ -67,7 +56,7 @@ export const Hello = () => (
       engineer | developer | avid golfer | aspiring polyglot .
     </Subtitle>
     <ButtonWrapper>
-      <Button href="mail">Contact</Button>
+      <Button href="mail">contact</Button>
     </ButtonWrapper>
   </HelloContainer>
 );

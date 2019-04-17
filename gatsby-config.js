@@ -5,11 +5,11 @@ require('dotenv').config({
 });
 
 const siteMetadata = {
-  siteTitle: 'Matty Smith | Software Engineer | Avid Golfer',
+  siteTitle: 'Matty Smith | Software Engineer',
   siteTitleShort: 'MS Portfolio',
   siteTitleAlt: 'Matty Smith Portfolio Page',
   siteDescription:
-    'Matty Smith is a Software Engineer based in Burlington, VT who is currently looking for his first job as an Engineeer',
+    'Matty Smith is a Software Engineer based in Burlington, Vermont.',
   siteKeywords:
     'Matty Smith, Matty, Matt, Smith, Matthew, @mattysmith9, software engineer, front-end engineer, back-end engineer, full stack developer, full stack engineer, web developer, javascript, react, node, kotlin',
   author: 'Matty Smith',
@@ -71,6 +71,19 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          '@src': path.resolve(__dirname, 'src'),
+          '@comp': path.resolve(__dirname, 'src/components'),
+          '@style': 'src/styled',
+          '@page': path.resolve(__dirname, 'src/pages'),
+          '@image': path.resolve(__dirname, 'src/images'),
+        },
+        extensions: ['js'],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -82,6 +95,20 @@ module.exports = {
       options: {
         name: `projects`,
         path: path.join(__dirname, `src`, `components`, `projects`),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     {
@@ -145,6 +172,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-modal-routing`,

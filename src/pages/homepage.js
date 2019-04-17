@@ -1,15 +1,16 @@
 import React from 'react';
-import { Projects } from '../components/Projects';
-import { Footer } from '../components/Footer';
-import { Header } from '../components/Nav';
-import { Layout } from '../styled/Layout';
-import { About } from '../components/About';
-import { Skills } from '../components/Skills';
-import { Hello } from '../components/Hello';
-import useSiteMetadata from '../components/SiteMetadata';
-import SEO from '../components/seo';
+import PropTypes from 'prop-types';
+import { Projects } from '@comp/Projects';
+import { Footer } from '@comp/Footer';
+import { Header } from '@comp/Nav';
+import { Layout } from '@style';
+import { About } from '@comp/About';
+import { Skills } from '@comp/Skills';
+import { Hello } from '@comp/Hello';
+import useSiteMetadata from '@comp/SiteMetadata';
+import SEO from '@comp/seo';
 
-const Homepage = () => {
+const Homepage = ({ data }) => {
   const { siteDescription, siteTitle } = useSiteMetadata();
   return (
     <Layout>
@@ -26,6 +27,10 @@ const Homepage = () => {
       <Footer />
     </Layout>
   );
+};
+
+Homepage.propTypes = {
+  data: PropTypes.object.isRequired,
 };
 
 export default Homepage;

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container } from '../../styled/Container';
+import { theme, Container } from '@style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './fontAwesome';
 import styled from 'styled-components';
-import theme from '../../styled/theme';
+import './fontAwesome';
+
 const { colors } = theme;
 
 const Wrapper = styled.div`
@@ -31,9 +31,17 @@ const Flex = styled.div`
 const Links = styled.div`
   display: flex;
   align-items: center;
+  background: ${colors.body};
+  padding: 0.3em 0.3em;
+  border-radius: ${theme.borderRadiusCard};
+  border: 2px solid ${colors.blue};
   a {
-    margin: 0 5px;
-    color: ${colors.grey};
+    margin: 0 10px;
+    color: ${colors.green};
+    padding: 0.2em 0.1em;
+    &:hover {
+      color: ${colors.orange};
+    }
   }
 `;
 
@@ -44,11 +52,8 @@ const Details = styled.div`
   }
   span {
     color: ${colors.orange};
-    font-family: ${theme.fontFamily};
+    font-family: ${theme.fontFamilyBtn};
     font-size: ${theme.footerSize};
-  }
-  h2 {
-    color: ${colors.blue};
   }
   a {
     color: ${colors.orange};
@@ -62,7 +67,6 @@ export const Footer = () => (
   <Wrapper>
     <Flex as={Container} id="footer" rel="canonical">
       <Details>
-        <h2>Burlington, Vermont</h2>
         <div>
           <span>
             © {new Date().getFullYear()} | Made with{' '}

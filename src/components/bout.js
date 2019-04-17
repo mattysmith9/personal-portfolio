@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'gatsby-plugin-modal-routing';
-import SkillList from './SkillList';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { helpers, theme, Section } from '@style';
+import { Section, theme, helpers} from '@style';
 
 const { colors } = theme;
 
@@ -54,27 +54,34 @@ const Button = styled(Link)`
   ${helpers.largeButton};
 `;
 
-export const Skills = () => (
-  <AboutWrapper id="skills">
-    <h2>About Me</h2>
-    <FlexWrapper>
-      <DetailsWrapper>
-        Hi! I'm Matty, I am an aspiring Software Engineer from Burlington,
-        Vermont. About six months ago I decided that my previous career as a
-        Mortgage Broker wasn't what I was looking for so I enrolled in a
-        bootcamp and took the plunge into the world of Software.
-        <br />
-        <br />
-        Here are a few of the technologies I am working with.
-        <SkillsWrapper>
-          {SkillList.map(({ id, name }) => (
-            <Skill key={id}>{name}</Skill>
-          ))}
-        </SkillsWrapper>
-      </DetailsWrapper>
-      <Button to="/projectDescription/" asModal>
-        more info
-      </Button>
-    </FlexWrapper>
-  </AboutWrapper>
-);
+class About extends Component {
+  static propTypes = {
+    data: PropTypes.array.isRequired,
+  };
+
+  render() {
+    const { data } = this.props;
+    const { frontmatter, html } = data[0].node;
+    const { title, skills } = frontmatter;
+
+    return (
+      <AboutWrapper id="skills" ref={el => (this.about = el)}>
+        <h2>{title}</h2>
+        <FlexWrapper>
+          <DetailsWrapper>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+            <SkillsWrapper>
+              {skills &&
+                skills.map((skill, i) => <Skill key={i}>{skill}</Skill>)}
+            </SkillsWrapper>
+          </DetailsWrapper>
+          <Button to="/projectDescription/" asModal>
+            more info
+          </Button>
+        </FlexWrapper>
+      </AboutWrapper>
+    );
+  }
+}
+
+export default About; 

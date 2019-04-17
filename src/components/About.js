@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container } from '../styled/Container';
-import Button from './Button';
 import styled from 'styled-components';
-import theme from '../styled/theme';
+import { theme, Container, helpers } from '@style';
+
 const { colors } = theme;
 
 const Wrapper = styled.div`
@@ -23,6 +22,7 @@ const SkillsWrapper = styled.div`
   span {
     color: ${colors.blue};
     font-size: 1.2rem;
+    font-family: ${theme.fontFamilyBtn};
   }
 `;
 
@@ -39,14 +39,16 @@ const Details = styled.div`
   }
 `;
 
+const Button = styled.a`
+  ${helpers.largeButton};
+`;
+
 export const About = () => (
   <Wrapper id="about">
     <SkillsWrapper as={Container}>
       <Details>
         <h2>Coming Soon</h2>
-        <Button href="#contact">
-          <span>résumé</span>
-        </Button>
+        <Button href="#contact">resume</Button>
       </Details>
     </SkillsWrapper>
   </Wrapper>

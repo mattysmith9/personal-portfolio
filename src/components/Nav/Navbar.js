@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Container } from '../../styled/Container';
 import { NavLinks } from './NavLinks';
+import { theme, Container } from '@style';
 import styled from 'styled-components';
-import theme from '../../styled/theme';
+
 const { colors } = theme;
 
 const Wrapper = styled.div`

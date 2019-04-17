@@ -1,9 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { StaticQuery } from 'gatsby';
-import { Card } from '../../styled/Card';
+import { Card, theme } from '@style';
 import styled from 'styled-components';
-import theme from '../../styled/theme';
 const { colors } = theme;
 
 const Wrapper = styled.div`
@@ -45,7 +44,7 @@ const Item = styled.div`
   }
   p {
     color: ${colors.grey};
-    font-family: ${theme.fontFamily};
+    font-family: ${theme.fontFamilyBtn};
   }
 `;
 

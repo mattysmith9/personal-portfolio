@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import theme from '../styled/theme';
+import { theme } from '@style';
+
 const { colors } = theme;
 
 const Button = styled(Link)`
