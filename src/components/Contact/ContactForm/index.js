@@ -39,7 +39,7 @@ const ContactForm = ({
   ReCaptcha,
 }) => (
   <Form
-    name="matty-portfolio"
+    form-name="matty-portfolio"
     method="post"
     data-netlify="true"
     data-netlify-recaptcha="true"
@@ -50,6 +50,7 @@ const ContactForm = ({
         as={FastField}
         type="text"
         name="name"
+        form-name="matty-portfolio"
         component="input"
         aria-label="name"
         placeholder="Full Name*"
@@ -62,6 +63,7 @@ const ContactForm = ({
         as={FastField}
         id="email"
         type="email"
+        form-name="matty-portfolio"
         name="email"
         component="input"
         aria-label="email"
@@ -75,6 +77,7 @@ const ContactForm = ({
         as={FastField}
         id="message"
         type="text"
+        form-name="matty-portfolio"
         name="message"
         component="textarea"
         aria-label="message"
@@ -90,6 +93,7 @@ const ContactForm = ({
           as={ReCaptcha}
           component={Recaptcha}
           sitekey={`${process.env.SITE_RECAPTCHA_KEY}`}
+          form-name="matty-portfolio"
           name="recaptcha"
           onChange={value => setFieldValue('recaptcha', value)}
         />
