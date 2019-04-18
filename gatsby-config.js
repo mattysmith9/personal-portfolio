@@ -56,10 +56,10 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          '@comp': path.resolve(__dirname, '/src/components'),
-          '@style': path.resolve(__dirname, '/src/styled'),
-          '@page': path.resolve(__dirname, '/src/pages'),
-          '@image': path.resolve(__dirname, '/src/images'),
+          '@comp': path.resolve(__dirname, 'src/components'),
+          '@style': path.resolve(__dirname, 'src/styled'),
+          '@page': path.resolve(__dirname, 'src/pages'),
+          '@image': path.resolve(__dirname, 'src/images'),
         },
         extensions: ['js'],
       },
@@ -88,7 +88,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `/src/utils/typography`,
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     {
@@ -101,7 +101,7 @@ module.exports = {
       resolve: 'gatsby-plugin-favicon',
       options: {
         logo: siteMetadata.faviconPng,
-        appName: siteMetadata.title,
+        appName: siteMetadata.siteTitle,
         appDescription: siteMetadata.siteDescription,
         developerName: siteMetadata.developerName,
         developerURL: siteMetadata.developerUrl,
@@ -124,13 +124,6 @@ module.exports = {
           yandex: false,
           windows: false,
         },
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://www.mattysmith.co',
-        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
     `gatsby-transformer-remark`,

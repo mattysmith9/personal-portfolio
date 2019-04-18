@@ -8,7 +8,7 @@ const useSiteMetadata = () => {
           siteMetadata {
             siteTitle
             siteDescription
-            siteUrl
+            url
             pages
             siteLanguage
             lastBuildDate
