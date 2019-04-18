@@ -1,92 +1,67 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { graphql, useStaticQuery } from 'gatsby';
+import {
+  siteUrl,
+  siteDescription,
+  siteTitle,
+  socialLinks,
+  address,
+  contact,
+  name,
+  foundingDate,
+} from '../config';
 
-function SEO({ description, lang, meta, keywords, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            siteTitle
-            siteDescription
-            author
-            siteUrl
-          }
-        }
-      }
-    `
-  );
-
-  const metaDescription = description || site.siteMetadata.description;
+const SEO = ({
+  title = siteTitle,
+  description = siteDescription,
+  location = address,
+}) => {
+  const structuredDataOrganization = `{ 
+		"@context": "http://schema.org",
+		"@type": "Individual",
+		"legalName": "${name}",
+		"url": "${siteUrl}",
+		"foundingDate": "${foundingDate}",
+		"founders": [{
+			"@type": "Person",
+			"name": "${name}"
+		}],
+		"contactPoint": [{
+			"@type": "ContactPoint",
+			"email": "${contact.email}",
+			"telephone": "${contact.phone}",
+			"contactType": "personal line"
+		}],
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "${address.city}",
+			"addressRegion": "${address.region}",
+			"addressCountry": "${address.country}",
+			"postalCode": "${address.zipCode}"
+		},
+		"sameAs": [
+			"${socialLinks.github}",
+			"${socialLinks.linkedin}",
+			"${socialLinks.instagram}",
+		]
+  	}`;
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ]
-        .concat(
-          keywords.length > 0
-            ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : []
-        )
-        .concat(meta)}
-    />
+    <Helmet>
+      <meta name="description" content={siteDescription} />
+      <meta
+        property="og:url"
+        content={`${siteUrl}${location}/?ref=mattysmith.co`}
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={siteTitle} />
+      <meta property="og:description" content={siteDescription} />
+      <script type="application/ld+json">{structuredDataOrganization}</script>
+      <link rel="publisher" href={socialLinks.github} />
+      <title>{siteTitle}</title>
+      <html lang="en" dir="ltr" />
+    </Helmet>
   );
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  keywords: [],
-  description: ``,
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
 };
 
 export default SEO;

@@ -52,7 +52,7 @@ const Content = styled.div`
   padding: 1rem 0;
 `;
 
-export const Projects = () => (
+const Projects = () => (
   <StaticQuery
     query={graphql`
       {
@@ -106,3 +106,5 @@ export const Projects = () => (
     )}
   />
 );
+
+export default Projects;

@@ -7,10 +7,12 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-export const Header = () => {
+const Header = () => {
   return (
     <Wrapper>
       <Navbar />
     </Wrapper>
   );
 };
+
+export default Header;

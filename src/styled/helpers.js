@@ -31,14 +31,12 @@ const helpers = {
     border-radius: ${theme.borderRadiusCard};
     padding: 16px 20px;
     font-size: 1.2rem;
-    font-family: ${theme.fontFamilyBtn};
+    font-family: ${theme.fontFamily};
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
     transition: ${theme.transition};
-    &:hover,
-    &:focus,
-    &:active {
+    &:hover {
       box-shadow: ${theme.boxShadow};
     }
   `,

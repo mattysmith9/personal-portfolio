@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { theme, Container, helpers } from '@style';
 
 const { colors } = theme;
 
-const HelloContainer = styled(Container)`
+const HeroContainer = styled(Container)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,18 +49,26 @@ const Button = styled.a`
   ${helpers.largeButton};
 `;
 
-export const Hello = () => (
-  <HelloContainer>
-    <Hola>Hola, My name is</Hola>
-    <FullName>Matty Smith.</FullName>
-    <Subtitle>
-      engineer | developer | avid golfer | aspiring polyglot .
-    </Subtitle>
-    <ButtonWrapper>
-      <Button href="mail">contact</Button>
-    </ButtonWrapper>
-  </HelloContainer>
-);
+class Hero extends Component {
+  static propTypes = {
+    data: PropTypes.array.isRequired,
+  };
 
-/*I am a Software Engineer from Burlington, Vermont
-        with a focus on technologies such as JavaScript, Node.JS and React. */
+  render() {
+    const { data } = this.props;
+    const { frontmatter } = data[0].node;
+
+    return (
+      <HeroContainer>
+        <Hola>{frontmatter.title}</Hola>
+        <FullName>{frontmatter.name}</FullName>
+        <Subtitle>{frontmatter.subtitle}</Subtitle>
+        <ButtonWrapper>
+          <Button href="mail">contact</Button>
+        </ButtonWrapper>
+      </HeroContainer>
+    );
+  }
+}
+
+export default Hero;

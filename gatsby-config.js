@@ -14,7 +14,7 @@ const siteMetadata = {
     'Matty Smith, Matty, Matt, Smith, Matthew, @mattysmith9, software engineer, front-end engineer, back-end engineer, full stack developer, full stack engineer, web developer, javascript, react, node, kotlin',
   author: 'Matty Smith',
   siteUrl: 'https://mattysmith.co',
-  googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
+  googleVerification: '',
   facebookAppID: '',
   pages: ['welcome', 'homepage'],
   siteLanguage: 'en_US',
@@ -33,25 +33,7 @@ const siteMetadata = {
   location: 'Burlington, VT',
   email: 'matthewcsmith18@gmail.com',
   phone: '1-802-598-9466',
-  nav: [
-    {
-      name: 'About',
-      url: '#about',
-    },
-    {
-      name: 'Work',
-      url: '#projects',
-    },
-    {
-      name: 'Contact',
-      url: '#contact',
-    },
-  ],
   googleAnalyticsID: 'UA-137382831-1',
-
-  headerHeight: 100,
-  whiteColor: '#F7F8F3',
-  blueColor: '#355c7d',
 };
 
 module.exports = {
@@ -101,7 +83,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/src/content/`,
+        path: path.join(__dirname, `src`, `content`),
       },
     },
     {

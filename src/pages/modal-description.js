@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby-plugin-modal-routing';
-import ConditionalLayout from '@comp/ConditionalLayout';
-import useSiteMetadata from '@comp/SiteMetadata';
-import SEO from '@comp/seo';
+import { ConditionalLayout, SEO } from '@comp';
 import styled from 'styled-components';
-import theme from '@style/theme';
+import { theme } from '@style';
 const { colors } = theme;
 
 const ModalWrapper = styled.div`
@@ -35,14 +33,12 @@ const TextWrapper = styled.div`
 `;
 
 const ProjectDescription = () => {
-  const { siteDescription, siteTitle } = useSiteMetadata();
   return (
     <ConditionalLayout>
       <ModalWrapper>
         <SEO
-          title={siteTitle}
-          description={siteDescription}
-          keywords={[`portfolio`, `gatsby`, `javascript`, `react`, `graphql`]}
+          title="modal-page"
+          description="further explanation of repositories"
         />
         <TextWrapper>
           <h2>More details</h2>
@@ -57,7 +53,7 @@ const ProjectDescription = () => {
           architecto consequuntur nulla ut rerum nesciunt. Nihil sint at sed
           tempora earum laudantium culpa et. Aperiam hic deleniti delectus fugit
         </TextWrapper>
-        <Link to="/#skills/" />
+        <Link to="/#about/" />
       </ModalWrapper>
     </ConditionalLayout>
   );

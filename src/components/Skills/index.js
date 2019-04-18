@@ -43,8 +43,8 @@ const Button = styled.a`
   ${helpers.largeButton};
 `;
 
-export const About = () => (
-  <Wrapper id="about">
+const Skills = () => (
+  <Wrapper id="skills">
     <SkillsWrapper as={Container}>
       <Details>
         <h2>Coming Soon</h2>
@@ -53,3 +53,5 @@ export const About = () => (
     </SkillsWrapper>
   </Wrapper>
 );
+
+export default Skills;

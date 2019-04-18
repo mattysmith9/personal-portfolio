@@ -63,7 +63,7 @@ const Details = styled.div`
   }
 `;
 
-export const Footer = () => (
+const Footer = () => (
   <Wrapper>
     <Flex as={Container} id="footer" rel="canonical">
       <Details>
@@ -121,3 +121,5 @@ export const Footer = () => (
     </Flex>
   </Wrapper>
 );
+
+export default Footer;

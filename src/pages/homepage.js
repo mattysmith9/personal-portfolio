@@ -1,16 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Projects } from '@comp/Projects';
-import { Footer } from '@comp/Footer';
-import { Header } from '@comp/Nav';
+import { SEO, Header, Hero, Skills, About, Projects, Footer } from '@comp';
+import useSiteMetadata from '../components/SiteMetaData';
 import { Layout } from '@style';
-import { About } from '@comp/About';
-import { Skills } from '@comp/Skills';
-import { Hello } from '@comp/Hello';
-import useSiteMetadata from '@comp/SiteMetadata';
-import SEO from '@comp/seo';
 
-const Homepage = ({ data }) => {
+const Homepage = () => {
   const { siteDescription, siteTitle } = useSiteMetadata();
   return (
     <Layout>
@@ -20,17 +13,13 @@ const Homepage = ({ data }) => {
         keywords={[`portfolio`, `gatsby`, `javascript`, `react`, `graphql`]}
       />
       <Header />
-      <Hello />
-      <Skills />
+      <Hero />
       <About />
+      <Skills />
       <Projects />
       <Footer />
     </Layout>
   );
-};
-
-Homepage.propTypes = {
-  data: PropTypes.object.isRequired,
 };
 
 export default Homepage;
