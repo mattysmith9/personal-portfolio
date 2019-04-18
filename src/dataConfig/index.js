@@ -48,7 +48,4 @@ module.exports = {
   bodyColor: '#FBFFFE',
   blueColor: '#355c7d',
   greenColor: '#19e0b4',
-  recaptcha_key: '6Lco354UAAAAAOsRcOAAqhy9k3NTsZk7dAUBDAI1',
-  SITE_RECAPTCHA_KEY: '6Lco354UAAAAAOsRcOAAqhy9k3NTsZk7dAUBDAI1',
-  SITE_RECAPTCHA_SECRET: '6Lco354UAAAAAH5JtK_mT7uxIvvgy2TWJ20Qvwzc',
 };

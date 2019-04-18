@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import { Layout } from '@style';
 import { Hero, SEO, About, Contact } from '@comp';
 import Projects from '../components/Projects';
-import config from '../config';
+import dataConfig from '../dataConfig';
 
 const IndexPage = ({ data }) => (
   <Layout id="content">
     <SEO
-      title={config.siteTitle}
-      description={config.siteDescription || 'de nada'}
+      title={dataConfig.siteTitle}
+      description={dataConfig.siteDescription || 'de nada'}
       keywords={[`portfolio`, `gatsby`, `javascript`, `react`, `graphql`]}
     />
     <Hero data={data.hero.edges} />

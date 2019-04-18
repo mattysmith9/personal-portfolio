@@ -9,7 +9,7 @@ import {
   contact,
   name,
   foundingDate,
-} from '../config';
+} from '../dataConfig';
 
 const SEO = ({
   title = siteTitle,

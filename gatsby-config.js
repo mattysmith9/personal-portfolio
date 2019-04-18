@@ -68,13 +68,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `projects`,
-        path: path.join(__dirname, `src`, `components`, `Projects`),
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `src`,
         path: `${__dirname}/src/`,
       },
@@ -86,7 +79,7 @@ module.exports = {
       options: {
         typeName: 'Github',
         fieldName: 'github',
-        url: 'https://api.github.com/graphql',
+        url: "https://api.github.com/graphql",
         headers: {
           Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
         },
