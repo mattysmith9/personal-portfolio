@@ -4,7 +4,7 @@ module.exports = {
     'Matty Smith is a Software Engineer based in Burlington, Vermont.',
   siteKeywords:
     'Matty Smith, Matty, Smith, mattysmith9, software engineer, front-end engineer, back-end engineer, web developer, javascript, vermont, burlington, react, gatsby, website',
-  siteUrl: 'https://mattysmith.co',
+  url: 'https://sleepy-spence-cf1e0e.netlify.com/',
   siteLanguage: 'en_US',
   googleVerification: '',
   googleAnalyticsID: 'UA-137382831-1',

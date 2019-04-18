@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {
-  siteUrl,
+  url,
   siteDescription,
   siteTitle,
   socialLinks,
@@ -20,7 +20,7 @@ const SEO = ({
 		"@context": "http://schema.org",
 		"@type": "Individual",
 		"legalName": "${name}",
-		"url": "${siteUrl}",
+		"url": "${url}",
 		"foundingDate": "${foundingDate}",
 		"founders": [{
 			"@type": "Person",
@@ -48,17 +48,17 @@ const SEO = ({
 
   return (
     <Helmet>
-      <meta name="description" content={siteDescription} />
+      <meta name="description" content={description} />
       <meta
         property="og:url"
-        content={`${siteUrl}${location}/?ref=mattysmith.co`}
+        content={`${url}${location}/?ref=mattysmith.co`}
       />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={siteTitle} />
-      <meta property="og:description" content={siteDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <link rel="publisher" href={socialLinks.github} />
-      <title>{siteTitle}</title>
+      <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>
   );

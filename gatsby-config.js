@@ -13,7 +13,7 @@ const siteMetadata = {
   siteKeywords:
     'Matty Smith, Matty, Matt, Smith, Matthew, @mattysmith9, software engineer, front-end engineer, back-end engineer, full stack developer, full stack engineer, web developer, javascript, react, node, kotlin',
   author: 'Matty Smith',
-  siteUrl: 'https://mattysmith.co',
+  url: 'https://sleepy-spence-cf1e0e.netlify.com/',
   googleVerification: '',
   facebookAppID: '',
   pages: ['welcome', 'homepage'],
@@ -29,7 +29,7 @@ const siteMetadata = {
   lastName: 'Smith',
   faviconPng: './src/images/favicon.png',
   developerName: 'Matty Smith',
-  developerUrl: 'https://mattysmith.co',
+  developerUrl: 'https://sleepy-spence-cf1e0e.netlify.com/',
   location: 'Burlington, VT',
   email: 'matthewcsmith18@gmail.com',
   phone: '1-802-598-9466',
@@ -56,11 +56,10 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          '@src': path.resolve(__dirname, 'src'),
-          '@comp': path.resolve(__dirname, 'src/components'),
-          '@style': 'src/styled',
-          '@page': path.resolve(__dirname, 'src/pages'),
-          '@image': path.resolve(__dirname, 'src/images'),
+          '@comp': path.resolve(__dirname, '/src/components'),
+          '@style': path.resolve(__dirname, '/src/styled'),
+          '@page': path.resolve(__dirname, '/src/pages'),
+          '@image': path.resolve(__dirname, '/src/images'),
         },
         extensions: ['js'],
       },
@@ -68,7 +67,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
+        name: 'src',
         path: `${__dirname}/src/`,
       },
     },
@@ -79,7 +78,7 @@ module.exports = {
       options: {
         typeName: 'Github',
         fieldName: 'github',
-        url: "https://api.github.com/graphql",
+        url: 'https://api.github.com/graphql',
         headers: {
           Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
         },
@@ -89,7 +88,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        pathToConfigModule: `/src/utils/typography`,
       },
     },
     {
@@ -112,7 +111,7 @@ module.exports = {
         theme_color: siteMetadata.themeColor,
         display: 'standalone',
         orientation: 'any',
-        start_url: '/?homescreen=1',
+        start_url: `/`,
         version: '1.0',
         icons: {
           android: true,
