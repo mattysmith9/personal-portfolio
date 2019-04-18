@@ -3,9 +3,9 @@ import theme from './theme';
 const { colors } = theme;
 
 const Input = styled.input`
-  width: 100%;
+  width: 50%;
   box-sizing: border-box;
-  border: 2px solid ${colors.blue};
+  border: 2px solid ${colors.grey};
   padding: 0.8rem 1rem;
   border-radius: 7px;
   margin-bottom: 0.5rem;
