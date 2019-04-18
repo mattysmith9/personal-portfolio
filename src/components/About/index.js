@@ -9,7 +9,7 @@ const { colors } = theme;
 const AboutWrapper = styled(Section)`
   position: relative;
   h2 {
-    color: ${colors.blue};
+    color: ${colors.orange};
   }
 `;
 
