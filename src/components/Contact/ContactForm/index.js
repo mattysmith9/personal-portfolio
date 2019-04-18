@@ -21,6 +21,7 @@ const Center = styled.div`
   text-align: left;
   h4 {
     font-weight: normal;
+    color: ${colors.green};
   }
 `;
 
@@ -35,6 +36,7 @@ const ContactForm = ({
   values,
   errors,
   touched,
+  ReCaptcha,
 }) => (
   <Form
     name="matty-portfolio"
@@ -85,6 +87,7 @@ const ContactForm = ({
     {values.name && values.email && values.message && (
       <InputField>
         <FastField
+          as={ReCaptcha}
           component={Recaptcha}
           sitekey={`${process.env.SITE_RECAPTCHA_KEY}`}
           name="recaptcha"
