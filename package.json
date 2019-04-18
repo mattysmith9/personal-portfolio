@@ -2,6 +2,7 @@
   "name": "gatsby-starter-default",
   "private": true,
   "description": "Matty Smiths Personal Portfolio with Gatsby and Styled-Components",
+  "homepage": "https://sleepy-spence-9.netlify.com",
   "version": "0.1.0",
   "author": "Matty Smith <matthewcsmith18@gmail.com>",
   "dependencies": {
