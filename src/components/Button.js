@@ -11,7 +11,7 @@ const Button = styled(Link)`
   padding: 1em 1.5em;
   vertical-align: middle;
   line-height: 1;
-  border: 3px solid ${colors.green};
+  border: 3px solid ${colors.blue};
   -webkit-appearance: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
