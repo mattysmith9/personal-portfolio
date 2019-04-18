@@ -76,7 +76,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
-        path: path.join(__dirname, `src`, `components`, `projects`),
+        path: path.join(__dirname, `src`, `components`, `Projects`),
       },
     },
     {

@@ -1,12 +1,36 @@
 import React from 'react';
 import { Form, withFormik, FastField, ErrorMessage } from 'formik';
-import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
-import { recaptcha_key } from '../../../config';
 import { Input, theme } from '@style';
-import Button from '../../Button';
 import styled from 'styled-components';
 const { colors } = theme;
+
+const Button = styled.button`
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0.7rem 2.5rem;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+  background: #0074d9;
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    background: gray;
+  }
+  ${({ secondary }) =>
+    secondary &&
+    `
+		background: #001F3F;
+	`}
+`;
 
 const Error = styled.span`
   color: ${colors.orange};
@@ -31,7 +55,13 @@ const ContactForm = ({
   errors,
   touched,
 }) => (
-  <Form name="matty-portfolio" method="post">
+  <Form
+    name="matty-portfolio"
+    method="post"
+    data-netlify="true"
+    data-netlify-recaptcha="true"
+    data-netlify-honeypot="bot-field"
+  >
     <InputField>
       <Input
         as={FastField}
@@ -72,15 +102,13 @@ const ContactForm = ({
       <ErrorMessage component={Error} name="message" />
     </InputField>
     {values.name && values.email && values.message && (
-      <InputField>
-        <FastField
-          component={Recaptcha}
-          sitekey={recaptcha_key}
-          name="recaptcha"
-          onChange={value => setFieldValue('recaptcha', 'value')}
-        />
-        <ErrorMessage component={Error} name="recaptcha" />
-      </InputField>
+      <Button
+        type="submit"
+        disabled={isSubmitting}
+        onSubmit={value => setFieldValue(value)}
+      >
+        Submit
+      </Button>
     )}
     {values.success && (
       <InputField>
@@ -92,11 +120,6 @@ const ContactForm = ({
         </Center>
       </InputField>
     )}
-    <Center>
-      <Button secondary type="submit" disabled={isSubmitting}>
-        Submit
-      </Button>
-    </Center>
   </Form>
 );
 
@@ -105,7 +128,6 @@ export default withFormik({
     name: '',
     email: '',
     message: '',
-    recaptcha: '',
     success: false,
   }),
   validationSchema: () =>
@@ -115,10 +137,9 @@ export default withFormik({
         .email('Invalid Email')
         .required('Email field is required'),
       message: Yup.string().required('Message field is required'),
-      recaptcha: Yup.string().required('Robots are not allowed here!'),
     }),
   handleSubmit: async (
-    { name, email, message, recaptcha },
+    { name, email, message },
     { setSubmitting, resetForm, setFieldValue }
   ) => {
     try {
@@ -137,7 +158,6 @@ export default withFormik({
           name,
           email,
           message,
-          'g-recaptcha-response': recaptcha,
         }),
       });
       await setSubmitting(false);
