@@ -9,7 +9,7 @@ const { colors } = theme;
 const Button = styled.button`
   ${helpers.largeButton};
   &:hover {
-    color: ${colors.orange};
+    color: ${colors.green};
   }
 `;
 
