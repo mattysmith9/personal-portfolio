@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, withFormik, FastField, ErrorMessage } from 'formik';
 import Recaptcha from 'react-google-recaptcha';
-import { recaptcha_key } from '@Recapt';
+import recaptcha_key from '@Recapt';
 import * as Yup from 'yup';
 import { Input, theme, helpers } from '@style';
 import styled from 'styled-components';
