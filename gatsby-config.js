@@ -60,7 +60,6 @@ module.exports = {
           '@style': path.resolve(__dirname, 'src/styled'),
           '@page': path.resolve(__dirname, 'src/pages'),
           '@image': path.resolve(__dirname, 'src/images'),
-          Recaptcha: path.resolve(__dirname, './recaptcha/config'),
         },
         extensions: ['js'],
       },
