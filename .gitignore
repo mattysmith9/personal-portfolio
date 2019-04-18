@@ -1,3 +1,6 @@
+.env.development
+.env.production
+
 # Logs
 logs
 *.log
@@ -52,9 +55,9 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# dotenv environment variables file
-.env.development
-.env.production
+
+
+
 
 # gatsby files
 .cache/
