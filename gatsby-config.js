@@ -68,22 +68,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `projects`,
         path: path.join(__dirname, `src`, `components`, `Projects`),
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: path.join(__dirname, `src`, `content`),
       },
     },
     {
@@ -93,10 +79,12 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-source-graphql',
       options: {
-        typeName: 'GitHub',
+        typeName: 'Github',
         fieldName: 'github',
         url: 'https://api.github.com/graphql',
         headers: {
@@ -153,9 +141,7 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-modal-routing`,
   ],

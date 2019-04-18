@@ -1,5 +1,5 @@
 import React from 'react';
-import { SEO, Header, Skills, Projects, Footer } from '@comp';
+import { SEO, Header, Skills, Footer } from '@comp';
 import useSiteMetadata from '../components/SiteMetaData';
 import { Layout } from '@style';
 
@@ -14,7 +14,6 @@ const Homepage = () => {
       />
       <Header />
       <Skills />
-      <Projects />
       <Footer />
     </Layout>
   );

@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Layout } from '@style';
 import { Hero, SEO, About, Contact } from '@comp';
+import Projects from '../components/Projects';
 import config from '../config';
 
 const IndexPage = ({ data }) => (
@@ -15,6 +16,7 @@ const IndexPage = ({ data }) => (
     <Hero data={data.hero.edges} />
     <About data={data.about.edges} />
     <Contact />
+    <Projects />
   </Layout>
 );
 

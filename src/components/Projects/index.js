@@ -15,7 +15,6 @@ const Wrapper = styled.div`
     color: ${colors.blue};
     padding-top: 1rem;
   }
-  
 `;
 
 const Grid = styled.div`
