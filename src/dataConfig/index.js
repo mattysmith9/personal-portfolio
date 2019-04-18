@@ -1,3 +1,4 @@
+
 module.exports = {
   siteTitle: 'Matty Smith | Software Engineer',
   siteDescription:
@@ -48,4 +49,5 @@ module.exports = {
   bodyColor: '#FBFFFE',
   blueColor: '#355c7d',
   greenColor: '#19e0b4',
+  siteKey: `${process.env.SITE_RECAPTCHA_KEY}`
 };
