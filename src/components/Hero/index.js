@@ -27,6 +27,7 @@ const FullName = styled.h2`
   line-height: 1.1;
   margin: 0 0 10px 1.8rem;
   color: ${colors.blue};
+  word-spacing: -0.7rem;
 `;
 
 const Subtitle = styled.h3`

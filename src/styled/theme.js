@@ -2,8 +2,8 @@ const theme = {
   colors: {
     body: '#FBFFFE',
     blue: '#355c7d',
-    green: '#19e0b4',
-    orange: '#f7444e',
+    green: '#13ab89',
+    orange: '#d76e78',
     teal: '#2aa1af',
     grey: '#708090',
   },

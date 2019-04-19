@@ -6,10 +6,15 @@ import { Input, theme, helpers } from '@style';
 import styled from 'styled-components';
 const { colors } = theme;
 
+const GetInTouch = styled.h2`
+  color: ${colors.blue};
+  text-align: center;
+`;
+
 const Button = styled.button`
   ${helpers.largeButton};
   &:hover {
-    color: ${colors.green};
+    color: ${colors.orange};
   }
 `;
 
@@ -37,14 +42,17 @@ const ContactForm = ({
   errors,
   touched,
   ReCaptcha,
+  handleSubmit,
 }) => (
   <Form
+    onSubmit={handleSubmit}
     form-name="matty-portfolio"
     method="post"
     data-netlify="true"
     data-netlify-recaptcha="true"
     data-netlify-honeypot="bot-field"
   >
+    <GetInTouch>Get In Touch</GetInTouch>
     <InputField>
       <Input
         as={FastField}
@@ -151,7 +159,7 @@ export default withFormik({
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({
-          'form-name': 'portfolio-dev',
+          'form-name': 'matty-portfolio',
           name,
           email,
           message,

@@ -37,7 +37,7 @@ const ProjectDescription = () => {
     <ConditionalLayout>
       <ModalWrapper>
         <SEO
-          title="modal-page"
+          title="More Details"
           description="further explanation of repositories"
         />
         <TextWrapper>
