@@ -5,9 +5,9 @@ module.exports = {
     'Matty Smith is a Software Engineer based in Burlington, Vermont.',
   siteKeywords:
     'Matty Smith, Matty, Smith, mattysmith9, software engineer, front-end engineer, back-end engineer, web developer, javascript, vermont, burlington, react, gatsby, website',
-  url: 'https://sleepy-spence-cf1e0e.netlify.com/',
+  url: 'https://mattysmith.co',
   siteLanguage: 'en_US',
-  googleVerification: '',
+  googleVerification: 'LZHrd7ZmT1jHJPni_PNcbl-I-UG-n-MEAGXnE08U9V4',
   googleAnalyticsID: 'UA-137382831-1',
   name: 'Matty Smith',
   foundingDate: Date.now(),
@@ -49,5 +49,4 @@ module.exports = {
   bodyColor: '#FBFFFE',
   blueColor: '#355c7d',
   greenColor: '#19e0b4',
-  siteKey: `${process.env.SITE_RECAPTCHA_KEY}`
 };

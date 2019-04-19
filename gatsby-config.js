@@ -13,8 +13,8 @@ const siteMetadata = {
   siteKeywords:
     'Matty Smith, Matty, Matt, Smith, Matthew, @mattysmith9, software engineer, front-end engineer, back-end engineer, full stack developer, full stack engineer, web developer, javascript, react, node, kotlin',
   author: 'Matty Smith',
-  url: 'https://sleepy-spence-cf1e0e.netlify.com/',
-  googleVerification: '',
+  url: 'https://mattysmith.co',
+  googleVerification: 'LZHrd7ZmT1jHJPni_PNcbl-I-UG-n-MEAGXnE08U9V4',
   facebookAppID: '',
   pages: ['welcome', 'homepage'],
   siteLanguage: 'en_US',
@@ -29,11 +29,12 @@ const siteMetadata = {
   lastName: 'Smith',
   faviconPng: './src/images/favicon.png',
   developerName: 'Matty Smith',
-  developerUrl: 'https://sleepy-spence-cf1e0e.netlify.com/',
+  developerUrl: 'https://mattysmith.co',
   location: 'Burlington, VT',
   email: 'matthewcsmith18@gmail.com',
   phone: '1-802-598-9466',
   googleAnalyticsID: 'UA-137382831-1',
+  gtag: ('config', 'UA-137382831-1'),
 };
 
 module.exports = {
