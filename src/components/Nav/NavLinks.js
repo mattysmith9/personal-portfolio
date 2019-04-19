@@ -23,6 +23,7 @@ const Wrapper = styled.div`
     transform: ${theme.transform};
     transition: ${theme.transition};
     color: ${colors.orange};
+    border-bottom: 2px solid ${colors.blue};
   }
 `;
 
@@ -31,6 +32,6 @@ export const NavLinks = () => (
     <AnchorLink href="#about">about</AnchorLink>
     <AnchorLink href="#projects">projects</AnchorLink>
     <AnchorLink href="#skills">skills</AnchorLink>
-    <AnchorLink href="#footer">contact</AnchorLink>
+    <AnchorLink href="#contact">contact</AnchorLink>
   </Wrapper>
 );

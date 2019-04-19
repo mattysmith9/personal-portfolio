@@ -6,7 +6,7 @@ import { theme } from '@style';
 const { colors } = theme;
 
 const ModalWrapper = styled.div`
-  background: ${colors.grey};
+  background: ${colors.modal};
   box-shadow: ${theme.boxShadow};
   font-family: ${theme.fontFamilyBtn};
   border-radius: ${theme.borderRadiusCard};
@@ -27,7 +27,7 @@ const TextWrapper = styled.div`
   width: 80%;
   max-width: 700px;
   margin: 0 auto;
-  color: ${colors.body};
+  color: ${colors.blue};
   line-height: 2;
   padding-bottom: 3rem;
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Layout } from '@style';
-import { Hero, SEO, About, Contact } from '@comp';
+import { Hero, SEO, About, Contact, Header, Footer } from '@comp';
 import Projects from '../components/Projects';
 import dataConfig from '../dataConfig';
 
@@ -13,10 +13,12 @@ const IndexPage = ({ data }) => (
       description={dataConfig.siteDescription || 'de nada'}
       keywords={[`portfolio`, `gatsby`, `javascript`, `react`, `graphql`]}
     />
+    <Header />
     <Hero data={data.hero.edges} />
     <About data={data.about.edges} />
-    <Contact />
     <Projects />
+    <Contact />
+    <Footer />
   </Layout>
 );
 

@@ -38,6 +38,7 @@ const helpers = {
     transition: ${theme.transition};
     &:hover {
       box-shadow: ${theme.boxShadow};
+      color: ${colors.orange};
     }
   `,
 };

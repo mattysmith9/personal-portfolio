@@ -37,10 +37,10 @@ const Links = styled.div`
   border: 2px solid ${colors.blue};
   a {
     margin: 0 10px;
-    color: ${colors.green};
+    color: ${colors.blue};
     padding: 0.2em 0.1em;
     &:hover {
-      color: ${colors.orange};
+      color: ${colors.green};
     }
   }
 `;

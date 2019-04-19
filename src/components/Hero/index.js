@@ -65,7 +65,7 @@ class Hero extends Component {
         <FullName>{frontmatter.name}</FullName>
         <Subtitle>{frontmatter.subtitle}</Subtitle>
         <ButtonWrapper>
-          <Button href="mail">contact</Button>
+          <Button href="mail">resume</Button>
         </ButtonWrapper>
       </HeroContainer>
     );

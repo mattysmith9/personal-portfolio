@@ -3,12 +3,14 @@ import theme from './theme';
 const { colors } = theme;
 
 const Input = styled.input`
+  display: flex;
   width: 50%;
+  margin: 0 auto;
   background: ${colors.body};
   box-sizing: border-box;
   border: 2px solid ${colors.blue};
   padding: 0.8rem 1rem;
-  border-radius: 7px;
+  border-radius: ${theme.borderRadiusCard};
   margin-bottom: 0.5rem;
   transition: 0.3s;
   ${({ error }) =>

@@ -13,9 +13,7 @@ const GetInTouch = styled.h2`
 
 const Button = styled.button`
   ${helpers.largeButton};
-  &:hover {
-    color: ${colors.orange};
-  }
+  margin-left: 25%;
 `;
 
 const Error = styled.span`
@@ -45,6 +43,7 @@ const ContactForm = ({
   handleSubmit,
 }) => (
   <Form
+    id="#contact"
     onSubmit={handleSubmit}
     form-name="matty-portfolio"
     method="post"
@@ -61,7 +60,7 @@ const ContactForm = ({
         form-name="matty-portfolio"
         component="input"
         aria-label="name"
-        placeholder="Full Name*"
+        placeholder="name"
         error={touched.name && errors.name}
       />
       <ErrorMessage component={Error} name="name" />
@@ -75,7 +74,7 @@ const ContactForm = ({
         name="email"
         component="input"
         aria-label="email"
-        placeholder="Email*"
+        placeholder="email"
         error={touched.email && errors.email}
       />
       <ErrorMessage component={Error} name="email" />
@@ -89,7 +88,7 @@ const ContactForm = ({
         name="message"
         component="textarea"
         aria-label="message"
-        placeholder="Message*"
+        placeholder="message..."
         rows="8"
         error={touched.message && errors.message}
       />
@@ -119,7 +118,12 @@ const ContactForm = ({
       </InputField>
     )}
     <Center>
-      <Button secondary type="submit" disabled={isSubmitting}>
+      <Button
+        secondary
+        type="submit"
+        onSubmit={handleSubmit}
+        disabled={isSubmitting}
+      >
         submit
       </Button>
     </Center>

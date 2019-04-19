@@ -6,6 +6,7 @@ const theme = {
     orange: '#d76e78',
     teal: '#2aa1af',
     grey: '#708090',
+    modal: '#b1bec7',
   },
   fontFamily: 'Nunito Sans sans-serif',
   fontFamilyNav: 'Montserrat sans-serif',
