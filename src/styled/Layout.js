@@ -8,3 +8,4 @@ const Layout = styled.div`
 `;
 
 export default Layout;
+

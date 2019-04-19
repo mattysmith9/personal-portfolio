@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import { NavLinks } from './NavLinks';
 import { theme, Container } from '@style';
 import styled from 'styled-components';
-
 const { colors } = theme;
 
 const Wrapper = styled.div`

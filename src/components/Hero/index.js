@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import resume from '../../images/mattsmithresume.pdf';
 import { theme, Container, helpers } from '@style';
 
 const { colors } = theme;
@@ -20,6 +21,7 @@ const Hola = styled.h1`
   font-size: 1.4rem;
   font-weight: normal;
   font-family: ${theme.fontFamily};
+  text-rendering: optimizeLegibility;
 `;
 
 const FullName = styled.h2`
@@ -28,6 +30,7 @@ const FullName = styled.h2`
   margin: 0 0 10px 1.8rem;
   color: ${colors.blue};
   word-spacing: -0.7rem;
+  text-rendering: optimizeLegibility;
 `;
 
 const Subtitle = styled.h3`
@@ -35,6 +38,7 @@ const Subtitle = styled.h3`
   line-height: 1.1;
   color: ${colors.green};
   margin: 0 0 10px 2rem;
+  text-rendering: optimizeLegibility;
 `;
 
 const ButtonWrapper = styled.div`
@@ -65,7 +69,13 @@ class Hero extends Component {
         <FullName>{frontmatter.name}</FullName>
         <Subtitle>{frontmatter.subtitle}</Subtitle>
         <ButtonWrapper>
-          <Button href="mail">resume</Button>
+          <Button
+            href={resume}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            resume
+          </Button>
         </ButtonWrapper>
       </HeroContainer>
     );

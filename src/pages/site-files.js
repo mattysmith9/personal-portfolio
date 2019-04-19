@@ -1,13 +1,36 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Layout } from '@style';
+import { theme } from '@style';
+import styled from 'styled-components';
+const { colors } = theme;
+
+const FileWrapper = styled.div`
+  background: ${colors.body};
+  font-family: ${theme.fontFamilyBtn};
+  display: flex;
+  justify-content: center;
+  position: relative;
+  h2 {
+    color: ${colors.blue};
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  th {
+    color: ${colors.green};
+    font-family: ${theme.fontFamilyBtn};
+  }
+  td {
+    color: ${colors.grey};
+    font-family: ${theme.fontFamilyBtn};
+  }
+`;
 
 export default ({ data }) => {
   console.log(data);
   return (
-    <Layout>
+    <FileWrapper>
       <div>
-        <h1>My Site's Files</h1>
+        <h2>Site Files</h2>
         <table>
           <thead>
             <tr>
@@ -29,7 +52,7 @@ export default ({ data }) => {
           </tbody>
         </table>
       </div>
-    </Layout>
+    </FileWrapper>
   );
 };
 
