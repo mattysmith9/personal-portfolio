@@ -8,7 +8,6 @@ const { colors } = theme;
 
 const Wrapper = styled.div`
   padding: 28rem 0 4rem 0;
-  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   background-color: ${colors.body};
@@ -20,6 +19,9 @@ const Wrapper = styled.div`
 const Flex = styled.div`
   display: flex;
   align-items: flex-end;
+  background: ${colors.blue};
+  border: 8px solid ${colors.blue};
+  border-radius: ${theme.borderRadiusBtn};
   justify-content: space-between;
   @media (max-width: 680px) {
     flex-direction: column;
@@ -31,13 +33,13 @@ const Flex = styled.div`
 const Links = styled.div`
   display: flex;
   align-items: center;
-  background: ${colors.body};
+  background: ${colors.blue};
   padding: 0.3em 0.3em;
-  border-radius: ${theme.borderRadiusCard};
-  border: 2px solid ${colors.blue};
+  border-radius: ${theme.borderRadiusBtn};
+  border: 8px solid ${colors.blue};
   a {
     margin: 0 10px;
-    color: ${colors.blue};
+    color: ${colors.body};
     padding: 0.2em 0.1em;
     &:hover {
       color: ${colors.green};
@@ -46,20 +48,20 @@ const Links = styled.div`
 `;
 
 const Details = styled.div`
-  margin-top: 2rem;
   @media (max-width: 680px) {
     margin-bottom: 2rem;
   }
   span {
-    color: ${colors.orange};
+    color: ${colors.body};
     font-family: ${theme.fontFamilyBtn};
     font-size: ${theme.footerSize};
+    margin-left: 1rem;
   }
   a {
-    color: ${colors.orange};
+    color: ${colors.green};
   }
   a:hover {
-    color: ${colors.blue};
+    color: ${colors.orange};
   }
 `;
 
