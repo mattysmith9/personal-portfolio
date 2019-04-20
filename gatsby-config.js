@@ -46,7 +46,7 @@ module.exports = {
       options: {
         name: siteMetadata.siteTitle,
         short_name: siteMetadata.siteTitleAlt,
-        start_url: `/`,
+        start_url: `https://mattysmith.co`,
         background_color: siteMetadata.whiteColor,
         theme_color: siteMetadata.blueColor,
         display: `minimal-ui`,
@@ -112,7 +112,7 @@ module.exports = {
         theme_color: siteMetadata.themeColor,
         display: 'standalone',
         orientation: 'any',
-        start_url: `/`,
+        start_url: `https://mattysmith.co`,
         version: '1.0',
         icons: {
           android: true,
