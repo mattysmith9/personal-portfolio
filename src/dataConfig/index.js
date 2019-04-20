@@ -48,5 +48,5 @@ module.exports = {
   bodyColor: '#FBFFFE',
   blueColor: '#355c7d',
   greenColor: '#19e0b4',
-  recaptcha_key: '6LdRPJ8UAAAAAALtOboC8JDfKFXeKRuBVYUNorph',
+  recaptcha_key: '6LeSP58UAAAAANMCypV78qNR5gPhZ02B7q-ELSIl',
 };
