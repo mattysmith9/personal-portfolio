@@ -63,6 +63,7 @@ module.exports = {
           '@style': path.resolve(__dirname, 'src/styled'),
           '@page': path.resolve(__dirname, 'src/pages'),
           '@image': path.resolve(__dirname, 'src/images'),
+          '@data': path.resolve(__dirname, 'src/dataConfig'),
         },
         extensions: ['js'],
       },
