@@ -35,6 +35,8 @@ const siteMetadata = {
   phone: '1-802-598-9466',
   googleAnalyticsID: 'UA-137382831-1',
   gtag: ('config', 'UA-137382831-1'),
+  backgroundColor: 'white',
+  themeColor: 'blue',
 };
 
 module.exports = {
@@ -47,8 +49,8 @@ module.exports = {
         name: siteMetadata.siteTitle,
         short_name: siteMetadata.siteTitleAlt,
         start_url: `https://mattysmith.co`,
-        background_color: siteMetadata.whiteColor,
-        theme_color: siteMetadata.blueColor,
+        background_color: siteMetadata.backgroundColor,
+        theme_color: siteMetadata.themeColor,
         display: `minimal-ui`,
         icon: siteMetadata.faviconPng,
       },
@@ -108,7 +110,7 @@ module.exports = {
         developerURL: siteMetadata.developerUrl,
         dir: 'auto',
         lang: siteMetadata.siteLanguage,
-        background: siteMetadata.backgroundColor,
+        background_color: siteMetadata.backgroundColor,
         theme_color: siteMetadata.themeColor,
         display: 'standalone',
         orientation: 'any',
