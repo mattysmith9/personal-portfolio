@@ -4,7 +4,7 @@ module.exports = {
     'Matty Smith is a Software Engineer based in Burlington, Vermont.',
   siteKeywords:
     'Matty Smith, Matty, Smith, mattysmith9, software engineer, front-end engineer, back-end engineer, web developer, javascript, vermont, burlington, react, gatsby, website',
-  url: 'https://mattysmith.co',
+  url: '',
   siteLanguage: 'en_US',
   googleVerification: 'LZHrd7ZmT1jHJPni_PNcbl-I-UG-n-MEAGXnE08U9V4',
   googleAnalyticsID: 'UA-137382831-1',

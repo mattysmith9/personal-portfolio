@@ -13,8 +13,9 @@ const siteMetadata = {
   siteKeywords:
     'Matty Smith, Matty, Matt, Smith, Matthew, @mattysmith9, software engineer, front-end engineer, back-end engineer, full stack developer, full stack engineer, web developer, javascript, react, node, kotlin',
   author: 'Matty Smith',
-  url: 'https://mattysmith.co',
-  googleVerification: 'LZHrd7ZmT1jHJPni_PNcbl-I-UG-n-MEAGXnE08U9V4',
+  url: 'mattysmith.co',
+  pathPrefix: '',
+  googleVerification: process.env.GOOGLE_VERIFICATION,
   facebookAppID: '',
   pages: ['welcome', 'homepage'],
   siteLanguage: 'en_US',
@@ -33,10 +34,11 @@ const siteMetadata = {
   location: 'Burlington, VT',
   email: 'matthewcsmith18@gmail.com',
   phone: '1-802-598-9466',
-  googleAnalyticsID: 'UA-137382831-1',
-  gtag: ('config', 'UA-137382831-1'),
+  googleAnalyticsID: process.env.GOOGLE_ANALYTICS_ID,
+  gtag: ('config', process.env.GOOGLE_ANALYTICS_ID),
   backgroundColor: 'white',
   themeColor: 'blue',
+  fontDisplay: 'auto',
 };
 
 module.exports = {
@@ -48,12 +50,16 @@ module.exports = {
       options: {
         name: siteMetadata.siteTitle,
         short_name: siteMetadata.siteTitleAlt,
-        start_url: `https://mattysmith.co`,
+        start_url: `/`,
         background_color: siteMetadata.backgroundColor,
         theme_color: siteMetadata.themeColor,
+        font_display: siteMetadata.fontDisplay,
         display: `minimal-ui`,
         icon: siteMetadata.faviconPng,
       },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
     },
     {
       resolve: `gatsby-plugin-alias-imports`,
@@ -98,7 +104,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: siteMetadata.googleAnalyticsID,
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
     },
     {
@@ -115,7 +121,7 @@ module.exports = {
         theme_color: siteMetadata.themeColor,
         display: 'standalone',
         orientation: 'any',
-        start_url: `https://mattysmith.co`,
+        start_url: `/`,
         version: '1.0',
         icons: {
           android: true,
@@ -133,5 +139,6 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-modal-routing`,
+    `gatsby-plugin-netlify`,
   ],
 };
