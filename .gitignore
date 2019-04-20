@@ -1,6 +1,7 @@
+# process.env files
 .env.development
 .env.production
-recaptcha
+
 # Logs
 logs
 *.log
