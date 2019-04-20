@@ -119,6 +119,14 @@ const Footer = () => (
         >
           <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" />
         </a>
+        <a
+          href="https://dev.to/mattysmith9"
+          aria-label="link to Dev.to profile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={['fab', 'dev']} size="3x" />
+        </a>
       </Links>
     </Flex>
   </Wrapper>
