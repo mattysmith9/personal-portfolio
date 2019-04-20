@@ -49,4 +49,5 @@ module.exports = {
   bodyColor: '#FBFFFE',
   blueColor: '#355c7d',
   greenColor: '#19e0b4',
+  
 };
