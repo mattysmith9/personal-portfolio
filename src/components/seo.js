@@ -58,8 +58,6 @@ const SEO = ({
       <meta property="og:description" content={description} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <link rel="publisher" href={socialLinks.github} />
-      <link rel="preload" href="../pages/modal-description.js" as="script" />
-      <link rel="preload" href="../images/mattsmithresume.pdf" as="script" />
       <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>
