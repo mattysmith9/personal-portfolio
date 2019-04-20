@@ -16,6 +16,7 @@ const SEO = ({
   title = siteTitle,
   description = siteDescription,
   location = address,
+  googleAnalytics = googleAnalyticsID,
 }) => {
   const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
@@ -50,7 +51,6 @@ const SEO = ({
   return (
     <Helmet>
       <meta name="description" content={description} />
-      <meta name="google-analyitics-id" content={googleAnalyticsID} />
       <meta
         property="og:url"
         content={`${url}${location}/?ref=mattysmith.co`}
@@ -59,17 +59,9 @@ const SEO = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
-      <link
-        href="https://fonts.googleapis.com/css?family=Montserrat"
-        rel="stylesheet"
-      />
       <link rel="publisher" href={socialLinks.github} />
       <title>{title}</title>
       <html lang="en" dir="ltr" />
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-137382831-1"
-      />
     </Helmet>
   );
 };
