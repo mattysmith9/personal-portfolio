@@ -39,7 +39,6 @@ const ContactForm = ({
   values,
   errors,
   touched,
-  ReCaptcha,
   handleSubmit,
 }) => (
   <Form
@@ -97,7 +96,6 @@ const ContactForm = ({
     {values.name && values.email && values.message && (
       <InputField>
         <FastField
-          as={ReCaptcha}
           component={Recaptcha}
           sitekey={`${process.env.SITE_RECAPTCHA_KEY}`}
           form-name="matty-portfolio"
