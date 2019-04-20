@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://sleepy-spence-9.netlify.com/* https://mattysmith.co/:splat 301!
