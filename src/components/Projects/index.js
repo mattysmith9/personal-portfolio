@@ -39,7 +39,6 @@ const Item = styled.div`
   background: ${colors.body};
   h4 {
     color: ${colors.grey};
-    font-weight: bold;
     font-family: ${theme.fontFamilyBtn};
   }
   p {
