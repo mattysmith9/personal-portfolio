@@ -40,7 +40,7 @@ const Item = styled.div`
   h4 {
     color: ${colors.grey};
     font-weight: bold;
-    font-family: ${theme.fontFamilyNav};
+    font-family: ${theme.fontFamilyBtn};
   }
   p {
     color: ${colors.blue};
