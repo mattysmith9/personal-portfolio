@@ -40,7 +40,7 @@ const Details = styled.div`
 const Contact = () => (
   <Wrapper as={Container} id="contact">
     <Details>
-      <ContactForm method="post" />
+      <ContactForm method="POST" />
     </Details>
   </Wrapper>
 );
