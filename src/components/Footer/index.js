@@ -53,7 +53,7 @@ const Details = styled.div`
   }
   span {
     color: ${colors.body};
-    font-family: ${theme.fontFamilyBtn};
+    font-family: ${theme.fontFamily};
     font-size: ${theme.footerSize};
     margin-left: 1rem;
   }
