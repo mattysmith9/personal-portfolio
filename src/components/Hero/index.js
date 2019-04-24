@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import resume from '../../images/Mresume.pdf';
+import resume from '@images/Mresume.pdf';
 import { theme, Container, helpers } from '@style';
 
 const { colors } = theme;

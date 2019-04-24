@@ -67,7 +67,7 @@ module.exports = {
           '@comp': path.resolve(__dirname, 'src/components'),
           '@style': path.resolve(__dirname, 'src/styled'),
           '@page': path.resolve(__dirname, 'src/pages'),
-          '@image': path.resolve(__dirname, 'src/images'),
+          '@images': path.resolve(__dirname, 'src/images'),
           '@data': path.resolve(__dirname, 'src/dataConfig'),
         },
         extensions: ['js'],
