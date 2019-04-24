@@ -60,6 +60,15 @@ const SEO = ({
       <meta property="og:description" content={description} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <link rel="publisher" href={socialLinks.github} />
+      <link rel="preconnect" href="https://www.google-analytics.com" />
+      <link
+        rel="preload"
+        as="font"
+        crossorigin="crossorigin"
+        type="font/woff2"
+        name="montserrat"
+        href="https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2"
+      />
       <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>

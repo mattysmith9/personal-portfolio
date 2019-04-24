@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { theme } from '@style';
 const { colors } = theme;
 
-const Wrapper = styled.div`
+const Wrapper = styled(Container)`
   padding: 4rem 0;
   display: flex;
   align-items: flex-start;
@@ -38,7 +38,7 @@ const Details = styled.div`
 `;
 
 const Contact = () => (
-  <Wrapper as={Container} id="contact">
+  <Wrapper id="contact">
     <Details>
       <ContactForm method="POST" />
     </Details>

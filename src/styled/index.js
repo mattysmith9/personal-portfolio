@@ -5,5 +5,6 @@ import Layout from './Layout';
 import helpers from './helpers';
 import theme from './theme';
 import Input from './Input';
+import mediaSizes from './mediaSizes';
 
-export { Container, Section, Card, Layout, helpers, theme, Input };
+export { Container, Section, Card, Layout, helpers, theme, Input, mediaSizes };
