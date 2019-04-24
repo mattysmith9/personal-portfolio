@@ -26,7 +26,7 @@ const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 26pt;
-    color: ${colors.blue};
+    color: ${colors.orange};
   }
   p {
     margin-bottom: 2.5rem;

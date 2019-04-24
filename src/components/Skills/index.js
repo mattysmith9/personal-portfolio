@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme, Container, helpers } from '@style';
+import { theme, Container } from '@style';
 
 const { colors } = theme;
 
@@ -11,21 +11,6 @@ const Wrapper = styled.div`
   min-height: 70vh;
 `;
 
-const SkillsWrapper = styled.div`
-  padding: 4rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-  span {
-    color: ${colors.blue};
-    font-size: 1.2rem;
-    font-family: ${theme.fontFamilyBtn};
-  }
-`;
-
 const Details = styled.div`
   flex: 1;
   padding-left: 2rem;
@@ -33,24 +18,25 @@ const Details = styled.div`
     padding-left: unset;
     width: 100%;
   }
-  h2 {
-    margin-bottom: 2rem;
+  h1 {
+    font-size: 7rem;
+    margin-top: 10rem;
     color: ${colors.blue};
+    text-align: center;
+  }
+  p {
+    color: ${colors.green};
+    text-align: center;
+    font-size: 1.5rem;
   }
 `;
 
-const Button = styled.a`
-  ${helpers.largeButton};
-`;
-
 const Skills = () => (
-  <Wrapper id="skills">
-    <SkillsWrapper as={Container}>
-      <Details>
-        <h2>Coming Soon</h2>
-        <Button href="#contact">resume</Button>
-      </Details>
-    </SkillsWrapper>
+  <Wrapper as={Container} id="skills">
+    <Details>
+      <h1>Coming Soon</h1>
+      <p>I am currently updating the page. Final product will be live soon!</p>
+    </Details>
   </Wrapper>
 );
 

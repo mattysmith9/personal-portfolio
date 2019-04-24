@@ -6,10 +6,11 @@ import styled from 'styled-components';
 const { colors } = theme;
 
 const GoBack = styled(Link)`
-  color: ${colors.orange};
-  font-size: 3rem;
+  color: ${colors.green};
+  font-size: 3.2rem;
+  font-weight: bold;
   &:hover {
-    color: ${colors.green};
+    color: ${colors.orange};
   }
 `;
 

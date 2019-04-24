@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   a {
     color: ${colors.blue};
-    font-family: ${theme.fontFamilyNav};
+    font-family: ${theme.fontFamily};
     font-weight: ${theme.navWeight};
     font-size: 1.3rem;
     text-decoration: none;
@@ -23,15 +23,15 @@ const Wrapper = styled.div`
     transform: ${theme.transform};
     transition: ${theme.transition};
     color: ${colors.orange};
-    border-bottom: 2px solid ${colors.blue};
+    border-bottom: 1px solid ${colors.blue};
   }
 `;
 
 export const NavLinks = () => (
   <Wrapper>
-    <AnchorLink href="#about">about</AnchorLink>
-    <AnchorLink href="#projects">projects</AnchorLink>
-    <AnchorLink href="#skills">skills</AnchorLink>
-    <AnchorLink href="#contact">contact</AnchorLink>
+    <AnchorLink href="#about">.about</AnchorLink>
+    <AnchorLink href="#projects">.projects</AnchorLink>
+    <AnchorLink href="#skills">.skills</AnchorLink>
+    <AnchorLink href="#contact">.contact</AnchorLink>
   </Wrapper>
 );

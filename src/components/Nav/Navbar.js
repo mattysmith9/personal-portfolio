@@ -1,41 +1,36 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { Container } from '@style';
 import { NavLinks } from './NavLinks';
-import { theme, Container } from '@style';
+import MaLogo from '../icons/logo';
 import styled from 'styled-components';
-const { colors } = theme;
 
-const Wrapper = styled.div`
+const Wrapper = styled(Container)`
   padding: 1rem 0;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  span {
-    color: ${colors.green};
-    font-size: 3.1em;
-    font-weight: bold;
-    font-family: ${theme.fontFamily};
-    background: ${colors.body};
-    padding: 0.1em 0.4em;
-    border-radius: ${theme.borderRadiusBtn};
-    border-bottom: 2px solid ${colors.blue};
-    border-left: 2px solid ${colors.blue};
-    border-top: 2px solid ${colors.blue};
-    border-right: 2px solid ${colors.blue};
-  }
-  span:hover {
-    transform: ${theme.transform};
-    transition: ${theme.transition};
-    color: ${colors.orange};
-    box-shadow: ${theme.boxShadow};
-  }
+`;
+
+const Logo = styled.div`
+  display: flex;
+  justify-content: left;
+  align-items: center;
+`;
+
+const LogoL = styled(Link)`
+  background: transparent;
+  height: 6rem;
 `;
 
 const Navbar = () => (
-  <Wrapper as={Container}>
-    <Link to="/" aria-label="Home">
-      <span>M</span>
-    </Link>
+  <Wrapper>
+    <Logo>
+      <LogoL to="/" aria-label="Home">
+        <MaLogo />
+      </LogoL>
+    </Logo>
     <NavLinks />
   </Wrapper>
 );

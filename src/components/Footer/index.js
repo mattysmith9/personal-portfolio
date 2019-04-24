@@ -7,21 +7,17 @@ import './fontAwesome';
 const { colors } = theme;
 
 const Wrapper = styled.div`
-  padding: 28rem 0 4rem 0;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-color: ${colors.body};
+  display: flex;
+  height: 3rem;
+  padding: 10rem 0 2rem;
   @media (max-width: 1960px) {
-    padding: 14rem 0 4rem;
+    padding: 10rem 0 2rem;
   }
 `;
 
-const Flex = styled.div`
+const Flex = styled(Container)`
   display: flex;
   align-items: flex-end;
-  background: ${colors.blue};
-  border: 8px solid ${colors.blue};
-  border-radius: ${theme.borderRadiusBtn};
   justify-content: space-between;
   @media (max-width: 680px) {
     flex-direction: column;
@@ -33,14 +29,10 @@ const Flex = styled.div`
 const Links = styled.div`
   display: flex;
   align-items: center;
-  background: ${colors.blue};
-  padding: 0.3em 0.3em;
-  border-radius: ${theme.borderRadiusBtn};
-  border: 8px solid ${colors.blue};
+  justify-content: space-evenly;
   a {
-    margin: 0 10px;
-    color: ${colors.body};
-    padding: 0.2em 0.1em;
+    margin: 0 0.3rem;
+    color: ${colors.blue};
     &:hover {
       color: ${colors.green};
     }
@@ -48,43 +40,37 @@ const Links = styled.div`
 `;
 
 const Details = styled.div`
-  @media (max-width: 680px) {
-    margin-bottom: 2rem;
-  }
-  span {
-    color: ${colors.body};
+  font-family: ${theme.fontFamilyBtn};
+  font-size: ${theme.footerSize};
+  color: ${colors.blue};
+  #name {
+    color: ${colors.blue};
     font-family: ${theme.fontFamily};
     font-size: ${theme.footerSize};
-    margin-left: 1rem;
+    &:hover {
+      color: ${colors.green};
+    }
   }
-  a {
-    color: ${colors.green};
-  }
-  a:hover {
-    color: ${colors.orange};
+  @media (max-width: 680px) {
+    margin-bottom: 2rem;
   }
 `;
 
 const Footer = () => (
   <Wrapper>
-    <Flex as={Container} id="footer" rel="canonical">
+    <Flex id="footer" rel="canonical">
       <Details>
-        <div>
-          <span>
-            © {new Date().getFullYear()} | Made with{' '}
-            <span aria-label="love" role="img">
-              🙏
-            </span>{' '}
-            by{' '}
-            <a
-              href="https://github.com/mattysmith9"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Matty Smith
-            </a>
-          </span>
-        </div>
+        <span>
+          © {new Date().getFullYear()} | Site built by{' '}
+          <a
+            id="name"
+            href="https://github.com/mattysmith9"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Matty Smith
+          </a>
+        </span>
       </Details>
       <Links>
         <a

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import resume from '../../images/mattsmithresume.pdf';
+import resume from '../../images/Mresume.pdf';
 import { theme, Container, helpers } from '@style';
 
 const { colors } = theme;
@@ -25,11 +25,11 @@ const Hola = styled.h1`
 `;
 
 const FullName = styled.h2`
-  font-size: 85px;
-  line-height: 1.1;
+  font-size: 100px;
+  line-height: 1.2;
   margin: 0 0 10px 1.8rem;
   color: ${colors.blue};
-  word-spacing: -0.7rem;
+  word-spacing: -0.8rem;
   text-rendering: optimizeLegibility;
 `;
 
