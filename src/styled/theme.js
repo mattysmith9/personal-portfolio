@@ -12,7 +12,6 @@ const theme = {
     header: '#b1aeba',
   },
   fontFamily: 'Nunito Sans sans-serif',
-  fontFamilyNav: 'Montserrat sans-serif',
   fontFamilyBtn: 'Poppins sans-serif',
   subsets: 'latin',
   fontDisplay: 'auto',

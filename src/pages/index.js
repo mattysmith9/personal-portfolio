@@ -5,6 +5,8 @@ import { Layout } from '@style';
 import { Hero, SEO, About, Contact, Header, Footer } from '@comp';
 import Projects from '../components/Projects';
 import dataConfig from '../dataConfig';
+require('typeface-montserrat');
+
 
 const IndexPage = ({ data }) => (
   <Layout id="content">

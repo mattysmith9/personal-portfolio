@@ -10,10 +10,10 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-display: auto;
   a {
     color: ${colors.blue};
-    font-family: ${theme.fontFamily};
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: none;
     margin-right: 1em;
     padding: 0.4em 0.4em;
