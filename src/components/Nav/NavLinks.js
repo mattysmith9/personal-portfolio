@@ -13,7 +13,6 @@ const Wrapper = styled.div`
   a {
     color: ${colors.blue};
     font-family: ${theme.fontFamily};
-    font-weight: ${theme.navWeight};
     font-size: 1.3rem;
     text-decoration: none;
     margin-right: 1em;
