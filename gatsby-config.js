@@ -66,19 +66,29 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat`,
+            subsets: [`latin`],
+            variants: [`400`, `700`],
+          },
+          {
+            family: `Roboto`,
+            subsets: [`latin-ext`],
+            variants: [`400`, `700`],
+          },
+        ],
+      },
+    },
+     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: [
-            'Montserrat',
-            'sans-serif',
-            'Georgia',
-            'serif',
-            'Roboto',
-            'sans-serif',
-          ],
-        },
-      },
+          families: ['Montserrat', 'Roboto']
+        }
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
