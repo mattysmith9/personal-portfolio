@@ -90,13 +90,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
-      options: {
-        id: process.env.GOOGLE_ANALYTICS_ID,
-        includeInDevelopment: false,
-      },
-    },
-    {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {

@@ -2,9 +2,8 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Layout } from '@style';
-import { Hero, SEO, About, Contact, Header, Footer } from '@comp';
-import Projects from '../components/Projects';
-import dataConfig from '../dataConfig';
+import { Hero, SEO, About, Contact, Header, Footer, Projects } from '@comp';
+import dataConfig from '@data';
 
 const IndexPage = ({ data }) => (
   <Layout id="content">

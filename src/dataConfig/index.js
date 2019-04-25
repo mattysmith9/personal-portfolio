@@ -1,4 +1,4 @@
-module.exports = {
+const dataConfig = {
   siteTitle: 'Matty Smith | Software Engineer',
   siteDescription:
     'Matty Smith is a Software Engineer based in Burlington, Vermont.',
@@ -51,3 +51,5 @@ module.exports = {
   greenColor: '#19e0b4',
   recaptcha_key: '6LeSP58UAAAAANMCypV78qNR5gPhZ02B7q-ELSIl',
 };
+
+module.exports = dataConfig;
