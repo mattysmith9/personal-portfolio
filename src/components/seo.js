@@ -9,15 +9,12 @@ import {
   contact,
   name,
   foundingDate,
-  googleAnalyticsID,
 } from '../dataConfig';
 
 const SEO = ({
   title = siteTitle,
   description = siteDescription,
-  location = address,
-  siteUrl = url,
-  googleAnalytics = googleAnalyticsID,
+  location = '',
 }) => {
   const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
@@ -41,7 +38,13 @@ const SEO = ({
 			"addressRegion": "${address.region}",
 			"addressCountry": "${address.country}",
 			"postalCode": "${address.zipCode}"
-		}]
+		}],
+    "sameAs": [
+			"${socialLinks.linkedin}",
+			"${socialLinks.instagram}",
+			"${socialLinks.github}",
+      "${socialLinks.facebook}",
+		]
   }`;
 
   return (
@@ -49,19 +52,14 @@ const SEO = ({
       <meta name="description" content={description} />
       <meta
         property="og:url"
-        content={`${siteUrl}${location}/?ref=mattysmith.co`}
+        content={`${url}${location}/?ref=mattysmith.co`}
       />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
+      <meta property="fb:app_id" content={socialLinks.facebook} />
       <meta property="og:description" content={description} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <link rel="publisher" href={socialLinks.github} />
-      <link
-        href="//fonts.googleapis.com/css?family=Montserrat:400"
-        rel="preconnect"
-        type="text/css"
-        crossorigin="crossorigin"
-      />
       <link
         rel="preconnect"
         crossorigin="crossorigin"
