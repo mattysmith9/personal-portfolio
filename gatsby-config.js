@@ -43,21 +43,6 @@ const siteMetadata = {
 module.exports = {
   siteMetadata: siteMetadata,
   plugins: [
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: [
-            'Montserrat',
-            'sans-serif',
-            'Georgia',
-            'serif',
-            'Nunito Sans',
-            'sans-serif',
-          ],
-        },
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -79,6 +64,51 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-favicon',
+      options: {
+        logo: siteMetadata.faviconPng,
+        appName: siteMetadata.siteTitle,
+        appDescription: siteMetadata.siteDescription,
+        developerName: siteMetadata.developerName,
+        developerURL: siteMetadata.developerUrl,
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        dir: 'auto',
+        lang: siteMetadata.siteLanguage,
+        background_color: siteMetadata.backgroundColor,
+        theme_color: siteMetadata.themeColor,
+        display: 'standalone',
+        orientation: 'any',
+        start_url: `/`,
+        version: '1.0',
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          firefox: true,
+          opengraph: false,
+          twitter: false,
+          yandex: false,
+          windows: false,
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: [
+            'Montserrat',
+            'sans-serif',
+            'Georgia',
+            'serif',
+            'Roboto',
+            'sans-serif',
+          ],
+        },
       },
     },
     {
@@ -121,36 +151,6 @@ module.exports = {
           Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
         },
         fetchOptions: {},
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-favicon',
-      options: {
-        logo: siteMetadata.faviconPng,
-        appName: siteMetadata.siteTitle,
-        appDescription: siteMetadata.siteDescription,
-        developerName: siteMetadata.developerName,
-        developerURL: siteMetadata.developerUrl,
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        dir: 'auto',
-        lang: siteMetadata.siteLanguage,
-        background_color: siteMetadata.backgroundColor,
-        theme_color: siteMetadata.themeColor,
-        display: 'standalone',
-        orientation: 'any',
-        start_url: `/`,
-        version: '1.0',
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          firefox: true,
-          opengraph: false,
-          twitter: false,
-          yandex: false,
-          windows: false,
-        },
       },
     },
     `gatsby-transformer-remark`,

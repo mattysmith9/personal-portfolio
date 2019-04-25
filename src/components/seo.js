@@ -72,8 +72,24 @@ const SEO = ({
         crossorigin="anonymous"
         href="https://github.com/mattysmith9/"
       />
-      <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        rel="preconnect"
+        href="https://www.google-analytics.com"
+        crossorigin
+      />
+      <link rel="preconnect" href="https://www.google.com" crossorigin />
+      <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        type="text/html"
+        crossorigin
+      />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        type="text/html"
+        crossorigin
+      />
       <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>

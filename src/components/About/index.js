@@ -9,7 +9,7 @@ const { colors } = theme;
 const AboutWrapper = styled(Section)`
   position: relative;
   h2 {
-    color: ${colors.blue};
+    color: ${colors.orange};
   }
   @media (max-width: 960px) {
     flex-direction: column;
@@ -28,6 +28,7 @@ const FlexWrapper = styled.div`
 const DetailsWrapper = styled.div`
   width: 60%;
   max-width: 480px;
+  font-family: ${theme.fontFamily};
   color: ${colors.grey};
   @media (max-width: 680px) {
     font-size: 0.5rem;
@@ -45,7 +46,7 @@ const Skill = styled.li`
   position: relative;
   margin-bottom: 10px;
   padding-left: 20px;
-  font-family: ${theme.fontFamilyBtn};
+  font-family: ${theme.fontFamily};
   font-size: 0.8rem;
   color: ${colors.blue};
   list-style: none;

@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   width: 80%;
   text-align: center;
   h2 {
-    color: ${colors.blue};
+    color: ${colors.orange};
     padding-top: 1rem;
   }
 `;
@@ -38,12 +38,14 @@ const Item = styled.div`
   border-radius: ${theme.borderRadiusCard};
   background: ${colors.body};
   h4 {
-    color: ${colors.grey};
-    font-family: ${theme.fontFamilyBtn};
+    color: ${colors.blue};
+    font-family: ${theme.fontFamily};
+    border-bottom: 2px solid ${colors.orange};
+    text-transform: capitalize;
   }
   p {
-    color: ${colors.blue};
-    font-family: ${theme.fontFamilyBtn};
+    color: ${colors.grey};
+    font-family: ${theme.fontFamily};
   }
 `;
 

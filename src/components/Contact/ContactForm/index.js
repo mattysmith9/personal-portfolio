@@ -8,7 +8,7 @@ import styled from 'styled-components';
 const { colors } = theme;
 
 const GetInTouch = styled.h2`
-  color: ${colors.blue};
+  color: ${colors.orange};
   text-align: center;
 `;
 
@@ -18,7 +18,8 @@ const Button = styled.button`
 `;
 
 const Error = styled.span`
-  color: ${colors.orange};
+  color: ${colors.blue};
+  margin-left: 25%;
 `;
 
 const Center = styled.div`
@@ -26,7 +27,6 @@ const Center = styled.div`
   h4 {
     font-weight: normal;
     color: ${colors.green};
-    border: 2px solid ${colors.blue};
   }
 `;
 

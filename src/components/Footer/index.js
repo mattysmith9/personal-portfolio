@@ -40,15 +40,15 @@ const Links = styled.div`
 `;
 
 const Details = styled.div`
-  font-family: ${theme.fontFamilyBtn};
+  font-family: ${theme.fontFamily};
   font-size: ${theme.footerSize};
-  color: ${colors.blue};
+  color: ${colors.orange};
   #name {
-    color: ${colors.blue};
+    color: ${colors.orange};
     font-family: ${theme.fontFamily};
     font-size: ${theme.footerSize};
     &:hover {
-      color: ${colors.green};
+      color: ${colors.blue};
     }
   }
   @media (max-width: 680px) {

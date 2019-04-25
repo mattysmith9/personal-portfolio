@@ -12,16 +12,17 @@ const Wrapper = styled.div`
   justify-content: space-between;
   font-display: auto;
   a {
-    color: ${colors.blue};
-    font-size: 1.2rem;
+    color: ${colors.orange};
+    font-size: 1.3rem;
     text-decoration: none;
     margin-right: 1em;
     padding: 0.4em 0.4em;
+    font-family: ${theme.fontFamily};
   }
   a:hover {
     transform: ${theme.transform};
     transition: ${theme.transition};
-    color: ${colors.orange};
+    color: ${colors.blue};
     border-bottom: 1px solid ${colors.blue};
   }
   ${({ desktop }) =>

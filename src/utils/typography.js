@@ -1,7 +1,9 @@
 import Typography from 'typography';
 import sternGroveTheme from 'typography-theme-stern-grove';
 const typography = new Typography(sternGroveTheme);
-sternGroveTheme.bodyFontFamily = ['Nunito Sans', 'sans-serif'];
+sternGroveTheme.bodyFontFamily = ['Roboto', 'sans-serif'];
 
-export const { scale, rhythm, options } = typography
+typography.injectStyles();
+
+export const { scale, rhythm, options } = typography;
 export default typography;
