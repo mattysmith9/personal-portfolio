@@ -64,6 +64,11 @@ const SEO = ({
         crossorigin="crossorigin"
         href={socialLinks.github}
       />
+      <link
+        rel="preload"
+        href="https://www.google-analytics.com"
+        crossorigin="crossorigin"
+      />
       <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>
