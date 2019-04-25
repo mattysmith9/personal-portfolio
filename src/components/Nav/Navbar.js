@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container } from '@style';
-import { NavLinks } from './NavLinks';
+import NavLinks from './NavLinks';
 import MaLogo from '../icons/logo';
 import styled from 'styled-components';
 
@@ -31,7 +31,7 @@ const Navbar = () => (
         <MaLogo />
       </LogoL>
     </Logo>
-    <NavLinks />
+    <NavLinks desktop />
   </Wrapper>
 );
 

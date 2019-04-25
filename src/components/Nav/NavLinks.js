@@ -26,11 +26,13 @@ const Wrapper = styled.div`
   }
 `;
 
-export const NavLinks = () => (
-  <Wrapper>
+const NavLinks = ({ desktop }) => (
+  <Wrapper desktop={desktop}>
     <AnchorLink href="#about">.about</AnchorLink>
     <AnchorLink href="#projects">.projects</AnchorLink>
     <AnchorLink href="#skills">.skills</AnchorLink>
     <AnchorLink href="#contact">.contact</AnchorLink>
   </Wrapper>
 );
+
+export default NavLinks;
