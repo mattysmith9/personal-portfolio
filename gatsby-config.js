@@ -82,13 +82,13 @@ module.exports = {
         ],
       },
     },
-     {
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Montserrat', 'Roboto']
-        }
-      }
+          families: ['Montserrat:400', 'Roboto'],
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
