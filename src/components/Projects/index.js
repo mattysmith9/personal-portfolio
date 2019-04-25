@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   width: 80%;
   text-align: center;
   h2 {
-    color: ${colors.orange};
+    color: ${colors.blue};
     padding-top: 1rem;
   }
 `;

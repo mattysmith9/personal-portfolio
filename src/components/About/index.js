@@ -9,7 +9,7 @@ const { colors } = theme;
 const AboutWrapper = styled(Section)`
   position: relative;
   h2 {
-    color: ${colors.orange};
+    color: ${colors.blue};
   }
   @media (max-width: 960px) {
     flex-direction: column;

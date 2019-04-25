@@ -2,8 +2,6 @@ import React from 'react';
 import { Container } from '@style';
 import ContactForm from './ContactForm';
 import styled from 'styled-components';
-import { theme } from '@style';
-const { colors } = theme;
 
 const Wrapper = styled(Container)`
   padding: 4rem 0;
@@ -22,18 +20,6 @@ const Details = styled.div`
     padding-right: unset;
     width: 100%;
     order: 1;
-  }
-  h1 {
-    margin-bottom: 2rem;
-    font-size: 26pt;
-    color: ${colors.orange};
-  }
-  p {
-    margin-bottom: 2.5rem;
-    font-size: 20pt;
-    font-weight: normal;
-    line-height: 1.3;
-    color: ${colors.green};
   }
 `;
 
