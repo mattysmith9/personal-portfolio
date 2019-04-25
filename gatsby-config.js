@@ -61,6 +61,42 @@ module.exports = {
       resolve: `gatsby-plugin-offline`,
     },
     {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: [
+            'Montserrat',
+            'sans-serif',
+            'Georgia',
+            'serif',
+            'Nunito Sans',
+            'sans-serif',
+          ],
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        head: true,
+        optimizeId: process.env.GOOGLE_ANALYTICS_ID,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: process.env.GOOGLE_ANALYTICS_ID,
+        includeInDevelopment: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
@@ -93,34 +129,6 @@ module.exports = {
           Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
         },
         fetchOptions: {},
-      },
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        head: true,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: [
-            'Montserrat',
-            'sans-serif',
-            'Georgia',
-            'serif',
-            'Nunito Sans',
-            'sans-serif',
-          ],
-        },
       },
     },
     {
