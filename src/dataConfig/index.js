@@ -10,7 +10,6 @@ module.exports = {
   googleAnalyticsID: 'UA-137382831-1',
   name: 'Matty Smith',
   foundingDate: Date.now(),
-  AccessControlAllowOrigin: 'https://www.google-analytics.com/analytics.js',
   socialLinks: {
     github: 'https://www.github.com/mattysmith9/',
     linkedin: 'https://www.linkedin.com/in/mattysmith9/',
