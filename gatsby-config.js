@@ -109,6 +109,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Montserrat', 'sans-serif', 'Georgia', 'serif'],
+        },
+      },
+    },
+    {
       resolve: 'gatsby-plugin-favicon',
       options: {
         logo: siteMetadata.faviconPng,
