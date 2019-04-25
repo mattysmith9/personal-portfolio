@@ -11,18 +11,27 @@ const AboutWrapper = styled(Section)`
   h2 {
     color: ${colors.orange};
   }
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
 `;
 
 const FlexWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  @media (max-width: 680px) {
+    flex-direction: column;
+  }
 `;
 
 const DetailsWrapper = styled.div`
   width: 60%;
   max-width: 480px;
   color: ${colors.grey};
+  @media (max-width: 680px) {
+    font-size: 0.5rem;
+  }
 `;
 
 const SkillsWrapper = styled.ul`
@@ -47,6 +56,9 @@ const Skill = styled.li`
     color: ${colors.orange};
     font-size: 1rem;
     line-height: 24px;
+  }
+  @media (max-width: 680px) {
+    font-size: 0.5rem;
   }
 `;
 

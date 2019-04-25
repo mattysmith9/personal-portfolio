@@ -13,6 +13,9 @@ const HeroContainer = styled(Container)`
   flex-direction: column;
   align-items: flex-start;
   min-height: 70vh;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
 `;
 
 const Hola = styled.h1`
@@ -22,6 +25,9 @@ const Hola = styled.h1`
   font-weight: normal;
   font-family: ${theme.fontFamily};
   text-rendering: optimizeLegibility;
+  @media (max-width: 680px) {
+    font-size: 20pt;
+  }
 `;
 
 const FullName = styled.h2`
@@ -31,6 +37,9 @@ const FullName = styled.h2`
   color: ${colors.blue};
   word-spacing: -0.8rem;
   text-rendering: optimizeLegibility;
+  @media (max-width: 680px) {
+    font-size: 26pt;
+  }
 `;
 
 const Subtitle = styled.h3`
@@ -39,6 +48,9 @@ const Subtitle = styled.h3`
   color: ${colors.green};
   margin: 0 0 10px 2rem;
   text-rendering: optimizeLegibility;
+  @media (max-width: 680px) {
+    font-size: 22pt;
+  }
 `;
 
 const ButtonWrapper = styled.div`
