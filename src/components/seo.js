@@ -16,6 +16,7 @@ const SEO = ({
   title = siteTitle,
   description = siteDescription,
   location = address,
+  siteUrl = url,
   googleAnalytics = googleAnalyticsID,
 }) => {
   const structuredDataOrganization = `{ 
@@ -48,13 +49,19 @@ const SEO = ({
       <meta name="description" content={description} />
       <meta
         property="og:url"
-        content={`${url}${location}/?ref=mattysmith.co`}
+        content={`${siteUrl}${location}/?ref=mattysmith.co`}
       />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <link rel="publisher" href={socialLinks.github} />
+      <link
+        href="//fonts.googleapis.com/css?family=Montserrat:400"
+        rel="preconnect"
+        type="text/css"
+        crossorigin="crossorigin"
+      />
       <link
         rel="preconnect"
         crossorigin="crossorigin"
