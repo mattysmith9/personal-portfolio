@@ -60,7 +60,7 @@ const SEO = ({
         crossorigin="crossorigin"
         href="https://www.google-analytics.com"
       />
-  
+
       <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>

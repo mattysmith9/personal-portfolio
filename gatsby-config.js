@@ -69,8 +69,9 @@ module.exports = {
           '@page': path.resolve(__dirname, 'src/pages'),
           '@images': path.resolve(__dirname, 'src/images'),
           '@data': path.resolve(__dirname, 'src/dataConfig'),
+          '@fonts': path.resolve(__dirname, 'src/fonts'),
         },
-        extensions: ['js'],
+        extensions: ['js', 'css'],
       },
     },
     {

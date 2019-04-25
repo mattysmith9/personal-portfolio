@@ -2,7 +2,7 @@
   "name": "gatsby-starter-default",
   "private": true,
   "description": "Matty Smiths Personal Portfolio with Gatsby and Styled-Components",
-  "homepage": "https://sleepy-spence-9.netlify.com",
+  "homepage": "https://mattysmith.co",
   "version": "0.1.0",
   "author": "Matty Smith <matthewcsmith18@gmail.com>",
   "dependencies": {
@@ -47,7 +47,6 @@
     "styled-components": "^4.2.0",
     "ts-invariant": "^0.4.0",
     "tslib": "^1.9.3",
-    "typeface-montserrat": "0.0.54",
     "typography": "^0.16.19",
     "typography-theme-stern-grove": "^0.16.19",
     "yup": "^0.27.0",

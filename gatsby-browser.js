@@ -1,2 +1,1 @@
-import 'typeface-montserrat';
 
