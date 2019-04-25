@@ -20,7 +20,6 @@ const GlobalStyle = createGlobalStyle`
 /* montserrat-200 - latin */
 @font-face {
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 200;
   font-display: auto;
   src: url('../fonts/montserrat-v13-latin-200.eot');

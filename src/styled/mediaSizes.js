@@ -4,7 +4,7 @@ const sizes = {
   large: 1440,
   biggerDesktop: 1200,
   desktop: 1000,
-  tablet: 768,
+  tablet: 767,
   thone: 600,
   phablet: 480,
   phone: 376,
