@@ -60,22 +60,29 @@ const SEO = ({
       <meta property="og:description" content={description} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <link
-        preload
+        as="fetch"
         rel="publisher"
-        crossorigin="crossorigin"
+        crossorigin="anonymous"
         href="https://www.github.com/mattysmith9/"
       />
       <link
-        preload
-        rel="preload"
-        href="https://www.google-analytics.com/analytics.js"
-        crossorigin="crossorigin"
+        as="fetch"
+        rel="publisher"
+        crossorigin="anonymous"
+        href="https://github.com/mattysmith9/"
       />
       <link
-        preload
+        as="script"
+        rel="preload"
+        href="https://www.google-analytics.com/analytics.js"
+        crossorigin="anonymous"
+      />
+      <link
+        as="stylesheet"
+        type="font"
         rel="preload"
         href="https://fonts.googleapis.com/css?family=Montserrat:400"
-        crossorigin="crossorigin"
+        crossorigin="anonymous"
       />
       <title>{title}</title>
       <html lang="en" dir="ltr" />
