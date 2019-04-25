@@ -11,7 +11,7 @@ module.exports = {
   name: 'Matty Smith',
   foundingDate: Date.now(),
   socialLinks: {
-    github: 'https://github.com/mattysmith9/',
+    github: 'https://www.github.com/mattysmith9/',
     linkedin: 'https://www.linkedin.com/in/mattysmith9/',
     instagram: 'https://www.instagram.com/mattysmith9/',
     facebook: 'https://www.facebook.com/matty.smith.146',

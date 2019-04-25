@@ -59,13 +59,11 @@ const SEO = ({
       <meta property="fb:app_id" content={socialLinks.facebook} />
       <meta property="og:description" content={description} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
-      <link rel="publisher" href={socialLinks.github} />
       <link
-        rel="preconnect"
+        rel="publisher"
         crossorigin="crossorigin"
-        href="https://www.google-analytics.com"
+        href={socialLinks.github}
       />
-
       <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>
