@@ -9,6 +9,7 @@ import {
   contact,
   name,
   foundingDate,
+  AccessControlAllowOrigin,
 } from '../dataConfig';
 
 const SEO = ({
@@ -59,6 +60,9 @@ const SEO = ({
       <meta property="fb:app_id" content={socialLinks.facebook} />
       <meta property="og:description" content={description} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
+      <script type="access-control-allow-origin">
+        {AccessControlAllowOrigin}
+      </script>
       <link
         as="fetch"
         rel="publisher"
@@ -72,10 +76,16 @@ const SEO = ({
         href="https://github.com/mattysmith9/"
       />
       <link
-        as="script"
+        as="fetch"
+        type="script"
         rel="preload"
         href="https://www.google-analytics.com/analytics.js"
-        crossorigin="anonymous"
+      />
+      <link
+        as="fetch"
+        rel="preload"
+        type="script"
+        href="https://www.google-analytics.com"
       />
       <link
         as="stylesheet"
@@ -84,6 +94,14 @@ const SEO = ({
         href="https://fonts.googleapis.com/css?family=Montserrat:400"
         crossorigin="anonymous"
       />
+      <link
+        as="stylesheet"
+        type="font"
+        rel="preload"
+        href="https://fonts.googleapis.com"
+        crossorigin="anonymous"
+      />
+
       <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>
