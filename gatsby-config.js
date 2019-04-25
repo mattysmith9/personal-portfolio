@@ -52,7 +52,6 @@ module.exports = {
         start_url: `/`,
         background_color: siteMetadata.backgroundColor,
         theme_color: siteMetadata.themeColor,
-        font_display: siteMetadata.fontDisplay,
         display: `minimal-ui`,
         icon: siteMetadata.faviconPng,
       },

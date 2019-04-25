@@ -2,3 +2,8 @@
   from = "https://sleepy-spence-9.netlify.com/*"
   to = "https://mattysmith.co/:splat 301!"
   force = true
+
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
+
+
