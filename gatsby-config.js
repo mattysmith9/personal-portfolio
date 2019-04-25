@@ -43,6 +43,21 @@ const siteMetadata = {
 module.exports = {
   siteMetadata: siteMetadata,
   plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: [
+            'Montserrat',
+            'sans-serif',
+            'Georgia',
+            'serif',
+            'Nunito Sans',
+            'sans-serif',
+          ],
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -67,26 +82,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: [
-            'Montserrat',
-            'sans-serif',
-            'Georgia',
-            'serif',
-            'Nunito Sans',
-            'sans-serif',
-          ],
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
         head: true,
-        optimizeId: process.env.GOOGLE_ANALYTICS_ID,
       },
     },
     {
