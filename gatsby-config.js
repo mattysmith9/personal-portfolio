@@ -112,7 +112,14 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Montserrat', 'sans-serif', 'Georgia', 'serif'],
+          families: [
+            'Montserrat',
+            'sans-serif',
+            'Georgia',
+            'serif',
+            'Nunito Sans',
+            'sans-serif',
+          ],
         },
       },
     },

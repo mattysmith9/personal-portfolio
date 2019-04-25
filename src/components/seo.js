@@ -60,13 +60,21 @@ const SEO = ({
       <meta property="og:description" content={description} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <link
+        preload
         rel="publisher"
         crossorigin="crossorigin"
-        href={socialLinks.github}
+        href="https://www.github.com/mattysmith9/"
       />
       <link
+        preload
         rel="preload"
-        href="https://www.google-analytics.com"
+        href="https://www.google-analytics.com/analytics.js"
+        crossorigin="crossorigin"
+      />
+      <link
+        preload
+        rel="preload"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400"
         crossorigin="crossorigin"
       />
       <title>{title}</title>
