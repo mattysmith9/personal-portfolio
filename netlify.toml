@@ -3,7 +3,4 @@
   to = "https://mattysmith.co/:splat 301!"
   force = true
 
-Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-
-
 

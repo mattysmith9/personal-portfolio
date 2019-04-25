@@ -122,7 +122,7 @@ module.exports = {
         fetchOptions: {},
       },
     },
-     {
+    {
       resolve: 'gatsby-plugin-favicon',
       options: {
         logo: siteMetadata.faviconPng,
