@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, ModalRoutingContext } from 'gatsby-plugin-modal-routing';
-import { Layout, theme } from '@style';
+import { Layout } from '@comp';
+import { theme } from '@style';
 import styled from 'styled-components';
 
 const { colors } = theme;

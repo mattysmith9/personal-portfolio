@@ -6,7 +6,7 @@ const { colors } = theme;
 
 const FileWrapper = styled.div`
   background: ${colors.body};
-  font-family: ${theme.fontFamilyBtn};
+  font-family: ${theme.fontFamily};
   display: flex;
   justify-content: center;
   position: relative;
@@ -17,11 +17,11 @@ const FileWrapper = styled.div`
   }
   th {
     color: ${colors.green};
-    font-family: ${theme.fontFamilyBtn};
+    font-family: ${theme.fontFamily};
   }
   td {
     color: ${colors.grey};
-    font-family: ${theme.fontFamilyBtn};
+    font-family: ${theme.fontFamily};
   }
 `;
 

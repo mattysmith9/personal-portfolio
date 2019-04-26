@@ -1,8 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Layout } from '@style';
-import { Hero, SEO, About, Contact, Header, Footer, Projects } from '@comp';
+import { Hero, SEO, About, Contact, Header, Footer, Projects, Layout } from '@comp';
 import dataConfig from '@data';
 
 const IndexPage = ({ data }) => (

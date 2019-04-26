@@ -1,3 +1,4 @@
+import Layout from './Layout';
 import Footer from './Footer';
 import About from './About';
 import Header from './Nav';
@@ -11,6 +12,7 @@ import Skills from './Skills';
 import Contact from './Contact';
 
 export {
+  Layout,
   About,
   Footer,
   Header,
@@ -22,4 +24,5 @@ export {
   SkillList,
   Skills,
   Contact,
+  
 };

@@ -8,7 +8,7 @@ import {
   address,
   contact,
   name,
-  foundingDate,
+  lastUpdated,
 } from '@data';
 
 const SEO = ({
@@ -21,7 +21,7 @@ const SEO = ({
 		"@type": "Individual",
 		"legalName": "${name}",
 		"url": "${url}",
-		"foundingDate": "${foundingDate}",
+		"lastUpdated": "${lastUpdated}",
 		"founders": [{
 			"@type": "Person",
 			"name": "${name}"
@@ -46,7 +46,6 @@ const SEO = ({
       "${socialLinks.facebook}",
 		]
   }`;
-
   return (
     <Helmet>
       <meta name="description" content={description} />
@@ -59,7 +58,6 @@ const SEO = ({
       <meta property="fb:app_id" content={socialLinks.facebook} />
       <meta property="og:description" content={description} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
-
       <link
         as="fetch"
         rel="publisher"
@@ -71,6 +69,18 @@ const SEO = ({
         rel="publisher"
         crossorigin="anonymous"
         href="https://github.com/mattysmith9/"
+      />
+      <link
+        as="font/woff2"
+        rel="preconnect"
+        href="https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2"
+        crossorigin
+      />
+      <link
+        as="font/woff2"
+        rel="preconnect"
+        href="https://mattysmith.co/google-fonts/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+        crossorigin
       />
       <title>{title}</title>
       <html lang="en" dir="ltr" />
