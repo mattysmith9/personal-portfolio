@@ -14,9 +14,7 @@ const siteMetadata = {
     'Matty Smith, Matty, Matt, Smith, Matthew, @mattysmith9, software engineer, front-end engineer, back-end engineer, full stack developer, full stack engineer, web developer, javascript, react, node, kotlin',
   author: 'Matty Smith',
   url: 'mattysmith.co',
-  pathPrefix: '',
-  googleVerification: process.env.GOOGLE_VERIFICATION,
-  facebookAppID: '',
+  pathPrefix: '/',
   pages: ['welcome', 'homepage'],
   siteLanguage: 'en_US',
   lastBuildDate: Date.now(),
@@ -34,7 +32,6 @@ const siteMetadata = {
   location: 'Burlington, VT',
   email: 'matthewcsmith18@gmail.com',
   phone: '1-802-598-9466',
-  googleAnalyticsID: process.env.GOOGLE_ANALYTICS_ID,
   backgroundColor: 'white',
   themeColor: 'blue',
   fontDisplay: 'auto',
@@ -55,9 +52,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: siteMetadata.faviconPng,
       },
-    },
-    {
-      resolve: `gatsby-plugin-offline`,
     },
     {
       resolve: `gatsby-plugin-typography`,
@@ -88,13 +82,6 @@ module.exports = {
         google: {
           families: ['Montserrat:400', 'Roboto'],
         },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        head: true,
       },
     },
     {
@@ -162,9 +149,17 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        head: false,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-modal-routing`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
   ],
 };

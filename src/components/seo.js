@@ -70,18 +70,7 @@ const SEO = ({
         crossorigin="anonymous"
         href="https://github.com/mattysmith9/"
       />
-      <link
-        as="font/woff2"
-        rel="preconnect"
-        href="https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2"
-        crossorigin
-      />
-      <link
-        as="font/woff2"
-        rel="preconnect"
-        href="https://mattysmith.co/google-fonts/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
-        crossorigin
-      />
+
       <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>
