@@ -1,7 +1,7 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styled from 'styled-components';
-import { theme } from '@style';
+import { theme, mediaSizes } from '@style';
 
 const { colors } = theme;
 
@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   font-display: auto;
+  ${mediaSizes.tablet`display: none;`};
   a {
     color: ${colors.orange};
     font-size: 1.3rem;

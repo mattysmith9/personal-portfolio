@@ -3,10 +3,12 @@ import Navbar from './Navbar';
 import Hamburger from './Hamburger';
 import Sidebar from './Sidebar';
 import styled from 'styled-components';
+import { mediaSizes } from '@style';
 
 const Wrapper = styled.div`
   background: transparent;
   width: 100%;
+  ${mediaSizes.tablet`padding: 0 25px;`};
 `;
 
 const Overlay = styled.div`

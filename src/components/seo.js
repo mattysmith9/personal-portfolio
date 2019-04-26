@@ -54,10 +54,13 @@ const SEO = ({
   return (
     <Helmet>
       <html lang="en" prefix="og: http://ogp.me/ns#" />
+      <title>{title}</title>
+      <meta property="description" content={description} />
       <meta
         property="og:url"
         content={`${url}${location}/?ref=mattysmith.co`}
       />
+
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta name="keywords" content={siteKeywords} />
@@ -72,11 +75,6 @@ const SEO = ({
       <meta name="theme-color" content={bodyColor} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <link rel="apple-touch-icon" sizes="60x60" href={appleIcon60x60} />
-      <link
-        as="preconnect"
-        type="text/css"
-        url="https://fonts.googleapis.com/css?family=Montserrat:400"
-      />
       <link
         as="fetch"
         rel="publisher"

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import resume from '@images/Mresume.pdf';
-import { theme, Container, helpers } from '@style';
+import { theme, Container, helpers, mediaSizes } from '@style';
 
-const { colors } = theme;
+const { colors, fontSizes } = theme;
 
 const HeroContainer = styled(Container)`
   display: flex;
@@ -13,9 +13,7 @@ const HeroContainer = styled(Container)`
   flex-direction: column;
   align-items: flex-start;
   min-height: 70vh;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
+  ${mediaSizes.tablet`padding-top: 150px;`};
 `;
 
 const Hola = styled.h1`
@@ -25,9 +23,7 @@ const Hola = styled.h1`
   font-weight: normal;
   font-family: ${theme.fontFamily};
   text-rendering: optimizeLegibility;
-  @media (max-width: 680px) {
-    font-size: 20pt;
-  }
+  ${mediaSizes.tablet`font-size: ${fontSizes.medium};`};
 `;
 
 const FullName = styled.h2`
@@ -37,9 +33,9 @@ const FullName = styled.h2`
   color: ${colors.blue};
   word-spacing: -0.8rem;
   text-rendering: optimizeLegibility;
-  @media (max-width: 680px) {
-    font-size: 26pt;
-  }
+  ${mediaSizes.tablet`font-size: 60px;`};
+  ${mediaSizes.iphonex`font-size: 50px;`};
+  ${mediaSizes.phone`font-size: 40px;`};
 `;
 
 const Subtitle = styled.h3`
@@ -48,9 +44,9 @@ const Subtitle = styled.h3`
   color: ${colors.green};
   margin: 0 0 10px 2rem;
   text-rendering: optimizeLegibility;
-  @media (max-width: 680px) {
-    font-size: 22pt;
-  }
+  ${mediaSizes.tablet`font-size: 60px;`};
+  ${mediaSizes.iphonex`font-size: 50px;`};
+  ${mediaSizes.phone`font-size: 40px;`};
 `;
 
 const ButtonWrapper = styled.div`

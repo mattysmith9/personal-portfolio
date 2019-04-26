@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby-plugin-modal-routing';
 import styled from 'styled-components';
-import { helpers, theme, Section } from '@style';
+import { helpers, theme, Section, mediaSizes } from '@style';
 
 const { colors } = theme;
 
@@ -11,18 +11,13 @@ const AboutWrapper = styled(Section)`
   h2 {
     color: ${colors.orange};
   }
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
 `;
 
 const FlexWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  @media (max-width: 680px) {
-    flex-direction: column;
-  }
+  ${mediaSizes.tablet`display: block;`};
 `;
 
 const DetailsWrapper = styled.div`
@@ -30,9 +25,7 @@ const DetailsWrapper = styled.div`
   max-width: 480px;
   font-family: ${theme.fontFamily};
   color: ${colors.grey};
-  @media (max-width: 680px) {
-    font-size: 0.5rem;
-  }
+  ${mediaSizes.tablet`width: 100%;`};
 `;
 
 const SkillsWrapper = styled.ul`

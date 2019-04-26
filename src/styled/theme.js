@@ -12,6 +12,11 @@ const theme = {
     header: '#b1aeba',
   },
 
+  fontSizes: {
+    small: '13px',
+    medium: '14px',
+  },
+
   fontFamily: 'Roboto sans-serif',
   fontFamilyBtn: 'Poppins sans-serif',
   subsets: 'latin',

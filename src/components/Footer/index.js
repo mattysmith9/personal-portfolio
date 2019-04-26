@@ -1,5 +1,5 @@
 import React from 'react';
-import { theme, Container } from '@style';
+import { theme, Container, mediaSizes } from '@style';
 import { socialLinks } from '@data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
@@ -25,20 +25,14 @@ const Flex = styled(Container)`
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-  @media (max-width: 680px) {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
+  ${mediaSizes.tablet`display: block;`};
 `;
 
 const SocialList = styled.ul`
   display: inline-flex;
   list-style: none;
   margin-top: 1rem;
-  @media (max-width: 680px) {
-    margin-bottom: 2rem;
-  }
+  ${mediaSizes.tablet`display: block;`};
 `;
 
 const Links = styled.a`
@@ -47,9 +41,6 @@ const Links = styled.a`
   color: ${colors.blue};
   &:hover {
     color: ${colors.green};
-  }
-  @media (max-width: 680px) {
-    margin-bottom: 2rem;
   }
 `;
 
@@ -67,9 +58,6 @@ const Details = styled.div`
     &:hover {
       color: ${colors.blue};
     }
-  }
-  @media (max-width: 680px) {
-    margin-bottom: 2rem;
   }
 `;
 
