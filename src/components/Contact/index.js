@@ -24,7 +24,7 @@ const Details = styled.div`
 `;
 
 const Contact = () => (
-  <Wrapper id="contact">
+  <Wrapper id="contact" aria-label="contact-form">
     <Details>
       <ContactForm method="POST" />
     </Details>

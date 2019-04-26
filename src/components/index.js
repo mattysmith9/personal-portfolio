@@ -7,7 +7,6 @@ import Button from './Button';
 import ConditionalLayout from './ConditionalLayout';
 import Hero from './Hero';
 import SEO from './seo';
-import SkillList from './About/SkillList';
 import Skills from './Skills';
 import Contact from './Contact';
 
@@ -21,8 +20,6 @@ export {
   ConditionalLayout,
   Hero,
   SEO,
-  SkillList,
   Skills,
   Contact,
-  
 };

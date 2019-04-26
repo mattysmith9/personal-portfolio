@@ -32,8 +32,8 @@ const siteMetadata = {
   location: 'Burlington, VT',
   email: 'matthewcsmith18@gmail.com',
   phone: '1-802-598-9466',
-  backgroundColor: 'white',
-  themeColor: 'blue',
+  backgroundColor: '#f6faff',
+  themeColor: '#355c7d',
   fontDisplay: 'auto',
 };
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { theme, Container } from '@style';
+import { socialLinks } from '@data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import './fontAwesome';
@@ -8,8 +9,13 @@ const { colors } = theme;
 
 const Wrapper = styled.div`
   display: flex;
-  height: 3rem;
-  padding: 10rem 0 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+  min-height: 70px;
+  padding: 15px;
   @media (max-width: 1960px) {
     padding: 10rem 0 2rem;
   }
@@ -17,8 +23,8 @@ const Wrapper = styled.div`
 
 const Flex = styled(Container)`
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
+  margin-top: 2rem;
   @media (max-width: 680px) {
     flex-direction: column;
     text-align: center;
@@ -26,16 +32,24 @@ const Flex = styled(Container)`
   }
 `;
 
-const Links = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  a {
-    margin: 0 0.3rem;
-    color: ${colors.blue};
-    &:hover {
-      color: ${colors.green};
-    }
+const SocialList = styled.ul`
+  display: inline-flex;
+  list-style: none;
+  margin-top: 1rem;
+  @media (max-width: 680px) {
+    margin-bottom: 2rem;
+  }
+`;
+
+const Links = styled.a`
+  padding: 6px;
+  text-decoration: none;
+  color: ${colors.blue};
+  &:hover {
+    color: ${colors.green};
+  }
+  @media (max-width: 680px) {
+    margin-bottom: 2rem;
   }
 `;
 
@@ -44,6 +58,9 @@ const Details = styled.div`
   font-size: ${theme.footerSize};
   color: ${colors.orange};
   #name {
+    margin-top: 2.5rem;
+    display: inline-flex;
+    align-items: center;
     color: ${colors.orange};
     font-family: ${theme.fontFamily};
     font-size: ${theme.footerSize};
@@ -58,62 +75,48 @@ const Details = styled.div`
 
 const Footer = () => (
   <Wrapper>
-    <Flex id="footer" rel="canonical">
+    <Flex id="footer" rel="canonical" aria-label="footer">
       <Details>
         <span>
           © {new Date().getFullYear()} | Site built by{' '}
           <a
             id="name"
-            href="https://github.com/mattysmith9"
+            href="https://www.github.com/mattysmith9/"
             rel="noopener noreferrer"
             target="_blank"
+            aria-label="github repo"
           >
             Matty Smith
           </a>
         </span>
       </Details>
-      <Links>
-        <a
-          href="https://github.com/mattysmith9"
-          aria-label="link to github repositories"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
-        </a>
-        <a
-          href="https://instagram.com/mattysmith9"
-          aria-label="link to instagram account"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={['fab', 'instagram']} size="3x" />
-        </a>
-        <a
-          href="https://www.facebook.com/matty.smith.146"
-          aria-label="link to facebook account"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={['fab', 'facebook']} size="3x" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/mattysmith9"
-          aria-label="link to linkedin profile"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" />
-        </a>
-        <a
-          href="https://dev.to/mattysmith9"
-          aria-label="link to Dev.to profile"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={['fab', 'dev']} size="3x" />
-        </a>
-      </Links>
+      <SocialList>
+        {socialLinks &&
+          socialLinks.map(({ name, url }, i) => (
+            <li key={i}>
+              <Links
+                href={url}
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label={name}
+              >
+                {name === 'Linkedin' ? (
+                  <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" />
+                ) : name === 'Dev' ? (
+                  <FontAwesomeIcon icon={['fab', 'dev']} size="3x" />
+                ) : name === 'Facebook' ? (
+                  <FontAwesomeIcon icon={['fab', 'facebook']} size="3x" />
+                ) : name === 'Github' ? (
+                  <FontAwesomeIcon icon={['fab', 'github-square']} size="3x" />
+                ) : name === 'Instagram' ? (
+                  <FontAwesomeIcon icon={['fab', 'instagram']} size="3x" />
+                ) : (
+                  <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
+                )}
+              </Links>
+            </li>
+          ))}
+      </SocialList>
     </Flex>
   </Wrapper>
 );

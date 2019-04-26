@@ -76,7 +76,7 @@ class Hero extends Component {
     const { frontmatter } = data[0].node;
 
     return (
-      <HeroContainer>
+      <HeroContainer aria-label="hero-name">
         <Hola>{frontmatter.title}</Hola>
         <FullName>{frontmatter.name}</FullName>
         <Subtitle>{frontmatter.subtitle}</Subtitle>

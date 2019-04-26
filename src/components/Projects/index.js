@@ -84,7 +84,7 @@ const Projects = () => (
         },
       },
     }) => (
-      <Wrapper id="projects" rel="canonical">
+      <Wrapper id="projects" rel="canonical" aria-label="projects">
         <h2>Recent Repositories</h2>
         <Grid>
           {edges.map(({ node }) => (

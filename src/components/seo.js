@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import ogImage from '@images/og.png';
+import appleIcon60x60 from '@images/favicons/apple-touch-icon-60x60.png';
 import {
   url,
   siteDescription,
@@ -72,6 +73,12 @@ const SEO = ({
       <meta itemProp="image" content={`${url}${ogImage}`} />
       <meta name="theme-color" content={bodyColor} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
+      <link rel="apple-touch-icon" sizes="60x60" href={appleIcon60x60} />
+      <link
+        as="preconnect"
+        type="text/css"
+        url="https://fonts.googleapis.com/css?family=Montserrat:400"
+      />
       <link
         as="fetch"
         rel="publisher"

@@ -32,7 +32,7 @@ const Wrapper = styled.div`
 `;
 
 const Sidebar = ({ sidebar, toggle }) => (
-  <Wrapper active={sidebar} onClick={toggle}>
+  <Wrapper aria-label="sidebar nav" active={sidebar} onClick={toggle}>
     <NavLinks />
   </Wrapper>
 );

@@ -63,7 +63,11 @@ const Bar = styled.div`
 `;
 
 const Hamburger = ({ sidebar, toggle }) => (
-  <Wrapper sidebar={sidebar} onClick={() => toggle(!sidebar)}>
+  <Wrapper
+    aria-label="hamburger nav"
+    sidebar={sidebar}
+    onClick={() => toggle(!sidebar)}
+  >
     <Bar top sidebar={sidebar} />
     <Bar mid sidebar={sidebar} />
     <Bar bottom sidebar={sidebar} />

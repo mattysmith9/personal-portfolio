@@ -52,11 +52,19 @@ const Wrapper = styled.div`
 `;
 
 const NavLinks = ({ desktop }) => (
-  <Wrapper desktop={desktop}>
-    <AnchorLink href="#about">about</AnchorLink>
-    <AnchorLink href="#projects">projects</AnchorLink>
-    <AnchorLink href="#skills">skills</AnchorLink>
-    <AnchorLink href="#contact">contact</AnchorLink>
+  <Wrapper aria-label="nav links" desktop={desktop}>
+    <AnchorLink aria-label="about me" href="#about">
+      about
+    </AnchorLink>
+    <AnchorLink aria-label="projects" href="#projects">
+      projects
+    </AnchorLink>
+    <AnchorLink aria-label="skills" href="#skills">
+      skills
+    </AnchorLink>
+    <AnchorLink aria-label="contact" href="#contact">
+      contact
+    </AnchorLink>
   </Wrapper>
 );
 
