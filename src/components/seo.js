@@ -54,22 +54,20 @@ const SEO = ({
   return (
     <Helmet>
       <html lang="en" prefix="og: http://ogp.me/ns#" />
-      <title>{title}</title>
-      <meta name="description" content={description} />
       <meta
         property="og:url"
         content={`${url}${location}/?ref=mattysmith.co`}
       />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <meta name="keywords" content={siteKeywords} />
       <meta name="google-site-verification" content={googleVerification} />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={title} />
       <meta property="og:image" content={`${url}${ogImage}`} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:type" content="image/png" />
       <meta property="fb:app_id" content={socialLinks.facebook} />
-      <meta property="og:description" content={description} />
       <meta itemProp="image" content={`${url}${ogImage}`} />
       <meta name="theme-color" content={bodyColor} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
