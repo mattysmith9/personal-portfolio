@@ -29,7 +29,7 @@ const Overlay = styled.div`
 const Header = () => {
   const [sidebar, toggle] = useState(false);
   return (
-    <Wrapper aria-label="navigation">
+    <Wrapper id="header" aria-label="navigation">
       <Overlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
       <Navbar />
       <Hamburger sidebar={sidebar} toggle={toggle} />

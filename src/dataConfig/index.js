@@ -45,6 +45,33 @@ const dataConfig = {
     },
   ],
 
+  scrollNav: [
+    {
+      name: 'header',
+      url: '#header',
+    },
+    {
+      name: 'about',
+      url: '#about',
+    },
+    {
+      name: 'projects',
+      url: '#projects',
+    },
+    {
+      name: 'skills',
+      url: '#skills',
+    },
+    {
+      name: 'contact',
+      url: '#contact',
+    },
+    {
+      name: 'footer',
+      url: '#footer',
+    },
+  ],
+
   instagramHandle: '@mattysmith9',
   headerHeight: 100,
   bodyColor: '#f6faff',

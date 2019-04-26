@@ -9,6 +9,7 @@ import Hero from './Hero';
 import SEO from './seo';
 import Skills from './Skills';
 import Contact from './Contact';
+import Scroll from './Scroll';
 
 export {
   Layout,
@@ -22,4 +23,5 @@ export {
   SEO,
   Skills,
   Contact,
+  Scroll,
 };
