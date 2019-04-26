@@ -5,7 +5,7 @@ const { colors } = theme;
 
 const Card = styled.div`
   padding: 1rem;
-  background: ${colors.body};
+  background: ${colors.items};
   height: 100%;
   border: 3px solid ${colors.blue};
   border-radius: ${theme.borderRadiusCard};

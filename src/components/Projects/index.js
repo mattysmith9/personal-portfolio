@@ -36,11 +36,12 @@ const Item = styled.div`
   overflow: hidden;
   box-shadow: ${theme.boxShadow};
   border-radius: ${theme.borderRadiusCard};
-  background: ${colors.body};
+  background: ${colors.items};
   h4 {
     color: ${colors.blue};
     font-family: ${theme.fontFamily};
     border-bottom: 2px solid ${colors.orange};
+    border-top: 2px solid ${colors.orange};
     text-transform: capitalize;
   }
   p {

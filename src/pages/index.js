@@ -5,7 +5,7 @@ import { Hero, SEO, About, Contact, Header, Footer, Projects, Layout } from '@co
 import dataConfig from '@data';
 
 const IndexPage = ({ data }) => (
-  <Layout id="content">
+  <Layout>
     <SEO
       title={dataConfig.siteTitle}
       description={dataConfig.siteDescription || 'de nada'}

@@ -1,11 +1,11 @@
 const theme = {
   colors: {
-    body: '#FBFFFE',
+    items: '#f6faff',
     blue: '#355c7d',
     green: '#13ab89',
-    orange: '#c04549',
+    orange: '#774A62',
     teal: '#2aa1af',
-    grey: '#59627a',
+    grey: '#4D5B6B',
     modal: '#b1bec7',
     footer: '#e3f0fc',
     yellow: '#f3b80b',
