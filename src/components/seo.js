@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import ogImage from '@images/og.png';
 import {
   url,
   siteDescription,
@@ -9,6 +10,9 @@ import {
   contact,
   name,
   lastUpdated,
+  googleVerification,
+  siteKeywords,
+  bodyColor,
 } from '@data';
 
 const SEO = ({
@@ -48,15 +52,25 @@ const SEO = ({
   }`;
   return (
     <Helmet>
+      <html lang="en" prefix="og: http://ogp.me/ns#" />
+      <title>{title}</title>
       <meta name="description" content={description} />
       <meta
         property="og:url"
         content={`${url}${location}/?ref=mattysmith.co`}
       />
+      <meta name="keywords" content={siteKeywords} />
+      <meta name="google-site-verification" content={googleVerification} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
+      <meta property="og:image" content={`${url}${ogImage}`} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:type" content="image/png" />
       <meta property="fb:app_id" content={socialLinks.facebook} />
       <meta property="og:description" content={description} />
+      <meta itemProp="image" content={`${url}${ogImage}`} />
+      <meta name="theme-color" content={bodyColor} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <link
         as="fetch"
@@ -70,9 +84,12 @@ const SEO = ({
         crossorigin="anonymous"
         href="https://github.com/mattysmith9/"
       />
-
-      <title>{title}</title>
-      <html lang="en" dir="ltr" />
+      <link
+        as="fetch"
+        rel="publisher"
+        crossorigin="anonymous"
+        href="https://github.com/"
+      />
     </Helmet>
   );
 };

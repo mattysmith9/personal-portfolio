@@ -27,7 +27,7 @@ const dataConfig = {
   },
   instagramHandle: '@mattysmith9',
   headerHeight: 100,
-  bodyColor: '#FBFFFE',
+  bodyColor: '#f6faff',
   blueColor: '#355c7d',
   greenColor: '#19e0b4',
   recaptcha_key: '6LeSP58UAAAAANMCypV78qNR5gPhZ02B7q-ELSIl',
