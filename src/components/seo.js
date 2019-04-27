@@ -22,39 +22,38 @@ const SEO = ({
   location = '',
 }) => {
   const structuredDataOrganization = `{ 
-		"@context": "http://schema.org",
-		"@type": "Individual",
+		"context": "http://schema.org",
+		"type": "Individual",
 		"legalName": "${name}",
 		"url": "${url}",
 		"lastUpdated": "${lastUpdated}",
 		"founders": [{
-			"@type": "Person",
+			"type": "Person",
 			"name": "${name}"
 		}],
 		"contactPoint": [{
-			"@type": "ContactPoint",
+			"type": "ContactPoint",
 			"email": "${contact.email}",
 			"telephone": "${contact.phone}",
 			"contactType": "personal line"
 		}],
 		"address": [{
-			"@type": "PostalAddress",
+			"type": "PostalAddress",
 			"addressLocality": "${address.city}",
 			"addressRegion": "${address.region}",
 			"addressCountry": "${address.country}",
 			"postalCode": "${address.zipCode}"
 		}],
-    "sameAs": [
+    "sameAs": [{
 			"${socialLinks.linkedin}",
 			"${socialLinks.instagram}",
 			"${socialLinks.github}",
       "${socialLinks.facebook}",
-		]
+		}]
   }`;
   return (
-    <Helmet>
+    <Helmet lang="en" prefix="og: http://ogp.me/ns#">
       <meta name="description" content={description} />
-      <html lang="en" prefix="og: http://ogp.me/ns#" />
       <title>{title}</title>
       <meta
         property="og:url"
