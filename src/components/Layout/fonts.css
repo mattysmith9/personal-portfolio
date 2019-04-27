@@ -4,7 +4,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
     url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2)
       format('woff2');
@@ -17,7 +17,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
     url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2)
       format('woff2');
@@ -29,7 +29,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
     url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2)
       format('woff2');
@@ -41,7 +41,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
     url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2)
       format('woff2');
@@ -54,7 +54,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
     url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2)
       format('woff2');
@@ -68,7 +68,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'),
     url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2)
       format('woff2');
@@ -81,7 +81,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'),
     url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2)
       format('woff2');
@@ -93,7 +93,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'),
     url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2)
       format('woff2');
@@ -105,7 +105,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'),
     url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2)
       format('woff2');
@@ -117,7 +117,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'),
     url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2)
       format('woff2');
@@ -129,7 +129,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'),
     url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2)
       format('woff2');
@@ -142,7 +142,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'),
     url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2)
       format('woff2');
