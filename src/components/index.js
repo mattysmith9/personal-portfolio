@@ -10,6 +10,7 @@ import SEO from './seo';
 import Skills from './Skills';
 import Contact from './Contact';
 import Scroll from './Scroll';
+import Info from './Info';
 
 export {
   Layout,
@@ -24,4 +25,5 @@ export {
   Skills,
   Contact,
   Scroll,
+  Info,
 };
