@@ -73,9 +73,7 @@ const ButtonWrapper = styled.div`
 
 const Button = styled.a`
   ${helpers.largeButton};
-  @media screen {
-    font-size: 12px;
-  }
+  ${mediaSizes.tablet`font-size: ${fontSizes.medium};`};
 `;
 
 class Hero extends Component {
