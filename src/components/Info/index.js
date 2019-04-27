@@ -19,7 +19,6 @@ const Tech = styled.li`
   position: relative;
   margin-bottom: 10px;
   padding-left: 1rem;
-  font-family: ${theme.fontFamily};
   font-size: 1rem;
   color: ${colors.footer};
   list-style: none;

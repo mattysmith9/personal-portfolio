@@ -52,14 +52,14 @@ const SEO = ({
 		}]
   }`;
   return (
-    <Helmet lang="en" prefix="og: http://ogp.me/ns#">
+    <Helmet>
+      <html lang="en" prefix="og: http://ogp.me/ns#" />
       <meta name="description" content={description} />
       <title>{title}</title>
       <meta
         property="og:url"
         content={`${url}${location}/?ref=mattysmith.co`}
       />
-
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta name="keywords" content={siteKeywords} />

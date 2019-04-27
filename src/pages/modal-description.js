@@ -10,7 +10,6 @@ const { colors } = theme;
 const ModalWrapper = styled.div`
   background: ${colors.grey};
   box-shadow: ${theme.boxShadow};
-  font-family: ${theme.fontFamilyBtn};
   border-radius: ${theme.borderRadiusCard};
   display: flex;
   justify-content: space-between;
