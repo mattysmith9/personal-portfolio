@@ -4,7 +4,7 @@ import { Link } from 'gatsby-plugin-modal-routing';
 import styled from 'styled-components';
 import { helpers, theme, Section, mediaSizes } from '@style';
 
-const { colors } = theme;
+const { colors, fontSizes } = theme;
 
 const AboutWrapper = styled(Section)`
   position: relative;
@@ -25,7 +25,7 @@ const DetailsWrapper = styled.div`
   max-width: 480px;
   font-family: ${theme.fontFamily};
   color: ${colors.grey};
-  ${mediaSizes.tablet`width: 100%;`};
+  ${mediaSizes.tablet`width: 80%;`};
 `;
 
 const SkillsWrapper = styled.ul`
@@ -58,6 +58,7 @@ const Skill = styled.li`
 
 const Button = styled(Link)`
   ${helpers.largeButton};
+  ${mediaSizes.tablet`font-size: ${fontSizes.medium};`};
 `;
 
 class About extends Component {

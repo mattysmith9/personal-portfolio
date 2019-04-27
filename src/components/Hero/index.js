@@ -24,6 +24,9 @@ const Hola = styled.h1`
   font-family: ${theme.fontFamily};
   text-rendering: optimizeLegibility;
   ${mediaSizes.tablet`font-size: ${fontSizes.medium};`};
+  @media screen {
+    margin: 0 0 5px 1.9rem;
+  }
 `;
 
 const FullName = styled.h2`
@@ -33,9 +36,13 @@ const FullName = styled.h2`
   color: ${colors.blue};
   word-spacing: -0.8rem;
   text-rendering: optimizeLegibility;
-  ${mediaSizes.tablet`font-size: 60px;`};
-  ${mediaSizes.iphonex`font-size: 50px;`};
-  ${mediaSizes.phone`font-size: 40px;`};
+  ${mediaSizes.tablet`font-size: 40px;`};
+  ${mediaSizes.iphonex`font-size: 30px;`};
+  ${mediaSizes.phone`font-size: 30px;`};
+  ${mediaSizes.phone`word-spaceing: 1rem;`};
+  @media screen {
+    word-spacing: 0rem;
+  }
 `;
 
 const Subtitle = styled.h3`
@@ -44,9 +51,12 @@ const Subtitle = styled.h3`
   color: ${colors.green};
   margin: 0 0 10px 2rem;
   text-rendering: optimizeLegibility;
-  ${mediaSizes.tablet`font-size: 60px;`};
-  ${mediaSizes.iphonex`font-size: 50px;`};
-  ${mediaSizes.phone`font-size: 40px;`};
+  ${mediaSizes.tablet`font-size: 30px;`};
+  ${mediaSizes.iphonex`font-size: 20px;`};
+  ${mediaSizes.phone`font-size: 20px;`};
+  @media screen {
+    margin: 0 0 5px 1.9rem;
+  }
 `;
 
 const ButtonWrapper = styled.div`
@@ -56,10 +66,16 @@ const ButtonWrapper = styled.div`
   position: relative;
   margin: 0 0 5px 2rem;
   padding-top: 1.5rem;
+  @media screen {
+    margin: 0 0 5px 1.8rem;
+  }
 `;
 
 const Button = styled.a`
   ${helpers.largeButton};
+  @media screen {
+    font-size: 12px;
+  }
 `;
 
 class Hero extends Component {

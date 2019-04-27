@@ -41,7 +41,6 @@ const Item = styled.div`
     color: ${colors.blue};
     font-family: ${theme.fontFamily};
     border-bottom: 2px solid ${colors.orange};
-    border-top: 2px solid ${colors.orange};
     text-transform: capitalize;
   }
   p {

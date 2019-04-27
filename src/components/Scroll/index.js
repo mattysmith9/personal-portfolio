@@ -21,19 +21,11 @@ const ScrollItemList = styled.ul`
   flex-direction: column;
   align-items: center;
   list-style: none;
-  &:after {
-    content: '';
-    display: block;
-    width: 2px;
-    height: 90px;
-    margin-left: 9px;
-    background-color: ${colors.blue};
-  }
 `;
 
 const ScrollItem = styled.li`
   &:last-of-type {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 `;
 
@@ -41,7 +33,7 @@ const MorelLink = styled(AnchorLink)`
   padding: 10px;
   color: ${colors.modal};
   &:hover {
-    color: ${colors.yellow};
+    color: ${colors.orange};
   }
   svg {
     width: 14px;
