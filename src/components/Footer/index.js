@@ -10,12 +10,8 @@ const { colors } = theme;
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  text-align: center;
-  height: auto;
   min-height: 70px;
-  padding: 15px;
   @media (max-width: 1960px) {
     padding: 10rem 0 2rem;
   }
@@ -25,6 +21,8 @@ const Flex = styled(Container)`
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  border-bottom: 2px solid ${colors.modal};
+
   ${mediaSizes.tablet`display: block;`};
 `;
 
@@ -38,25 +36,22 @@ const SocialList = styled.ul`
 const Links = styled.a`
   padding: 6px;
   text-decoration: none;
-  color: ${colors.blue};
+  color: ${colors.modal};
   &:hover {
-    color: ${colors.green};
+    color: ${colors.scroll};
   }
 `;
 
 const Details = styled.div`
-  font-family: ${theme.fontFamily};
   font-size: ${theme.footerSize};
-  color: ${colors.orange};
+  color: ${colors.modal};
   #name {
-    margin-top: 2.5rem;
+    margin-top: 2.4rem;
     display: inline-flex;
-    align-items: center;
-    color: ${colors.orange};
-    font-family: ${theme.fontFamily};
+    color: ${colors.modal};
     font-size: ${theme.footerSize};
     &:hover {
-      color: ${colors.blue};
+      color: ${colors.orange};
     }
   }
 `;

@@ -17,53 +17,43 @@ const HeroContainer = styled(Container)`
 `;
 
 const Hola = styled.h1`
-  color: ${colors.grey};
-  margin: 0 0 10px 2.3rem;
-  font-size: 1.4rem;
-  font-weight: normal;
+  margin: 0 0 8px 3.5rem;
   font-family: ${theme.fontFamily};
-  text-rendering: optimizeLegibility;
+  color: ${colors.modal};
+  font-size: 1.6rem;
   ${mediaSizes.tablet`font-size: ${fontSizes.medium};`};
-  ${mediaSizes.tablet`margin: 0 0 5px 1.9rem;`};
 `;
 
 const FullName = styled.h2`
-  font-size: 100px;
-  line-height: 1.2;
-  margin: 0 0 10px 1.8rem;
+  font-size: 85px;
+  line-height: 1;
+  padding-left: 3rem;
+  margin: 0;
   color: ${colors.blue};
-  word-spacing: -0.8rem;
-  text-rendering: optimizeLegibility;
   ${mediaSizes.tablet`font-size: 40px;`};
   ${mediaSizes.iphonex`font-size: 30px;`};
   ${mediaSizes.phone`font-size: 30px;`};
   ${mediaSizes.phone`word-spaceing: 1rem;`};
-  @media screen {
-    word-spacing: 0rem;
-  }
 `;
 
-const Subtitle = styled.h3`
+const Subtitle = styled.p`
+  font-family: ${theme.fontFamilyBtn};
   font-size: 35px;
-  line-height: 1.1;
+  line-height: 1.2;
+  padding-left: 3.3rem;
+  margin-top: 0.7rem;
   color: ${colors.green};
-  margin: 0 0 10px 2rem;
-  text-rendering: optimizeLegibility;
   ${mediaSizes.tablet`font-size: 30px;`};
   ${mediaSizes.iphonex`font-size: 20px;`};
   ${mediaSizes.phone`font-size: 20px;`};
-  @media screen {
-    margin: 0 0 5px 1.9rem;
-  }
 `;
 
 const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
-  margin: 0 0 5px 2rem;
-  padding-top: 1.5rem;
+  margin-left: 3.4rem;
   ${mediaSizes.tablet`margin: margin: 0 0 5px 1.8rem; ;`};
 `;
 

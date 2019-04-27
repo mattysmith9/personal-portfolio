@@ -29,9 +29,9 @@ const helpers = {
     background-color: transparent;
     border: 2px solid ${colors.blue};
     border-radius: ${theme.borderRadiusCard};
-    padding: 16px 20px;
-    font-size: 1.2rem;
-    font-family: ${theme.fontFamily};
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-family: ${theme.fontFamilyBtn};
     line-height: 1;
     text-decoration: none;
     cursor: pointer;

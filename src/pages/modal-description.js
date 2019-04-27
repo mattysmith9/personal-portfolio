@@ -8,7 +8,7 @@ import { theme } from '@style';
 const { colors } = theme;
 
 const ModalWrapper = styled.div`
-  background: ${theme.gradient};
+  background: ${colors.modalBack};
   box-shadow: ${theme.boxShadow};
   border-radius: ${theme.borderRadiusCard};
   display: flex;
@@ -17,7 +17,7 @@ const ModalWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   h2 {
-    color: ${colors.yellow};
+    color: ${colors.modalText};
     text-align: center;
   }
 `;
@@ -28,7 +28,7 @@ const ContentWrapper = styled.div`
   width: 85%;
   max-width: 800px;
   margin: 0 auto;
-  color: ${colors.items};
+  color: ${colors.scroll};
   line-height: 2;
 `;
 

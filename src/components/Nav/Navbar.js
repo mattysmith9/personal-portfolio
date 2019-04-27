@@ -6,7 +6,6 @@ import MaLogo from '../icons/logo';
 import styled from 'styled-components';
 
 const Wrapper = styled(Container)`
-  padding: 1rem 0;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -15,8 +14,6 @@ const Wrapper = styled(Container)`
 
 const Logo = styled.div`
   display: flex;
-  justify-content: left;
-  align-items: center;
 `;
 
 const LogoL = styled(Link)`

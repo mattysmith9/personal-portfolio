@@ -5,24 +5,18 @@ import { theme } from '@style';
 const { colors } = theme;
 
 const Wrapper = styled.div`
-  padding-right: 0.7rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  font-display: auto;
   a {
-    color: ${colors.orange};
+    color: ${colors.modal};
     font-size: 1.3rem;
     text-decoration: none;
-    margin-right: 1em;
-    padding: 0.4em 0.4em;
-    font-family: ${theme.fontFamily};
+    padding: 0.3em 0.3em;
+    font-family: ${theme.fontFamilyBtn};
+    font-weight: normal;
   }
   a:hover {
-    transform: ${theme.transform};
-    transition: ${theme.transition};
-    color: ${colors.blue};
-    border-bottom: 1px solid ${colors.blue};
+    color: ${colors.orange};
   }
   ${({ desktop }) =>
     desktop

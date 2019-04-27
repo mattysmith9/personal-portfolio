@@ -24,7 +24,7 @@ const DetailsWrapper = styled.div`
   width: 60%;
   max-width: 480px;
   font-family: ${theme.fontFamily};
-  color: ${colors.grey};
+  color: ${colors.modal};
   ${mediaSizes.tablet`width: 80%;`};
 `;
 
@@ -40,7 +40,7 @@ const Skill = styled.li`
   margin-bottom: 10px;
   padding-left: 20px;
   font-family: ${theme.fontFamily};
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: ${colors.blue};
   list-style: none;
   &:before {

@@ -6,7 +6,9 @@ import styled from 'styled-components';
 import { mediaSizes } from '@style';
 
 const Wrapper = styled.div`
-  background: transparent;
+  padding-top: 1rem;
+  margin: 0 auto;
+  align-content: center;
   width: 100%;
   ${mediaSizes.tablet`padding: 0 25px;`};
 `;
@@ -30,8 +32,8 @@ const Header = () => {
   const [sidebar, toggle] = useState(false);
   return (
     <Wrapper id="header" aria-label="navigation">
-      <Overlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
       <Navbar />
+      <Overlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
       <Hamburger sidebar={sidebar} toggle={toggle} />
       <Sidebar sidebar={sidebar} toggle={toggle} />
     </Wrapper>

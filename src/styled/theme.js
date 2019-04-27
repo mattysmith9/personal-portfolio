@@ -11,6 +11,8 @@ const theme = {
     yellow: '#f3b80b',
     header: '#b1aeba',
     scroll: '#bcc7cf',
+    modalText: '#FFF7D6',
+    modalBack: '#18282e',
   },
 
   gradient:
@@ -21,12 +23,12 @@ const theme = {
     medium: '14px',
   },
 
-  fontFamily: 'Roboto sans-serif',
-  fontFamilyBtn: 'Poppins sans-serif',
+  fontFamily: 'Roboto, sans-serif',
+  fontFamilyBtn: 'Montserrat, sans-serif',
   subsets: 'latin',
   fontDisplay: 'auto',
   footerSize: '1.1rem',
-  navWeight: '100',
+  fontWeight: '100',
   borderRadiusBtn: '8px',
   borderRadiusCard: '4px',
 
