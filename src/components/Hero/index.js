@@ -24,9 +24,7 @@ const Hola = styled.h1`
   font-family: ${theme.fontFamily};
   text-rendering: optimizeLegibility;
   ${mediaSizes.tablet`font-size: ${fontSizes.medium};`};
-  @media screen {
-    margin: 0 0 5px 1.9rem;
-  }
+  ${mediaSizes.tablet`margin: 0 0 5px 1.9rem;`};
 `;
 
 const FullName = styled.h2`
@@ -66,9 +64,7 @@ const ButtonWrapper = styled.div`
   position: relative;
   margin: 0 0 5px 2rem;
   padding-top: 1.5rem;
-  @media screen {
-    margin: 0 0 5px 1.8rem;
-  }
+  ${mediaSizes.tablet`margin: margin: 0 0 5px 1.8rem; ;`};
 `;
 
 const Button = styled.a`
