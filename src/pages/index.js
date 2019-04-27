@@ -1,18 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Hero, SEO, About, Contact, Header, Footer, Projects, Layout } from '@comp';
-import dataConfig from '@data';
+import { Hero, SEO, About, Contact, Footer, Projects, Layout } from '@comp';
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO
-      title={dataConfig.siteTitle}
-      description={dataConfig.siteDescription || 'de nada'}
-      keywords={[`portfolio`, `gatsby`, `javascript`, `react`, `graphql`]}
-    />
-
-    <Header />
+    <SEO />
     <Hero data={data.hero.edges} />
     <About data={data.about.edges} />
     <Projects />

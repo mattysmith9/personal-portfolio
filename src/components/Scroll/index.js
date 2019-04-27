@@ -31,7 +31,7 @@ const ScrollItem = styled.li`
 
 const MorelLink = styled(AnchorLink)`
   padding: 10px;
-  color: ${colors.modal};
+  color: ${colors.scroll};
   &:hover {
     color: ${colors.orange};
   }

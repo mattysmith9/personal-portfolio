@@ -20,7 +20,7 @@ const Tech = styled.li`
   margin-bottom: 10px;
   padding-left: 1rem;
   font-size: 1rem;
-  color: ${colors.footer};
+  color: ${colors.scroll};
   list-style: none;
 
   &:before {
@@ -28,7 +28,7 @@ const Tech = styled.li`
     position: absolute;
     margin-top: 8px;
     left: 0;
-    color: ${colors.footer};
+    color: ${colors.scroll};
     font-size: 1rem;
     line-height: 22px;
   }

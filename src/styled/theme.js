@@ -6,11 +6,15 @@ const theme = {
     orange: '#774A62',
     teal: '#2aa1af',
     grey: '#4D5B6B',
-    modal: '#b1bec7',
+    modal: '#44545f',
     footer: '#e3f0fc',
     yellow: '#f3b80b',
     header: '#b1aeba',
+    scroll: '#bcc7cf',
   },
+
+  gradient:
+    'linear-gradient(to bottom, #657d8d, #5d7381, #556976, #4d5f6b, #455560);',
 
   fontSizes: {
     small: '13px',

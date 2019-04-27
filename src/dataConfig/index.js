@@ -44,6 +44,25 @@ const dataConfig = {
       url: 'https://www.instagram.com/mattysmith9/',
     },
   ],
+  
+  navLinks: [
+    {
+      name: 'about',
+      url: '#about',
+    },
+    {
+      name: 'projects',
+      url: '#projects',
+    },
+    {
+      name: 'skills',
+      url: '#skills',
+    },
+    {
+      name: 'contact',
+      url: '#contact',
+    },
+  ],
 
   scrollNav: [
     {
