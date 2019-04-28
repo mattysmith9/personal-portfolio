@@ -6,14 +6,14 @@ import styled from 'styled-components';
 const { colors } = theme;
 
 const Wrapper = styled.div`
-  min-height: 140vh;
+  min-height: 100vh;
   max-width: 1280px;
   margin: 0 auto;
-  width: 80%;
+  width: 82%;
   text-align: center;
   h2 {
     color: ${colors.orange};
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 `;
 
@@ -50,7 +50,7 @@ const Item = styled.div`
 `;
 
 const Content = styled.div`
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 `;
 
 const Projects = () => (

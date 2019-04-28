@@ -40,7 +40,7 @@ const theme = {
   gridTemplateColumnsMob9: 'repeat(2, 1fr)',
   gridTemplateColumnsMob6: '1fr',
   gridTemplateRows: '8fr',
-  gap: '1.2rem 1.2rem',
+  gap: '1rem 1rem',
 
   hamburgerWidth: 30,
   hamBefore: `top 0.1s ease-in 0.25s, opacity 0.1s ease-in`,

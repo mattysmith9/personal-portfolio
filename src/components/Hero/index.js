@@ -12,7 +12,7 @@ const HeroContainer = styled(Container)`
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 70vh;
+  min-height: 80vh;
   ${mediaSizes.tablet`padding-top: 150px;`};
 `;
 
