@@ -11,7 +11,6 @@ const Input = styled.input`
   border: 2px solid ${colors.blue};
   padding: 0.8rem 1rem;
   border-radius: ${theme.borderRadiusCard};
-  margin-bottom: 0.5rem;
   transition: 0.3s;
   ${({ error }) =>
     error &&

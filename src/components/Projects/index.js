@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const { colors } = theme;
 
 const Wrapper = styled.div`
-  min-height: 100vh;
+  min-height: 90vh;
   max-width: 1280px;
   margin: 0 auto;
   width: 82%;
@@ -39,7 +39,7 @@ const Item = styled.div`
   h4 {
     color: ${colors.items};
     font-family: ${theme.fontFamily};
-    background: ${colors.orange};
+    background: ${colors.blue};
     border-radius: ${theme.borderRadiusCard};
     text-transform: capitalize;
   }

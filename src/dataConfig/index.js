@@ -44,7 +44,7 @@ const dataConfig = {
       url: 'https://www.instagram.com/mattysmith9/',
     },
   ],
-  
+
   navLinks: [
     {
       name: 'about',

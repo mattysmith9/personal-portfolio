@@ -61,7 +61,7 @@ const ContactForm = ({
         form-name="matty-portfolio"
         component="input"
         aria-label="name"
-        placeholder="name"
+        placeholder="full name"
         error={touched.name && errors.name}
       />
       <ErrorMessage component={Error} name="name" />
@@ -89,7 +89,6 @@ const ContactForm = ({
         name="message"
         component="textarea"
         aria-label="message"
-        placeholder="message..."
         rows="8"
         error={touched.message && errors.message}
       />

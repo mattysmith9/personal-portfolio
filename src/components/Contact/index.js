@@ -4,7 +4,7 @@ import ContactForm from './ContactForm';
 import styled from 'styled-components';
 
 const Wrapper = styled(Container)`
-  padding: 4rem 0;
+  padding: 2.5rem 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;

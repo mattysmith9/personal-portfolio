@@ -9,10 +9,9 @@ const { colors, fontSizes } = theme;
 const HeroContainer = styled(Container)`
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 80vh;
+  min-height: 85vh;
   ${mediaSizes.tablet`padding-top: 150px;`};
 `;
 
