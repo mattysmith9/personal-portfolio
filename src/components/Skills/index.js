@@ -1,43 +1,83 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { theme, Container } from '@style';
+import { theme, Section, mediaSizes } from '@style';
 
 const { colors } = theme;
 
-const Wrapper = styled.div`
-  background-size: contain;
-  background-position: left top;
-  background-repeat: no-repeat;
-  min-height: 70vh;
-`;
-
-const Details = styled.div`
-  flex: 1;
-  padding-left: 2rem;
-  @media (max-width: 960px) {
-    padding-left: unset;
-    width: 100%;
-  }
-  h1 {
-    font-size: 7rem;
-    margin-top: 10rem;
-    color: ${colors.blue};
-    text-align: center;
-  }
-  p {
-    color: ${colors.green};
-    text-align: center;
-    font-size: 1.5rem;
+const SkillsWrapper = styled(Section)`
+  position: relative;
+  h2 {
+    color: ${colors.orange};
   }
 `;
 
-const Skills = () => (
-  <Wrapper as={Container} id="skills">
-    <Details>
-      <h1>Coming Soon</h1>
-      <p>I am currently updating the page. Final product will be live soon!</p>
-    </Details>
-  </Wrapper>
-);
+const FlexWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  ${mediaSizes.tablet`display: block;`};
+`;
+
+const DetailsWrapper = styled.div`
+  width: 70%;
+  max-width: 600px;
+  font-family: ${theme.fontFamily};
+  color: ${colors.modal};
+  ${mediaSizes.tablet`width: 80%;`};
+`;
+
+const TechWrapper = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  overflow: hidden;
+`;
+
+const Tech = styled.li`
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: ${theme.fontFamily};
+  font-size: 0.9rem;
+  color: ${colors.blue};
+  list-style: none;
+  &:before {
+    content: '》';
+    position: absolute;
+    left: 0;
+    color: ${colors.orange};
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  @media (max-width: 680px) {
+    font-size: 0.5rem;
+  }
+`;
+
+class Skills extends Component {
+  static propTypes = {
+    data: PropTypes.array.isRequired,
+  };
+
+  render() {
+    const { data } = this.props;
+    const { frontmatter, html } = data[0].node;
+    const { title, tech } = frontmatter;
+
+    return (
+      <SkillsWrapper id="skills" aria-label="skills & interests">
+        <h2>{title}</h2>
+        <FlexWrapper>
+          <DetailsWrapper>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+            <TechWrapper>
+              {tech && tech.map((tech, i) => <Tech key={i}>{tech}</Tech>)}
+            </TechWrapper>
+          </DetailsWrapper>
+        </FlexWrapper>
+      </SkillsWrapper>
+    );
+  }
+}
 
 export default Skills;

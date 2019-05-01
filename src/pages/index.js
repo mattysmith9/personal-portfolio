@@ -1,13 +1,23 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Hero, SEO, About, Contact, Footer, Projects, Layout } from '@comp';
+import {
+  Hero,
+  SEO,
+  About,
+  Contact,
+  Footer,
+  Projects,
+  Layout,
+  Skills,
+} from '@comp';
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO />
     <Hero data={data.hero.edges} />
     <About data={data.about.edges} />
+    <Skills data={data.skills.edges} />
     <Projects />
     <Contact />
     <Footer />
@@ -43,7 +53,20 @@ export const query = graphql`
         node {
           frontmatter {
             title
-            skills
+            interests
+          }
+          html
+        }
+      }
+    }
+    skills: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/src/content/skills/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            tech
           }
           html
         }

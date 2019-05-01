@@ -28,14 +28,14 @@ const DetailsWrapper = styled.div`
   ${mediaSizes.tablet`width: 80%;`};
 `;
 
-const SkillsWrapper = styled.ul`
+const InterestsWrapper = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
   overflow: hidden;
   margin-top: 20px;
 `;
 
-const Skill = styled.li`
+const Interest = styled.li`
   position: relative;
   margin-bottom: 10px;
   padding-left: 20px;
@@ -69,7 +69,7 @@ class About extends Component {
   render() {
     const { data } = this.props;
     const { frontmatter, html } = data[0].node;
-    const { title, skills } = frontmatter;
+    const { title, interests } = frontmatter;
 
     return (
       <AboutWrapper id="about" aria-label="about me">
@@ -77,10 +77,12 @@ class About extends Component {
         <FlexWrapper>
           <DetailsWrapper>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            <SkillsWrapper>
-              {skills &&
-                skills.map((skill, i) => <Skill key={i}>{skill}</Skill>)}
-            </SkillsWrapper>
+            <InterestsWrapper>
+              {interests &&
+                interests.map((interest, i) => (
+                  <Interest key={i}>{interest}</Interest>
+                ))}
+            </InterestsWrapper>
           </DetailsWrapper>
           <Button to="/modal-description/" asModal>
             more info
