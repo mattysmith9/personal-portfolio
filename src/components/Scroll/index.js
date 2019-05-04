@@ -62,7 +62,7 @@ const Scroll = () => (
               ) : name === 'footer' ? (
                 <FontAwesomeIcon icon={['fas', 'anchor']} />
               ) : (
-                <FontAwesomeIcon icon={['fas', 'anchor']} size="7x" />
+                <FontAwesomeIcon icon={['fas', 'anchor']} />
               )}
             </ScrollLink>
           </ScrollItem>
