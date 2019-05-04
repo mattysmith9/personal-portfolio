@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const { colors } = theme;
 
-const FileWrapper = styled.div`
+const SiteFileWrapper = styled.div`
   background: ${colors.body};
   font-family: ${theme.fontFamily};
   display: flex;
@@ -29,7 +29,7 @@ const FileWrapper = styled.div`
 export default ({ data }) => {
   console.log(data);
   return (
-    <FileWrapper>
+    <SiteFileWrapper>
       <div>
         <h2>Site Files</h2>
         <table>
@@ -53,7 +53,7 @@ export default ({ data }) => {
           </tbody>
         </table>
       </div>
-    </FileWrapper>
+    </SiteFileWrapper>
   );
 };
 

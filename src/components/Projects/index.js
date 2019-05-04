@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const { colors } = theme;
 
-const Wrapper = styled.div`
+const ProjectsWrapper = styled.div`
   min-height: 90vh;
   max-width: 1280px;
   margin: 0 auto;
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const Grid = styled.div`
+const ProjectsGrid = styled.div`
   display: grid;
   align-items: center;
   grid-template-columns: ${theme.gridTemplateColumnsDesk};
@@ -32,7 +32,7 @@ const Grid = styled.div`
   }
 `;
 
-const Item = styled.div`
+const ProjectItem = styled.div`
   height: 100%;
   overflow: hidden;
   box-shadow: ${theme.boxShadow};
@@ -50,7 +50,7 @@ const Item = styled.div`
   }
 `;
 
-const Content = styled.div`
+const ProjectContent = styled.div`
   padding: 0.5rem 0;
 `;
 
@@ -84,11 +84,11 @@ const Projects = () => (
         },
       },
     }) => (
-      <Wrapper id="projects" rel="canonical" aria-label="projects">
+      <ProjectsWrapper id="projects" rel="canonical" aria-label="projects">
         <h2>Recent Repositories</h2>
-        <Grid>
+        <ProjectsGrid>
           {edges.map(({ node }) => (
-            <Item
+            <ProjectItem
               key={node.id}
               as="a"
               href={node.url}
@@ -96,15 +96,15 @@ const Projects = () => (
               rel="noopener noreferrer"
             >
               <Card>
-                <Content>
+                <ProjectContent>
                   <h4>{node.name}</h4>
                   <p>{node.description}</p>
-                </Content>
+                </ProjectContent>
               </Card>
-            </Item>
+            </ProjectItem>
           ))}
-        </Grid>
-      </Wrapper>
+        </ProjectsGrid>
+      </ProjectsWrapper>
     )}
   />
 );

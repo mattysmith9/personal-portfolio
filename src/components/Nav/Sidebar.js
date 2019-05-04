@@ -5,7 +5,7 @@ import { theme } from '@style';
 
 const { colors } = theme;
 
-const Wrapper = styled.div`
+const SidebarWrapper = styled.div`
   position: fixed;
   z-index: 4;
   overflow: auto;
@@ -32,9 +32,9 @@ const Wrapper = styled.div`
 `;
 
 const Sidebar = ({ sidebar, toggle }) => (
-  <Wrapper aria-label="sidebar nav" active={sidebar} onClick={toggle}>
+  <SidebarWrapper aria-label="sidebar nav" active={sidebar} onClick={toggle}>
     <NavLinks />
-  </Wrapper>
+  </SidebarWrapper>
 );
 
 export default Sidebar;

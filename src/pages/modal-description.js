@@ -24,7 +24,7 @@ const ModalWrapper = styled.div`
   }
 `;
 
-const ContentWrapper = styled.div`
+const ModalContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 85%;
@@ -37,11 +37,11 @@ const ContentWrapper = styled.div`
 const ProjectDescription = ({ data }) => (
   <ConditionalLayout>
     <ModalWrapper>
-      <ContentWrapper>
+      <ModalContentWrapper>
         <Info data={data.info.edges} />
         <Startup data={data.startup.edges} />
         <Apartments data={data.apartments.edges} />
-      </ContentWrapper>
+      </ModalContentWrapper>
       <Link to="/#about/" />
     </ModalWrapper>
   </ConditionalLayout>

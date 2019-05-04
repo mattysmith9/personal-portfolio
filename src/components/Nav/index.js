@@ -5,7 +5,7 @@ import Hamburger from './Hamburger';
 import Sidebar from './Sidebar';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const HeaderWrapper = styled.div`
   padding-top: 1rem;
   margin: 0 auto;
   align-content: center;
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   ${mediaSizes.tablet`padding: 0 25px;`};
 `;
 
-const Overlay = styled.div`
+const SidebarOverlay = styled.div`
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
@@ -31,12 +31,12 @@ const Overlay = styled.div`
 const Header = () => {
   const [sidebar, toggle] = useState(false);
   return (
-    <Wrapper id="header" aria-label="navigation">
+    <HeaderWrapper id="header" aria-label="navigation">
       <Navbar />
-      <Overlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
+      <SidebarOverlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
       <Hamburger sidebar={sidebar} toggle={toggle} />
       <Sidebar sidebar={sidebar} toggle={toggle} />
-    </Wrapper>
+    </HeaderWrapper>
   );
 };
 

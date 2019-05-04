@@ -12,7 +12,7 @@ const SkillsWrapper = styled(Section)`
   }
 `;
 
-const FlexWrapper = styled.div`
+const SkillsFlexWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -67,14 +67,14 @@ class Skills extends Component {
     return (
       <SkillsWrapper id="skills" aria-label="skills and interests">
         <h2>{title}</h2>
-        <FlexWrapper>
+        <SkillsFlexWrapper>
           <DetailsWrapper>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             <TechWrapper>
               {tech && tech.map((tech, i) => <Tech key={i}>{tech}</Tech>)}
             </TechWrapper>
           </DetailsWrapper>
-        </FlexWrapper>
+        </SkillsFlexWrapper>
       </SkillsWrapper>
     );
   }

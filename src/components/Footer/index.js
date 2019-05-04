@@ -33,7 +33,7 @@ const SocialList = styled.ul`
   ${mediaSizes.tablet`display: block;`};
 `;
 
-const Links = styled.a`
+const IconLinks = styled.a`
   padding: 6px;
   text-decoration: none;
   color: ${colors.modal};
@@ -67,7 +67,7 @@ const Footer = () => (
             href="https://www.github.com/mattysmith9/"
             rel="noopener noreferrer"
             target="_blank"
-            aria-label="github repo"
+            aria-label="github profile"
           >
             Matty Smith
           </a>
@@ -77,7 +77,7 @@ const Footer = () => (
         {socialLinks &&
           socialLinks.map(({ name, url }, i) => (
             <li key={i}>
-              <Links
+              <IconLinks
                 href={url}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
@@ -96,7 +96,7 @@ const Footer = () => (
                 ) : (
                   <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
                 )}
-              </Links>
+              </IconLinks>
             </li>
           ))}
       </SocialList>

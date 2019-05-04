@@ -5,7 +5,7 @@ import NavLinks from './NavLinks';
 import MaLogo from '../icons/logo';
 import styled from 'styled-components';
 
-const Wrapper = styled(Container)`
+const NavWrapper = styled(Container)`
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -16,20 +16,20 @@ const Logo = styled.div`
   display: flex;
 `;
 
-const LogoL = styled(Link)`
+const LogoLinks = styled(Link)`
   background: transparent;
   height: 6rem;
 `;
 
 const Navbar = () => (
-  <Wrapper>
+  <NavWrapper>
     <Logo>
-      <LogoL to="/" aria-label="Home">
+      <LogoLinks to="/" aria-label="Home">
         <MaLogo />
-      </LogoL>
+      </LogoLinks>
     </Logo>
     <NavLinks desktop />
-  </Wrapper>
+  </NavWrapper>
 );
 
 export default Navbar;

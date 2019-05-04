@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const { colors } = theme;
 
-const Wrapper = styled.div`
+const NavLinksWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   a {
@@ -46,7 +46,7 @@ const Wrapper = styled.div`
 `;
 
 const NavLinks = ({ desktop }) => (
-  <Wrapper aria-label="nav links" desktop={desktop}>
+  <NavLinksWrapper aria-label="nav links" desktop={desktop}>
     <AnchorLink aria-label="about me" href="#about">
       about
     </AnchorLink>
@@ -59,7 +59,7 @@ const NavLinks = ({ desktop }) => (
     <AnchorLink aria-label="contact" href="#contact">
       contact
     </AnchorLink>
-  </Wrapper>
+  </NavLinksWrapper>
 );
 
 export default NavLinks;
