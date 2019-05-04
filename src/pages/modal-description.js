@@ -11,6 +11,14 @@ const { colors } = theme;
 const ModalWrapper = styled.div`
   box-shadow: ${theme.boxShadow};
   border-radius: ${theme.borderRadiusCard};
+  background-image: linear-gradient(
+    to bottom,
+    #f5f7f8,
+    #e2e8eb,
+    #cfd9de,
+    #bccad1,
+    #aabbc4
+  );
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -23,14 +31,6 @@ const ModalWrapper = styled.div`
 `;
 
 const ModalContentWrapper = styled.div`
-  background-image: linear-gradient(
-    to left bottom,
-    #f5f7f8,
-    #e2e8eb,
-    #cfd9de,
-    #bccad1,
-    #aabbc4
-  );
   display: flex;
   flex-direction: column;
   width: 85%;
