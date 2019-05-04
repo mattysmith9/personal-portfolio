@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { StaticQuery } from 'gatsby';
 import { Card, theme } from '@style';
 import styled from 'styled-components';
+
 const { colors } = theme;
 
 const Wrapper = styled.div`

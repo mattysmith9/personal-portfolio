@@ -1,10 +1,11 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 import { Link } from 'gatsby-plugin-modal-routing';
 import { ConditionalLayout, Info } from '@comp';
 import styled from 'styled-components';
 import { theme } from '@style';
+
 const { colors } = theme;
 
 const ModalWrapper = styled.div`

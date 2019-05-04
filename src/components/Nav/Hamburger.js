@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '@style';
+
 const { colors } = theme;
 
 const Wrapper = styled.div`

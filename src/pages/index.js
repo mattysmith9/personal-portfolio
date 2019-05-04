@@ -2,14 +2,14 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import {
-  Hero,
+  Layout,
   SEO,
+  Hero,
   About,
+  Skills,
+  Projects,
   Contact,
   Footer,
-  Projects,
-  Layout,
-  Skills,
 } from '@comp';
 
 const IndexPage = ({ data }) => (

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { theme, Container } from '@style';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { theme, Container } from '@style';
+
 const { colors } = theme;
 
 const ProjectWrapper = styled(Container)`

@@ -23,6 +23,7 @@ const siteMetadata = {
     { name: 'Instagram', link: 'https://instagram.com/mattysmith9' },
     { name: 'Facebook', link: 'https://facebook.com/matty.smith.146' },
     { name: 'Linkedin', link: 'https://www.linkedin.com/in/mattysmith9/' },
+    { name: 'Dev', link: 'https://dev.to/mattysmith9' },
   ],
   firstName: 'Matty',
   lastName: 'Smith',

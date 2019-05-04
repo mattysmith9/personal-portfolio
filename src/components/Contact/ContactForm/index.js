@@ -1,10 +1,11 @@
 import React from 'react';
 import { Form, withFormik, FastField, ErrorMessage } from 'formik';
-import Recaptcha from 'react-google-recaptcha';
-import { recaptcha_key } from '@data';
-import * as Yup from 'yup';
 import { Input, theme, helpers } from '@style';
+import { recaptcha_key } from '@data';
+import Recaptcha from 'react-google-recaptcha';
 import styled from 'styled-components';
+import * as Yup from 'yup';
+
 const { colors } = theme;
 
 const GetInTouch = styled.h2`

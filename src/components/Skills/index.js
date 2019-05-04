@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { theme, Section, mediaSizes } from '@style';
+import styled from 'styled-components';
 
 const { colors } = theme;
 
@@ -65,7 +65,7 @@ class Skills extends Component {
     const { title, tech } = frontmatter;
 
     return (
-      <SkillsWrapper id="skills" aria-label="skills & interests">
+      <SkillsWrapper id="skills" aria-label="skills and interests">
         <h2>{title}</h2>
         <FlexWrapper>
           <DetailsWrapper>

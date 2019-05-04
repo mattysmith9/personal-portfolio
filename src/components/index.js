@@ -1,29 +1,29 @@
 import Layout from './Layout';
-import Footer from './Footer';
-import About from './About';
-import Header from './Nav';
-import Projects from './Projects';
-import Button from './Button';
-import ConditionalLayout from './ConditionalLayout';
-import Hero from './Hero';
 import SEO from './seo';
+import Header from './Nav';
+import Hero from './Hero';
+import About from './About';
 import Skills from './Skills';
+import Projects from './Projects';
 import Contact from './Contact';
+import Button from './Button';
 import Scroll from './Scroll';
 import Info from './Info';
+import Footer from './Footer';
+import ConditionalLayout from './ConditionalLayout';
 
 export {
   Layout,
-  About,
-  Footer,
+  SEO,
   Header,
+  Hero,
+  About,
+  Skills,
   Projects,
+  Contact,
+  Footer,
   Button,
   ConditionalLayout,
-  Hero,
-  SEO,
-  Skills,
-  Contact,
   Scroll,
   Info,
 };

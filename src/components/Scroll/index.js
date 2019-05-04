@@ -1,12 +1,13 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styled from 'styled-components';
 import { theme, mediaSizes } from '@style';
 import { scrollNav } from '@data';
+import styled from 'styled-components';
+
 const { colors } = theme;
 
-const MoreWrapper = styled.div`
+const ScrollWrapper = styled.div`
   width: 40px;
   position: fixed;
   bottom: 0;
@@ -29,7 +30,7 @@ const ScrollItem = styled.li`
   }
 `;
 
-const MorelLink = styled(AnchorLink)`
+const ScrollLink = styled(AnchorLink)`
   padding: 10px;
   color: ${colors.scroll};
   &:hover {
@@ -42,12 +43,12 @@ const MorelLink = styled(AnchorLink)`
 `;
 
 const Scroll = () => (
-  <MoreWrapper>
+  <ScrollWrapper>
     <ScrollItemList>
       {scrollNav &&
         scrollNav.map(({ url, name }, i) => (
           <ScrollItem key={i}>
-            <MorelLink href={url} aria-label={name}>
+            <ScrollLink href={url} aria-label={name}>
               {name === 'header' ? (
                 <FontAwesomeIcon icon={['fas', 'circle']} size="2x" />
               ) : name === 'about' ? (
@@ -63,11 +64,11 @@ const Scroll = () => (
               ) : (
                 <FontAwesomeIcon icon={['fas', 'circle']} size="2x" />
               )}
-            </MorelLink>
+            </ScrollLink>
           </ScrollItem>
         ))}
     </ScrollItemList>
-  </MoreWrapper>
+  </ScrollWrapper>
 );
 
 export default Scroll;

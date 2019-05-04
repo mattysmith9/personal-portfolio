@@ -1,7 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { theme, Container, mediaSizes } from '@style';
 import { socialLinks } from '@data';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import './fontAwesome';
 

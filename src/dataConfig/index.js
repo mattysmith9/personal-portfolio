@@ -4,24 +4,20 @@ const dataConfig = {
     'Matty Smith is a Software Engineer based in Burlington, Vermont who is gritty and focused on continuous improvement.  He is always open for new experiences and has a personally clear hierarchy of goals.',
   siteKeywords:
     'Matty Smith, Matty, Smith, mattysmith9, software engineer, front-end engineer, back-end engineer, web developer, javascript, vermont, burlington, react, gatsby, website, technology, developer, engineer, reactjs, react, gatsbyjs, gatsby',
-
   url: 'https://mattysmith.co',
   siteLanguage: 'en_US',
   name: 'Matty Smith',
   lastUpdated: Date.now(),
-
   address: {
     city: 'Burlington',
     region: 'Vermont',
     country: 'United States of America',
     zipCode: '05401',
   },
-
   contact: {
     email: 'matthewcsmith18@gmail.com',
     phone: '1-802-598-9466',
   },
-
   socialLinks: [
     {
       name: 'Linkedin',
@@ -44,7 +40,6 @@ const dataConfig = {
       url: 'https://www.instagram.com/mattysmith9/',
     },
   ],
-
   navLinks: [
     {
       name: 'about',
@@ -63,7 +58,6 @@ const dataConfig = {
       url: '#contact',
     },
   ],
-
   scrollNav: [
     {
       name: 'header',
@@ -91,7 +85,6 @@ const dataConfig = {
       url: '#footer',
     },
   ],
-
   instagramHandle: '@mattysmith9',
   headerHeight: 100,
   bodyColor: '#f6faff',

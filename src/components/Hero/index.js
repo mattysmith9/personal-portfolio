@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { theme, Container, helpers, mediaSizes } from '@style';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import resume from '@images/Mresume.pdf';
-import { theme, Container, helpers, mediaSizes } from '@style';
 
 const { colors, fontSizes } = theme;
 

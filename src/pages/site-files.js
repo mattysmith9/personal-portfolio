@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { theme } from '@style';
 import styled from 'styled-components';
+
 const { colors } = theme;
 
 const FileWrapper = styled.div`

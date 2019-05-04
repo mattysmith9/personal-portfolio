@@ -1,7 +1,8 @@
 import React from 'react';
+import { theme } from '@style';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styled from 'styled-components';
-import { theme } from '@style';
+
 const { colors } = theme;
 
 const Wrapper = styled.div`

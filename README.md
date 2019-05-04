@@ -1,3 +1,3 @@
-## 🚀 My Second rendition of my portfolio using GatsbyJs.
+## Second version of my portfolio using GatsbyJs, Styled-Components and Netlify.
 
  

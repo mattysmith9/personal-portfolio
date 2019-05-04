@@ -2,6 +2,7 @@ import React from 'react';
 import NavLinks from './NavLinks';
 import styled from 'styled-components';
 import { theme } from '@style';
+
 const { colors } = theme;
 
 const Wrapper = styled.div`

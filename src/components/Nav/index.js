@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
+import { mediaSizes } from '@style';
 import Navbar from './Navbar';
 import Hamburger from './Hamburger';
 import Sidebar from './Sidebar';
 import styled from 'styled-components';
-import { mediaSizes } from '@style';
 
 const Wrapper = styled.div`
   padding-top: 1rem;
