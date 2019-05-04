@@ -49,7 +49,7 @@ class Apartments extends Component {
     const { title, tech } = frontmatter;
 
     return (
-      <ProjectWrapper id="more">
+      <ProjectWrapper id="apartment-tracker">
         <h2>{title}</h2>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <TechWrapper>

@@ -49,7 +49,7 @@ class Startup extends Component {
     const { title, tech } = frontmatter;
 
     return (
-      <ProjectWrapper id="more">
+      <ProjectWrapper id="startup-tracker" aria-label="startup_tracker">
         <h2>{title}</h2>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <TechWrapper>

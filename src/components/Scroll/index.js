@@ -43,7 +43,7 @@ const ScrollLink = styled(AnchorLink)`
 `;
 
 const Scroll = () => (
-  <ScrollWrapper>
+  <ScrollWrapper aria-label="scroll-navigation">
     <ScrollItemList>
       {scrollNav &&
         scrollNav.map(({ url, name }, i) => (

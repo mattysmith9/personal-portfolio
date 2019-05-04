@@ -58,7 +58,7 @@ const FooterDetails = styled.div`
 
 const Footer = () => (
   <FooterWrapper>
-    <FooterFlex id="footer" rel="canonical" aria-label="footer">
+    <FooterFlex id="footer" rel="canonical" aria-label="footer-social-links">
       <FooterDetails>
         <span>
           © {new Date().getFullYear()} | Site built by{' '}
@@ -67,7 +67,7 @@ const Footer = () => (
             href="https://www.github.com/mattysmith9/"
             rel="noopener noreferrer"
             target="_blank"
-            aria-label="github profile"
+            aria-label="github-profile"
           >
             Matty Smith
           </a>

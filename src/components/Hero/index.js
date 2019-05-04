@@ -71,7 +71,7 @@ class Hero extends Component {
     const { frontmatter } = data[0].node;
 
     return (
-      <HeroWrapper id="hero" aria-label="hero-name">
+      <HeroWrapper id="hero" aria-label="hero-landing-name">
         <Hola>{frontmatter.title}</Hola>
         <FullName>{frontmatter.name}</FullName>
         <Subtitle>{frontmatter.subtitle}</Subtitle>

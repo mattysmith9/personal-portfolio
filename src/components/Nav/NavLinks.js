@@ -46,8 +46,8 @@ const NavLinksWrapper = styled.div`
 `;
 
 const NavLinks = ({ desktop }) => (
-  <NavLinksWrapper aria-label="nav links" desktop={desktop}>
-    <AnchorLink aria-label="about me" href="#about">
+  <NavLinksWrapper aria-label="navigation-links" desktop={desktop}>
+    <AnchorLink aria-label="about-me" href="#about">
       about
     </AnchorLink>
     <AnchorLink aria-label="projects" href="#projects">

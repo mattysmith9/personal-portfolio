@@ -49,7 +49,7 @@ class Info extends Component {
     const { title, tech } = frontmatter;
 
     return (
-      <ProjectWrapper id="info">
+      <ProjectWrapper id="project-information">
         <h2>{title}</h2>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <TechWrapper>

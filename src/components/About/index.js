@@ -72,7 +72,7 @@ class About extends Component {
     const { title, interests } = frontmatter;
 
     return (
-      <AboutWrapper id="about" aria-label="about me">
+      <AboutWrapper id="about" aria-label="about-me">
         <h2>{title}</h2>
         <AboutFlexWrapper>
           <AboutDetailsWrapper>

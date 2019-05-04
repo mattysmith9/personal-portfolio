@@ -9,7 +9,6 @@ import { theme } from '@style';
 const { colors } = theme;
 
 const ModalWrapper = styled.div`
-  background: ${colors.white};
   box-shadow: ${theme.boxShadow};
   border-radius: ${theme.borderRadiusCard};
   display: flex;
@@ -17,7 +16,6 @@ const ModalWrapper = styled.div`
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
-
   h2 {
     color: ${colors.green};
     text-align: center;
@@ -25,6 +23,14 @@ const ModalWrapper = styled.div`
 `;
 
 const ModalContentWrapper = styled.div`
+  background-image: linear-gradient(
+    to left bottom,
+    #f5f7f8,
+    #e2e8eb,
+    #cfd9de,
+    #bccad1,
+    #aabbc4
+  );
   display: flex;
   flex-direction: column;
   width: 85%;

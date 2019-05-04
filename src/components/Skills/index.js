@@ -65,7 +65,7 @@ class Skills extends Component {
     const { title, tech } = frontmatter;
 
     return (
-      <SkillsWrapper id="skills" aria-label="skills and interests">
+      <SkillsWrapper id="skills" aria-label="skills_and_interests">
         <h2>{title}</h2>
         <SkillsFlexWrapper>
           <DetailsWrapper>
