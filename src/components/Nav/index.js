@@ -6,7 +6,7 @@ import Sidebar from './Sidebar';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   margin: 0 auto;
   align-content: center;
   width: 100%;

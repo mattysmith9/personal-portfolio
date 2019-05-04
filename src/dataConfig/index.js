@@ -46,13 +46,14 @@ const dataConfig = {
       url: '#about',
     },
     {
-      name: 'projects',
-      url: '#projects',
-    },
-    {
       name: 'skills',
       url: '#skills',
     },
+    {
+      name: 'projects',
+      url: '#projects',
+    },
+
     {
       name: 'contact',
       url: '#contact',

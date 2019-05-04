@@ -34,11 +34,11 @@ const ScrollLink = styled(AnchorLink)`
   padding: 10px;
   color: ${colors.scroll};
   &:hover {
-    color: ${colors.orange};
+    color: ${colors.blue};
   }
   svg {
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
   }
 `;
 
@@ -50,19 +50,19 @@ const Scroll = () => (
           <ScrollItem key={i}>
             <ScrollLink href={url} aria-label={name}>
               {name === 'header' ? (
-                <FontAwesomeIcon icon={['fas', 'circle']} size="2x" />
+                <FontAwesomeIcon icon={['fas', 'anchor']} />
               ) : name === 'about' ? (
-                <FontAwesomeIcon icon={['fas', 'circle']} size="2x" />
+                <FontAwesomeIcon icon={['fas', 'anchor']} />
               ) : name === 'projects' ? (
-                <FontAwesomeIcon icon={['fas', 'circle']} size="2x" />
+                <FontAwesomeIcon icon={['fas', 'anchor']} />
               ) : name === 'skills' ? (
-                <FontAwesomeIcon icon={['fas', 'circle']} size="2x" />
+                <FontAwesomeIcon icon={['fas', 'anchor']} />
               ) : name === 'contact' ? (
-                <FontAwesomeIcon icon={['fas', 'circle']} size="2x" />
+                <FontAwesomeIcon icon={['fas', 'anchor']} />
               ) : name === 'footer' ? (
-                <FontAwesomeIcon icon={['fas', 'circle']} size="2x" />
+                <FontAwesomeIcon icon={['fas', 'anchor']} />
               ) : (
-                <FontAwesomeIcon icon={['fas', 'circle']} size="2x" />
+                <FontAwesomeIcon icon={['fas', 'anchor']} size="7x" />
               )}
             </ScrollLink>
           </ScrollItem>

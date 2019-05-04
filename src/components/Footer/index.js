@@ -60,7 +60,7 @@ const Footer = () => (
     <FooterFlex id="footer" rel="canonical" aria-label="footer-social-links">
       <FooterDetails>
         <span>
-          © {new Date().getFullYear()} | Site built by{' '}
+          © {new Date().getFullYear()} | site built by{' '}
           <a
             id="name"
             href="https://www.github.com/mattysmith9/"
@@ -68,7 +68,7 @@ const Footer = () => (
             target="_blank"
             aria-label="github-profile"
           >
-            .mattySmith.
+            matty smith
           </a>
         </span>
       </FooterDetails>
@@ -90,10 +90,8 @@ const Footer = () => (
                   <FontAwesomeIcon icon={['fab', 'facebook']} size="3x" />
                 ) : name === 'Github' ? (
                   <FontAwesomeIcon icon={['fab', 'github-square']} size="3x" />
-                ) : name === 'Instagram' ? (
-                  <FontAwesomeIcon icon={['fab', 'instagram']} size="3x" />
                 ) : (
-                  <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
+                  <FontAwesomeIcon />
                 )}
               </IconLinks>
             </li>
