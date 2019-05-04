@@ -19,7 +19,7 @@ const Hola = styled.h1`
   margin: 0 0 8px 3.5rem;
   font-family: ${theme.fontFamily};
   color: ${colors.modal};
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   ${mediaSizes.tablet`font-size: ${fontSizes.medium};`};
 `;
 

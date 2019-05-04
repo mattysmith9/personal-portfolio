@@ -11,7 +11,7 @@ const ProjectWrapper = styled(Container)`
 
 const TechWrapper = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 260px));
+  grid-template-columns: repeat(2, minmax(140px, 220px));
   overflow: hidden;
   margin-top: 20px;
 `;
@@ -38,7 +38,7 @@ const Tech = styled.li`
   }
 `;
 
-class Info extends Component {
+class Apartments extends Component {
   static propTypes = {
     data: PropTypes.array.isRequired,
   };
@@ -49,7 +49,7 @@ class Info extends Component {
     const { title, tech } = frontmatter;
 
     return (
-      <ProjectWrapper id="info">
+      <ProjectWrapper id="more">
         <h2>{title}</h2>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <TechWrapper>
@@ -60,4 +60,4 @@ class Info extends Component {
   }
 }
 
-export default Info;
+export default Apartments;

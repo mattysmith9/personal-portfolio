@@ -1,10 +1,12 @@
 ---
 title: 'Portfolio Page'
 tech:
-  - Gatsby
-  - React
+  - GatsbyJS
+  - ReactJS
   - Styled-Components
   - Netlify
+  - Google-Analytics
+  - Formik
 show: 'true'
 ---
 

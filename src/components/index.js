@@ -8,8 +8,10 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Button from './Button';
 import Scroll from './Scroll';
-import Info from './Info';
 import Footer from './Footer';
+import Info from './Info';
+import Startup from './Startup';
+import Apartments from './Apartments';
 import ConditionalLayout from './ConditionalLayout';
 
 export {
@@ -26,4 +28,6 @@ export {
   ConditionalLayout,
   Scroll,
   Info,
+  Startup,
+  Apartments,
 };
