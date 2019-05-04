@@ -21,8 +21,7 @@ const FooterFlex = styled(Container)`
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-  border-bottom: 2px solid ${colors.modal};
-
+  border-bottom: 2px solid ${colors.scroll};
   ${mediaSizes.tablet`display: block;`};
 `;
 
@@ -36,7 +35,7 @@ const SocialList = styled.ul`
 const IconLinks = styled.a`
   padding: 6px;
   text-decoration: none;
-  color: ${colors.modal};
+  color: ${colors.blue};
   &:hover {
     color: ${colors.scroll};
   }
@@ -44,14 +43,14 @@ const IconLinks = styled.a`
 
 const FooterDetails = styled.div`
   font-size: ${theme.footerSize};
-  color: ${colors.modal};
+  color: ${colors.blue};
   #name {
     margin-top: 2.4rem;
     display: inline-flex;
-    color: ${colors.modal};
+    color: ${colors.blue};
     font-size: ${theme.footerSize};
     &:hover {
-      color: ${colors.orange};
+      color: ${colors.scroll};
     }
   }
 `;
@@ -69,7 +68,7 @@ const Footer = () => (
             target="_blank"
             aria-label="github-profile"
           >
-            Matty Smith
+            .mattySmith.
           </a>
         </span>
       </FooterDetails>
