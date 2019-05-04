@@ -6,7 +6,7 @@ import resume from '@images/Mresume.pdf';
 
 const { colors, fontSizes } = theme;
 
-const HeroContainer = styled(Container)`
+const HeroWrapper = styled(Container)`
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -71,7 +71,7 @@ class Hero extends Component {
     const { frontmatter } = data[0].node;
 
     return (
-      <HeroContainer id="hero" aria-label="hero-name">
+      <HeroWrapper id="hero" aria-label="hero-name">
         <Hola>{frontmatter.title}</Hola>
         <FullName>{frontmatter.name}</FullName>
         <Subtitle>{frontmatter.subtitle}</Subtitle>
@@ -84,7 +84,7 @@ class Hero extends Component {
             resume
           </Button>
         </ButtonWrapper>
-      </HeroContainer>
+      </HeroWrapper>
     );
   }
 }

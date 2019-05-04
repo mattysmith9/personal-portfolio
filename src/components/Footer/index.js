@@ -7,7 +7,7 @@ import './fontAwesome';
 
 const { colors } = theme;
 
-const Wrapper = styled.div`
+const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const Flex = styled(Container)`
+const FooterFlex = styled(Container)`
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
@@ -42,7 +42,7 @@ const IconLinks = styled.a`
   }
 `;
 
-const Details = styled.div`
+const FooterDetails = styled.div`
   font-size: ${theme.footerSize};
   color: ${colors.modal};
   #name {
@@ -57,9 +57,9 @@ const Details = styled.div`
 `;
 
 const Footer = () => (
-  <Wrapper>
-    <Flex id="footer" rel="canonical" aria-label="footer">
-      <Details>
+  <FooterWrapper>
+    <FooterFlex id="footer" rel="canonical" aria-label="footer">
+      <FooterDetails>
         <span>
           © {new Date().getFullYear()} | Site built by{' '}
           <a
@@ -72,7 +72,7 @@ const Footer = () => (
             Matty Smith
           </a>
         </span>
-      </Details>
+      </FooterDetails>
       <SocialList>
         {socialLinks &&
           socialLinks.map(({ name, url }, i) => (
@@ -100,8 +100,8 @@ const Footer = () => (
             </li>
           ))}
       </SocialList>
-    </Flex>
-  </Wrapper>
+    </FooterFlex>
+  </FooterWrapper>
 );
 
 export default Footer;

@@ -13,14 +13,14 @@ const AboutWrapper = styled(Section)`
   }
 `;
 
-const FlexWrapper = styled.div`
+const AboutFlexWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   ${mediaSizes.tablet`display: block;`};
 `;
 
-const DetailsWrapper = styled.div`
+const AboutDetailsWrapper = styled.div`
   width: 60%;
   max-width: 480px;
   font-family: ${theme.fontFamily};
@@ -74,8 +74,8 @@ class About extends Component {
     return (
       <AboutWrapper id="about" aria-label="about me">
         <h2>{title}</h2>
-        <FlexWrapper>
-          <DetailsWrapper>
+        <AboutFlexWrapper>
+          <AboutDetailsWrapper>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             <InterestsWrapper>
               {interests &&
@@ -83,11 +83,11 @@ class About extends Component {
                   <Interest key={i}>{interest}</Interest>
                 ))}
             </InterestsWrapper>
-          </DetailsWrapper>
+          </AboutDetailsWrapper>
           <Button to="/modal-description/" asModal>
             more info
           </Button>
-        </FlexWrapper>
+        </AboutFlexWrapper>
       </AboutWrapper>
     );
   }

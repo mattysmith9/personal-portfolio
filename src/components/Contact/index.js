@@ -3,7 +3,7 @@ import { Container } from '@style';
 import ContactForm from './ContactForm';
 import styled from 'styled-components';
 
-const Wrapper = styled(Container)`
+const ContactWrapper = styled(Container)`
   padding: 2.5rem 0;
   display: flex;
   align-items: flex-start;
@@ -13,7 +13,7 @@ const Wrapper = styled(Container)`
   }
 `;
 
-const Details = styled.div`
+const ContactDetails = styled.div`
   flex: 1;
   padding-right: 2rem;
   @media (max-width: 960px) {
@@ -24,11 +24,11 @@ const Details = styled.div`
 `;
 
 const Contact = () => (
-  <Wrapper id="contact" aria-label="contact-form">
-    <Details>
+  <ContactWrapper id="contact" aria-label="contact-form">
+    <ContactDetails>
       <ContactForm method="POST" />
-    </Details>
-  </Wrapper>
+    </ContactDetails>
+  </ContactWrapper>
 );
 
 export default Contact;

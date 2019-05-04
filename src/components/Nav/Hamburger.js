@@ -4,7 +4,7 @@ import { theme } from '@style';
 
 const { colors } = theme;
 
-const Wrapper = styled.div`
+const HamburgerWrapper = styled.div`
   z-index: 5;
   top: 1.6rem;
   right: 1.8rem;
@@ -65,7 +65,7 @@ const Bar = styled.div`
 `;
 
 const Hamburger = ({ sidebar, toggle }) => (
-  <Wrapper
+  <HamburgerWrapper
     aria-label="hamburger"
     sidebar={sidebar}
     onClick={() => toggle(!sidebar)}
@@ -73,7 +73,7 @@ const Hamburger = ({ sidebar, toggle }) => (
     <Bar top sidebar={sidebar} />
     <Bar mid sidebar={sidebar} />
     <Bar bottom sidebar={sidebar} />
-  </Wrapper>
+  </HamburgerWrapper>
 );
 
 export default Hamburger;
