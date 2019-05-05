@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby-plugin-modal-routing';
 import styled from 'styled-components';
-import { helpers, theme, Section, mediaSizes } from '@style';
+import { theme, Section, mediaSizes } from '@style';
 
-const { colors, fontSizes } = theme;
+const { colors } = theme;
 
 const AboutWrapper = styled(Section)`
   position: relative;
@@ -56,11 +55,6 @@ const Interest = styled.li`
   }
 `;
 
-const Button = styled(Link)`
-  ${helpers.largeButton};
-  ${mediaSizes.tablet`font-size: ${fontSizes.medium};`};
-`;
-
 class About extends Component {
   static propTypes = {
     data: PropTypes.array.isRequired,
@@ -84,9 +78,6 @@ class About extends Component {
                 ))}
             </InterestsWrapper>
           </AboutDetailsWrapper>
-          <Button to="/modal-description/" asModal>
-            more info
-          </Button>
         </AboutFlexWrapper>
       </AboutWrapper>
     );

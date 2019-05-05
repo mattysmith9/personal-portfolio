@@ -21,7 +21,7 @@ const Tech = styled.li`
   margin-bottom: 10px;
   padding-left: 7rem;
   font-size: 0.8rem;
-  color: ${colors.grey};
+  color: ${colors.blue};
   list-style: none;
   &:before {
     content: '》';

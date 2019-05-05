@@ -7,11 +7,11 @@ import styled from 'styled-components';
 const { colors } = theme;
 
 const GoBack = styled(Link)`
-  color: ${colors.blue};
+  color: ${colors.grey};
   font-size: 3.2rem;
   font-weight: bold;
   &:hover {
-    color: ${colors.green};
+    color: ${colors.orange};
   }
 `;
 

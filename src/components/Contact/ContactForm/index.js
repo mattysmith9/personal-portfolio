@@ -28,6 +28,7 @@ const Center = styled.div`
   h4 {
     font-weight: normal;
     color: ${colors.green};
+    margin-left: 25%;
   }
 `;
 

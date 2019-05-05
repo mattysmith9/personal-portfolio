@@ -34,9 +34,7 @@ const theme = {
   transition: 'ease-in-out',
   transform: 'scale(1)',
 
-  boxShadow: '0 5px 9px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2)',
-  gradient:
-    'linear-gradient(to bottom, #657d8d, #5d7381, #556976, #4d5f6b, #455560);',
+  boxShadow: '0 5px 9px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2)',
 
   gridTemplateColumnsDesk: 'repeat(3, 1fr)',
   gridTemplateColumnsMob9: 'repeat(2, 1fr)',

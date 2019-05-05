@@ -39,7 +39,7 @@ const NavLinksHref = styled(AnchorLink)`
   padding: 0.8em;
   font-family: ${theme.fontFamilyBtn};
   &:hover {
-    color: ${colors.scroll};
+    color: ${colors.green};
   }
 `;
 

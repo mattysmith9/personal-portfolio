@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby-plugin-modal-routing';
 import PropTypes from 'prop-types';
-import { theme, Section, mediaSizes } from '@style';
+import { theme, Section, mediaSizes, helpers } from '@style';
 import styled from 'styled-components';
 
-const { colors } = theme;
+const { colors, fontSizes } = theme;
 
 const SkillsWrapper = styled(Section)`
   position: relative;
@@ -54,6 +55,11 @@ const Tech = styled.li`
   }
 `;
 
+const Button = styled(Link)`
+  ${helpers.largeButton};
+  ${mediaSizes.tablet`font-size: ${fontSizes.medium};`};
+`;
+
 class Skills extends Component {
   static propTypes = {
     data: PropTypes.array.isRequired,
@@ -74,6 +80,9 @@ class Skills extends Component {
               {tech && tech.map((tech, i) => <Tech key={i}>{tech}</Tech>)}
             </TechWrapper>
           </SkillsDetailWrapper>
+          <Button to="/modal-description/" asModal>
+            more info
+          </Button>
         </SkillsFlexWrapper>
       </SkillsWrapper>
     );

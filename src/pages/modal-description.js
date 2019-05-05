@@ -11,14 +11,13 @@ const { colors } = theme;
 const ModalWrapper = styled.div`
   box-shadow: ${theme.boxShadow};
   border-radius: ${theme.borderRadiusCard};
-  background-image: linear-gradient(to bottom, #f5f7f8, #cfd9de, #bccad1);
   display: flex;
   justify-content: space-between;
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
   h2 {
-    color: ${colors.green};
+    color: ${colors.orange};
     text-align: center;
   }
 `;
@@ -29,7 +28,7 @@ const ModalContentWrapper = styled.div`
   width: 85%;
   max-width: 800px;
   margin: 0 auto;
-  color: ${colors.modal};
+  color: ${colors.grey};
   line-height: 2;
 `;
 
@@ -41,7 +40,7 @@ const ProjectDescription = ({ data }) => (
         <Startup data={data.startup.edges} />
         <Apartments data={data.apartments.edges} />
       </ModalContentWrapper>
-      <Link to="/#about/" />
+      <Link to="/#skills/" />
     </ModalWrapper>
   </ConditionalLayout>
 );
