@@ -38,10 +38,6 @@ const dataConfig = {
       name: 'Github',
       url: 'https://www.github.com/mattysmith9/',
     },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/mattysmith9/',
-    },
   ],
 
   navigationLinks: [
