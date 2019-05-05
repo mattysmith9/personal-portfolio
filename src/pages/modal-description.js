@@ -11,14 +11,7 @@ const { colors } = theme;
 const ModalWrapper = styled.div`
   box-shadow: ${theme.boxShadow};
   border-radius: ${theme.borderRadiusCard};
-  background-image: linear-gradient(
-    to bottom,
-    #f5f7f8,
-    #e2e8eb,
-    #cfd9de,
-    #bccad1,
-    #aabbc4
-  );
+  background-image: linear-gradient(to bottom, #f5f7f8, #cfd9de, #bccad1);
   display: flex;
   justify-content: space-between;
   position: relative;

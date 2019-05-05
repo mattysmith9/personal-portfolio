@@ -19,7 +19,7 @@ const SkillsFlexWrapper = styled.div`
   ${mediaSizes.tablet`display: block;`};
 `;
 
-const DetailsWrapper = styled.div`
+const SkillsDetailWrapper = styled.div`
   width: 70%;
   max-width: 600px;
   font-family: ${theme.fontFamily};
@@ -68,12 +68,12 @@ class Skills extends Component {
       <SkillsWrapper id="skills" aria-label="skills_and_interests">
         <h2>{title}</h2>
         <SkillsFlexWrapper>
-          <DetailsWrapper>
+          <SkillsDetailWrapper>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             <TechWrapper>
               {tech && tech.map((tech, i) => <Tech key={i}>{tech}</Tech>)}
             </TechWrapper>
-          </DetailsWrapper>
+          </SkillsDetailWrapper>
         </SkillsFlexWrapper>
       </SkillsWrapper>
     );

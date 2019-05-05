@@ -1,6 +1,5 @@
 import React from 'react';
-import { Header } from '@comp';
-import Scroll from '../Scroll';
+import { Header, Scroll } from '@comp';
 import './fonts.css';
 
 const Layout = ({ children }) => (

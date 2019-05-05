@@ -8,16 +8,19 @@ const dataConfig = {
   siteLanguage: 'en_US',
   name: 'Matty Smith',
   lastUpdated: Date.now(),
+
   address: {
     city: 'Burlington',
     region: 'Vermont',
     country: 'United States of America',
     zipCode: '05401',
   },
+
   contact: {
     email: 'matthewcsmith18@gmail.com',
     phone: '1-802-598-9466',
   },
+
   socialLinks: [
     {
       name: 'Linkedin',
@@ -40,6 +43,7 @@ const dataConfig = {
       url: 'https://www.instagram.com/mattysmith9/',
     },
   ],
+
   navigationLinks: [
     {
       name: 'about',
@@ -59,6 +63,7 @@ const dataConfig = {
       url: '#contact',
     },
   ],
+
   scrollNav: [
     {
       name: 'header',
@@ -86,11 +91,14 @@ const dataConfig = {
       url: '#footer',
     },
   ],
+
   instagramHandle: '@mattysmith9',
+
   headerHeight: 100,
   bodyColor: '#f6faff',
   blueColor: '#355c7d',
   greenColor: '#19e0b4',
+
   recaptcha_key: '6LeSP58UAAAAANMCypV78qNR5gPhZ02B7q-ELSIl',
   googleAnalyticsID: 'UA-137382831-1',
   googleVerification: 'LZHrd7ZmT1jHJPni_PNcbl-I-UG-n-MEAGXnE08U9V4',

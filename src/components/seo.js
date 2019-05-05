@@ -80,18 +80,6 @@ const SEO = ({
         crossorigin="anonymous"
         href="https://www.github.com/mattysmith9/"
       />
-      <link
-        as="fetch"
-        rel="publisher"
-        crossorigin="anonymous"
-        href="https://github.com/mattysmith9/"
-      />
-      <link
-        as="fetch"
-        rel="publisher"
-        crossorigin="anonymous"
-        href="https://github.com/"
-      />
     </Helmet>
   );
 };
