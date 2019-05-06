@@ -27,7 +27,7 @@ const siteMetadata = {
   ],
   firstName: 'Matty',
   lastName: 'Smith',
-  faviconPng: './src/images/favicon.png',
+  faviconPng: './src/images/favicon32.png',
   developerName: 'Matty Smith',
   developerUrl: 'https://mattysmith.co',
   location: 'Burlington, VT',
