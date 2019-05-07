@@ -87,7 +87,7 @@ const Footer = () => (
                 ) : name === 'Dev' ? (
                   <FontAwesomeIcon icon={['fab', 'dev']} size="3x" />
                 ) : name === 'Facebook' ? (
-                  <FontAwesomeIcon icon={['fab', 'facebook']} size="3x" />
+                  <FontAwesomeIcon icon={['fab', 'facebook-square']} size="3x" />
                 ) : name === 'Github' ? (
                   <FontAwesomeIcon icon={['fab', 'github-square']} size="3x" />
                 ) : (
