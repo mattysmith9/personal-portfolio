@@ -9,6 +9,8 @@ const AboutWrapper = styled(Section)`
   position: relative;
   h2 {
     color: ${colors.orange};
+    border-bottom: 2px solid ${colors.blue};
+    border-bottom-right-radius: 10px;
   }
 `;
 
