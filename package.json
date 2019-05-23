@@ -19,7 +19,7 @@
     "formik": "^1.5.2",
     "gatsby": "^2.3.24",
     "gatsby-background-image": "^0.3.5",
-    "gatsby-cli": "^2.5.12",
+    "gatsby-cli": "^2.6.2",
     "gatsby-image": "^2.0.39",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-favicon": "^3.1.6",
