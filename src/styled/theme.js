@@ -1,7 +1,7 @@
 const theme = {
   colors: {
     white: '#ffffff',
-    items: '#e6ebee',
+    items: '#f5f7f8',
     blue: '#355c7d',
     green: '#13ab89',
     orange: '#774A62',
