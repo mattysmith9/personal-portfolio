@@ -8,13 +8,13 @@ interests:
   - Blockchain
   - Culture
   - Non-fiction books
-  - Music
+  - Cryptography
   - Sacred Geometry
-  - Finance
+  - Economics
 ---
 
 Hi! I'm Matty, I am an aspiring Software Engineer from Burlington,
-Vermont. About six months ago I decided that my previous career as a
+Vermont. I recently decided that my previous career as a
 Mortgage Broker wasn't what I was looking for so I enrolled in a
 bootcamp and took the plunge into the world of Software.
 
