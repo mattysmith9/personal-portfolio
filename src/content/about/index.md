@@ -4,7 +4,7 @@ interests:
   - Golf
   - Math
   - Alan Watts
-  - Technology
+  - NSA Puzzle's 
   - Blockchain
   - Culture
   - Non-fiction books
