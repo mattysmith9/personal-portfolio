@@ -1,5 +1,12 @@
 html {
-  background-color: #f3f7fa;
+  background-image: linear-gradient(
+    to bottom,
+    #eceaea,
+    #f1eff0,
+    #f5f4f5,
+    #fafafa,
+    #ffffff
+  );
 }
 
 html::-webkit-scrollbar {
