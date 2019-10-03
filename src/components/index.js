@@ -3,6 +3,7 @@ import SEO from './seo';
 import Header from './Nav';
 import Hero from './MarkdownProjects/Hero';
 import About from './MarkdownProjects/About';
+import Blockchain from './MarkdownProjects/Blockchain';
 import Skills from './MarkdownProjects/Skills';
 import Projects from './Projects';
 import Contact from './Contact';
@@ -32,4 +33,5 @@ export {
   Startup,
   Apartments,
   Spinner,
+  Blockchain,
 };

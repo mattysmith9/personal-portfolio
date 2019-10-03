@@ -2,7 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { Link } from 'gatsby-plugin-modal-routing';
-import { ConditionalLayout, Info, Startup, Apartments } from '@comp';
+import {
+  ConditionalLayout,
+  Info,
+  Startup,
+  Apartments,
+  Blockchain,
+} from '@comp';
 import styled from 'styled-components';
 import { theme } from '@style';
 
@@ -37,6 +43,7 @@ const ProjectDescription = ({ data }) => (
     <ModalWrapper>
       <ModalContentWrapper>
         <Info data={data.info.edges} />
+        <Blockchain data={data.blockchain.edges} />
         <Startup data={data.startup.edges} />
         <Apartments data={data.apartments.edges} />
       </ModalContentWrapper>
@@ -55,6 +62,19 @@ export const query = graphql`
   query InfoQuery {
     info: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/src/content/info/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            tech
+          }
+          html
+        }
+      }
+    }
+    blockchain: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/src/content/blockchain/" } }
     ) {
       edges {
         node {
